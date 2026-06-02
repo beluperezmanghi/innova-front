@@ -1,0 +1,22 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+
+  <div class="logo">
+    <a href="/home"><img src="/header/LOGO_INNOVA BLANCO.png" alt="Innova Trials"></a>
+  </div>
+
+  <button class="menu-toggle" (click)="toggleMenu()" [class.open]="isMenuOpen">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-links" [class.active]="isMenuOpen">
+    <li>
+      <a routerLink="/home" routerLinkActive="active-link" (click)="closeMenu()">HOME</a>
+    </li>
+    <li>
+      <a routerLink="/our-approach" routerLinkActive="active-link" (click)="closeMenu()">ABOUT US</a>
+    </li>
+    <li>
+      <a routerLink="/connect" routerLinkActive="active-link" (click)="closeMenu()">CONTACT US</a>
+    </li>
+  </ul>

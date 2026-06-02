@@ -1,0 +1,84 @@
+@import "aos/dist/aos.css";
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/Gotham-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/GothamRnd-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/Gotham-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+html {
+  scroll-padding-top: 120px; 
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Gotham", sans-serif;
+  margin: 0px !important;
+  background-color: rgba(0, 15, 40, 0.95);
+  max-width: 100vw;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.full-screen-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 120px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.text-end {
+  text-align: end;
+}
+[data-aos="fade-up"] {
+  transform: translateY(30px); 
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.desk {
+  display: flex !important;
+}
+.mob {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  .text-end {
+    text-align: center;
+  }
+  .desk {
+    display: none !important;
+  }
+  .mob {
+    display: flex !important;
+    width: 100%;
+  }
+  .full-screen-section {
+    padding-top: 40px;
+  }
+  .full-screen-section {
+    width: 100%;
+    min-height: 100% !important;
+  }
+}

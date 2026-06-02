@@ -1,0 +1,992 @@
+.gif {
+    height: 100%;
+    width: auto;
+    opacity: 0.9;
+}
+
+#gif9,
+#gif10,
+#gif11 {
+    display: none;
+}
+
+#gif2 {
+    height: auto;
+    position: absolute;
+    left: -2%;
+    top: 30%;
+    max-height: 210px;
+    transform: translateY(-50%) rotate(27deg);
+}
+
+#gif3 {
+    height: auto;
+    position: absolute;
+    left: 6%;
+    top: 90%;
+    transform: translateY(-50%) rotate(103deg);
+    z-index: 0;
+    max-height: 80px;
+}
+
+#gif4 {
+    height: auto;
+    position: absolute;
+    left: 0%;
+    top: 34%;
+    transform: translateY(-50%) rotate(0deg);
+    z-index: 0;
+    max-height: 270px;
+}
+
+#gif6 {
+    height: auto;
+    position: absolute;
+    left: 24%;
+    top: 80%;
+    transform: translateY(-50%) rotate(0deg);
+    z-index: 0;
+    max-height: 85px;
+}
+
+#gif7 {
+    height: auto;
+    position: absolute;
+    right: 11%;
+    top: 10%;
+    transform: translateY(-50%) rotate(27deg);
+    z-index: 0;
+    max-height: 200px;
+}
+
+#gif8 {
+    height: auto;
+    position: absolute;
+    right: 25%;
+    top: 82%;
+    transform: translateY(-50%) rotate(0deg);
+    z-index: 0;
+    max-height: 200px;
+}
+
+.our-approach-hero1 {
+    justify-content: end;
+    position: relative;
+}
+
+.our-approach-hero2 {
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.our-approach-hero3 {
+    justify-content: center;
+    padding: 0px;
+    display: flex;
+    padding: 5%;
+}
+
+.our-approach-container1 {
+    display: flex;
+    width: 100%;
+    max-width: 1860px;
+    gap: 30px;
+    align-items: center;
+}
+
+.our-approach-title {
+    color: #ffffff;
+    font-family: "Gotham", sans-serif;
+    font-size: 65px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0;
+    letter-spacing: -1px;
+    margin: auto;
+}
+
+.our-approach-description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.foto-grupal {
+    width: 100%;
+}
+
+.our-approach-header {
+    flex: 1.25;
+}
+
+.our-approach-content {
+    flex: 0.85;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+
+//card persons
+.our-approach-content2 {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-mini-person {
+    flex: 1 1 398px;
+    max-width: 398px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: 100%;
+    width: 398px;
+}
+
+.card-mini-person-header {
+    background-image: linear-gradient(135deg, #02182d 0%, #0067a8 100%);
+    border-radius: 18px 0px 0px 18px;
+    padding: 5% 20px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.card-mini-description {
+    background-color: #02182d;
+    margin-top: -25px;
+    border-radius: 20px 0px;
+    padding: 40px 10px;
+    display: none;
+}
+
+.card-mini-description span {
+    font-family: "Gotham";
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    color: white;
+    margin: 5px 0px;
+    padding: 4%;
+    flex: 1.3;
+}
+
+.card-mini-person-header h1 {
+    font-family: "Gotham";
+    font-size: 14px;
+    font-synthesis: 500;
+    color: white;
+    margin: 1px 0px;
+}
+
+.card-mini-person-header h2 {
+    font-family: "Gotham";
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+    margin: 1px 0px;
+}
+
+.card-mini-img {
+    margin-top: 20px;
+}
+
+.card-mini-img img {
+    width: 100%;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.container-in {
+    max-width: 40px;
+    position: relative;
+    margin-top: -50px;
+    margin-left: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.container-in img {
+    width: 100%;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.person-image-wrap {
+    position: relative;
+    width: fit-content;
+    flex-shrink: 0;
+}
+
+.person-image-wrap {
+    position: relative !important;
+    display: inline-block !important;
+    width: auto !important;
+    height: fit-content !important;
+    flex-shrink: 0 !important;
+  }
+  
+  .person-image-wrap .img-person {
+    display: block !important;
+  }
+  
+  .container-in2 {
+    position: absolute !important;
+    left: 16px !important;
+    bottom: 16px !important;
+    transform: translateY(16px) !important;
+    width: 42px !important;
+    height: 42px !important;
+    z-index: 999 !important;
+    cursor: pointer;
+  }
+  
+  .container-in2 img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+.card-mini-person-header:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+//cad large
+.our-approach-content3 {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.card-large-person {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    max-width: 1400px;
+}
+
+.card-large-person-header {
+    background-image: linear-gradient(135deg, #02182d 0%, #0067a8 100%);
+    border-radius: 28px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    z-index: 2;
+}
+
+.card-large-content {
+    flex-direction: row;
+    display: flex;
+    margin: 0px 1px;
+    height: 328px;
+    position: relative;
+    margin-top: -30px;
+    z-index: 1;
+}
+
+.card-large-content span {
+    font-family: "Gotham";
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: 300;
+    color: white;
+    margin: 5px 0px;
+    padding: 4%;
+    flex: 1.3;
+    white-space: pre-line;
+}
+
+.card-large-content .img-person {
+    width: auto;
+    height: 325px;
+}
+
+.card-large-person-header h1 {
+    font-family: "Gotham";
+    font-size: 20px;
+    font-synthesis: 500;
+    color: white;
+    margin: 5px 0px;
+}
+
+.card-large-person-header h2 {
+    font-family: "Gotham";
+    font-size: 19px;
+    font-weight: 300;
+    color: white;
+    margin: 7px 0px;
+}
+
+.foto-grupal.mob {
+    display: none;
+}
+
+.detail-header-pill {
+    background-image: linear-gradient(135deg, #02182d 0%, #0067a8 100%);
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+    border-radius: 20px 0px 0px 20px;
+    width: auto;
+    color: white;
+    position: relative;
+    margin-bottom: -10px;
+    z-index: 100;
+
+    .dot {
+        width: 8px;
+        height: 8px;
+        background: white;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    h3 {
+        margin: 0;
+        font-family: "Gotham", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+}
+
+.btn-card {
+    display: none;
+    position: relative;
+    margin-top: -20px;
+    text-align: end;
+    justify-content: end;
+    padding-right: 5%;
+}
+
+.detail-header-pill {
+    padding: 30px 50px;
+}
+
+.btn-card img {
+    width: 100%;
+    max-width: 35px;
+}
+
+.our-approach-hero1 {
+    background-image: url("/fondos responsive/1920x1080/02_OUR APROACH/02_INNOVATRIALS_FONDO_01.webp");
+}
+
+.our-approach-hero2 {
+    background-image: url("/fondos responsive/1920x1080/02_OUR APROACH/02_INNOVATRIALS_FONDO_02.webp");
+}
+
+.our-approach-hero3 {
+    background-image:
+        url("/fondos responsive/1920x1080/02_OUR APROACH/02_INNOVATRIALS_FONDO_03.webp"),
+        url("/fondos responsive/1920x1080/02_OUR APROACH/02_INNOVATRIALS_FONDO_04.webp"),
+        url("/fondos responsive/1920x1080/02_OUR APROACH/02_INNOVATRIALS_FONDO_05.webp"),
+        url("/fondos responsive/1920x1080/02_OUR APROACH/02_INNOVATRIALS_FONDO_06.webp");
+
+    background-size: 100% 100vh;
+
+    background-position:
+        left 0px,
+        left 100vh,
+        left 200vh,
+        left 300vh;
+
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (min-width: 2400px) {
+    .mobile {
+        display: none;
+    }
+
+    .our-approach-hero1 {
+        background-image: url("/fondos responsive/2440x1800/02_OUR APROACH/02_INNOVATRIALS_FONDO_01_2440x1800.webp");
+    }
+
+    .our-approach-hero2 {
+        background-image: url("/fondos responsive/2440x1800/02_OUR APROACH/02_INNOVATRIALS_FONDO_02_2440x1800.webp");
+    }
+
+    .our-approach-hero3 {
+        background-image:
+            url("/fondos responsive/2440x1800/02_OUR APROACH/02_INNOVATRIALS_FONDO_03_2440x1800.webp"),
+            url("/fondos responsive/2440x1800/02_OUR APROACH/02_INNOVATRIALS_FONDO_04_2440x1800.webp"),
+            url("/fondos responsive/2440x1800/02_OUR APROACH/02_INNOVATRIALS_FONDO_05_2440x1800.webp"),
+            url("/fondos responsive/2440x1800/02_OUR APROACH/02_INNOVATRIALS_FONDO_06_2440x1800.webp");
+
+        background-size: 100% 100vh;
+
+        background-position:
+            left 0px,
+            left 100vh,
+            left 200vh,
+            left 300vh;
+
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    .detail-header-pill {
+        padding: 48px 50px;
+        max-width: 1200px;
+    }
+
+    .our-approach-content,
+    .foto-grupal {
+        max-width: 1200px;
+    }
+
+    .our-approach-title {
+        font-size: 80px;
+        line-height: 1.3;
+    }
+
+    .our-approach-header {
+        padding-left: 40px;
+    }
+
+    .our-approach-description {
+        font-size: 2.2rem;
+        line-height: 1.4;
+    }
+
+    .our-approach-container1 {
+        max-width: 100%;
+    }
+
+    .card-mini-person {
+        flex: 1 1 600px;
+        max-width: 600px;
+        width: 600px;
+    }
+
+    .card-mini-person-header h1 {
+        font-size: 25px;
+    }
+
+    .card-mini-person-header h2 {
+        font-size: 18px;
+    }
+
+    .container-in {
+        max-width: 70px;
+        margin-top: -80px;
+        margin-left: 10px;
+    }
+
+    .container-in2 {
+        width: 70px;
+        height: 70px !important;
+    }
+
+    .card-large-person-header {
+        padding: 40px 30px;
+    }
+    .card-large-person {
+        max-width: 2100px;
+    }
+
+    .card-large-content .img-person {
+        height: 500px;
+    }
+
+    .card-large-person-header h1 {
+        font-size: 29px;
+    }
+
+    .card-large-person-header h2 {
+        font-size: 29px;
+        margin-left: 20px;
+    }
+
+    .card-large-content span {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .card-large-content {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .our-approach-title {
+        font-size: 50px;
+    }
+
+    .our-approach-description {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 1441px) {
+    .card-mini-person {
+        flex: 1 1 280px;
+        max-width: 280px;
+    }
+
+    .card-mini-person-header h2 {
+        font-size: 10px;
+    }
+
+    #gif2 {
+        max-height: 200px;
+    }
+
+    .our-approach-title {
+        font-size: 40px;
+    }
+
+    .our-approach-description {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    .our-approach-header {
+        padding: 0px 20px;
+    }
+
+ 
+}
+
+@media (max-width: 1140px) {
+    #gif2 {
+        max-height: 200px;
+    }
+
+    #gif3 {
+        max-height: 60px;
+    }
+
+    #gif4 {
+        max-height: 0px;
+    }
+
+    #gif6 {
+        max-height: 80px;
+    }
+
+    #gif7 {
+        max-height: 200px;
+    }
+
+    #gif8 {
+        max-height: 150px;
+    }
+
+    .our-approach-title {
+        font-size: 30px;
+    }
+
+    .our-approach-description {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    .card-large-content span {
+        display: -webkit-box;
+        line-height: 1.2;
+        font-size: 11px;
+        padding: 40px;
+    }
+    .card-large-person-header {
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 4px;
+        align-items: flex-start;
+    }
+    
+    .card-large-person-header h1,
+    .card-large-person-header h2 {
+        font-size: 15px;
+        margin: 0;
+    }
+    .card-large-content .img-person {
+        width: auto;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-large-content .img-person {
+        height: 100%;
+    }
+    .card-mini-img {
+        margin-top: 20px;
+    }
+
+    .card-large-content span {
+        font-size: 10px;
+        line-height: 12px;
+        padding: 40px 20px 10px 20px;
+    }
+    .card-mini-person-header h1 {
+        font-size: 12px;
+    }
+    .card-mini-person-header h2 {
+        font-size: 10px;
+    }
+    .card-large-content {
+        height: 200px;
+    }
+
+
+    .card-large-person-header h1,
+    .card-large-person-header h2 {
+        font-size: 15px;
+    }
+
+    .our-approach-container1,
+    .our-approach-container2 {
+        flex-direction: column;
+        padding-top: 80px;
+    }
+
+    .our-approach-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .our-approach-description {
+        font-size: 1rem;
+        line-height: 1.2;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .our-approach-hero3 {
+        padding: 5% 5% 10% 5%;
+    }
+}
+
+.img-desk {
+    display: flex;
+}
+
+.img-mob {
+    display: none;
+}
+
+@media (max-width: 481px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .img-desk {
+        display: none;
+    }
+
+    .img-mob {
+        display: flex;
+    }
+
+    .card-mini-person-header {
+        height: 80px;
+        padding: 5% 10px;
+        border-radius: 16px 0px 0px 16px;
+    }
+
+    #gif9,
+    #gif10,
+    #gif11 {
+        display: flex;
+    }
+
+    #gif9 {
+        height: auto;
+        position: absolute;
+        left: -6%;
+        top: 19%;
+        max-height: 135px;
+        transform: translateY(-50%) rotate(99deg);
+    }
+
+    #gif10 {
+        height: auto;
+        position: absolute;
+        left: 38%;
+        top: 58%;
+        max-height: 120px;
+        transform: translateY(-50%) rotate(92deg);
+    }
+
+    #gif11 {
+        height: auto;
+        position: absolute;
+        left: 39%;
+        top: 106%;
+        max-height: 150px;
+        transform: translateY(-50%) rotate(306deg);
+    }
+
+    #gif2,
+    #gif3,
+    #gif4,
+    #gif6,
+    #gif7,
+    #gif8 {
+        display: none;
+    }
+
+    .card-mini-person {
+        flex: 1 1 398px;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .main-approach-container {
+        width: 100%;
+        min-height: 2400px;
+        position: relative;
+
+        background-image:
+            url("/fondos responsive/mobile/02_OUR APROACH/02_INNOVATRIALS_FONDO_01-2.webp"),
+            url("/fondos responsive/mobile/02_OUR APROACH/02_INNOVATRIALS_FONDO_03-4.webp"),
+            url("/fondos responsive/mobile/02_OUR APROACH/02_INNOVATRIALS_FONDO_05-6.webp");
+
+        background-size:
+            100% 33.34%,
+            100% 33.34%,
+            100% 33.34%;
+
+        background-position:
+            top center,
+            center center,
+            bottom center;
+
+        background-repeat: no-repeat;
+    }
+
+    .our-approach-hero1,
+    .our-approach-hero2 {
+        background: transparent !important;
+        min-height: 100vh;
+    }
+
+    .container-in {
+        max-width: 40px;
+        position: relative;
+        margin-top: -63px;
+        z-index: 999;
+        margin-left: 10px;
+    }
+
+    .our-approach-header {
+        padding: 0px 20px;
+    }
+
+    .foto-grupal.mob {
+        display: flex;
+    }
+
+    .foto-grupal.desk {
+        display: none;
+    }
+
+    .foto-grupal {
+        width: 90%;
+        margin-left: 10%;
+        border-radius: 30px 0px 0px 30px;
+    }
+
+    .our-approach-content2 {
+        flex-direction: column;
+        padding: 60px 0px;
+    }
+
+    .card-mini-person-header {
+        position: relative;
+        z-index: 100;
+    }
+
+    .card-mini-img {
+        margin-top: -20px;
+        z-index: 50;
+    }
+
+    .btn-card {
+        display: flex;
+    }
+
+    .our-approach-hero3 {
+        display: none;
+    }
+
+    .card-mini-description.active {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition:
+            grid-template-rows 0.9s ease,
+            opacity 0.5s ease;
+        opacity: 0;
+    }
+
+    .card-person-wrapper.is-expanded .card-mini-description {
+        grid-template-rows: 1fr;
+        opacity: 1;
+        padding: 20px 0;
+        max-width: 300px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .card-mini-description span {
+        font-family: "Gotham";
+        font-size: 12px;
+        line-height: 19px;
+    }
+}
+
+/* TABLET GRANDE / iPad Pro / Surface */
+@media (max-width: 1140px) and (min-width: 769px) {
+    .card-large-content {
+      height: 360px !important;
+      align-items: flex-start;
+    }
+  
+    .card-large-content span {
+      display: block !important;
+      font-size: 11px !important;
+      line-height: 14px !important;
+      padding: 42px 28px 20px 28px !important;
+      flex: 1.35;
+    }
+  
+    .card-large-content .img-person {
+      height: 300px !important;
+      width: auto !important;
+      flex-shrink: 0;
+    }
+  
+    .card-large-person-header h1 {
+      font-size: 15px !important;
+      line-height: 1.15 !important;
+    }
+  
+    .card-large-person-header h2 {
+      font-size: 13px !important;
+      line-height: 1.15 !important;
+    }
+  
+    .card-large-person {
+      margin-bottom: 55px;
+    }
+  }
+  
+  
+  /* TABLET CHICA / 640-768 */
+  @media (max-width: 768px) and (min-width: 482px) {
+    .card-large-content {
+      height: 290px !important;
+      align-items: flex-start;
+    }
+  
+    .card-large-content span {
+      display: block !important;
+      font-size: 8.5px !important;
+      line-height: 10px !important;
+      padding: 42px 16px 14px 16px !important;
+      flex: 1.35;
+    }
+  
+    .card-large-content .img-person {
+      height: 240px !important;
+      width: auto !important;
+      flex-shrink: 0;
+    }
+  
+    .card-large-person-header h1 {
+      font-size: 13px !important;
+      line-height: 1.1 !important;
+    }
+  
+    .card-large-person-header h2 {
+      font-size: 10px !important;
+      line-height: 1.1 !important;
+    }
+  
+    .card-large-person {
+      margin-bottom: 35px;
+    }
+  }
+  
+  
+  /* CELULAR HORIZONTAL */
+  @media (max-width: 700px) and (orientation: landscape) {
+    .card-large-content {
+      height: 250px !important;
+      overflow: hidden !important;
+    }
+  
+    .card-large-content span {
+      font-size: 8px !important;
+      line-height: 9px !important;
+      padding: 42px 12px 10px 12px !important;
+    }
+  
+    .card-large-content .img-person {
+      height: 210px !important;
+    }
+  }
+
+  @media (min-width: 2400px) {
+    .container-in2 {
+        width: 70px !important;
+        left: 24px !important;
+        bottom: 24px !important;
+    }
+}
+
+@media (max-width: 1140px) {
+    .container-in2 {
+        width: 32px !important;
+        left: 12px !important;
+        bottom: 12px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-in2 {
+        width: 28px !important;
+        left: 10px !important;
+        bottom: 10px !important;
+    }
+}
+
+@media (min-width: 1141px) {
+    .card-large-person-header h1 {
+        width: 170px;
+        min-width: 170px;
+        line-height: 1.1;
+        line-height: 1.1;
+    }
+}
+
+@media (max-width: 1140px) {
+    .card-large-person-header h1 {
+        width: auto;
+        min-width: 0;
+    }
+}

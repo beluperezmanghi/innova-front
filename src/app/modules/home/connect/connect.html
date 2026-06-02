@@ -1,0 +1,106 @@
+<section class="full-screen-section connect-hero1">
+    <img id="gif1" class="gif" src="./gifs/MISCELANEA 002.gif" alt="Map">
+    <div class="connect-container1">
+        <div class="title-connect-container">
+            <h1 class="connect-title text-end" data-aos="fade-up" data-aos-duration="1200">
+                THE FUTURE IS <br> BUILT AS A TEAM
+            </h1>
+            <h2 class="connect-subtitle desk ">
+                At Innova Trials, we are a team driven by curiosity, commitment, and collaboration. We work to advance
+                clinical research in a responsible, human-centered way focused on generating&nbsp;real&nbsp;impact. <br>
+                We value people who challenge ideas, contribute new perspectives, and seek to grow while contributing to
+                something meaningful. Beyond experience, we care about how you think, how you work, and the intention
+                you bring to&nbsp;what&nbsp;you&nbsp;do.<br>
+                If this resonates with you, let’s&nbsp;move&nbsp;forward&nbsp;together.
+            </h2>
+            <h2 class="connect-subtitle mob ">
+               At Innova Trials, we are a team driven by curiosity, commitment, and collaboration. We work to advance
+                clinical research in a responsible, human-centered way focused on generating&nbsp;real&nbsp;impact. <br>
+                We value people who challenge ideas, contribute new perspectives, and seek to grow while contributing to
+                something meaningful. Beyond experience, we care about how you think, how you work, and the intention
+                you bring to&nbsp;what&nbsp;you&nbsp;do.<br>
+                If this resonates with you, let’s&nbsp;move&nbsp;forward&nbsp;together.
+            </h2>
+        </div>
+    </div>
+    <div class="title-connect-container2">
+        <div class="connect-map" data-aos="fade-up" data-aos-duration="1200">
+            <img src="./connect/mapa-animado.gif" alt="Map">
+        </div>
+        <div class="connect-red" data-aos="fade-up" data-aos-duration="1200">
+            <div class="red">
+                <a href="mailto:info@innovatrials.com" class="social-btn">
+                    <img src="/connect/03_INNOVATRIALS_BOTON01.svg" alt=""></a>
+                <h1>E-mail</h1>
+                <h2>info@innovatrials.com</h2>
+            </div>
+            <div class="red">
+                <a href="tel:+17863511786" class="social-btn">
+                    <img src="/connect/03_INNOVATRIALS_BOTON02.svg" alt=""></a>
+                <h1>Phone number</h1>
+                <h2>+1&nbsp;(786)&nbsp;351-1786</h2>
+            </div>
+            <div class="red">
+                <a href="https://www.google.com/maps/search/?api=1&query=104+Crandon+Blvd+Suite+312+Key+Biscayne+FL+33149"
+                    target="_blank" class="social-btn"><img src="/connect/03_INNOVATRIALS_BOTON03.svg" alt=""></a>
+                <h1>Adress</h1>
+                <h2>104 Crandon BIvd, Suite 312
+                    Key&nbsp;Biscayne,&nbsp;FL33149</h2>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<section class="full-screen-section connect-hero2">
+    <div class="view-mobile" id="contact" style="height: 30px;"></div>
+
+    <h2 class="connect-title-form" data-aos="fade-up" data-aos-duration="1200">LET'S CONNECT</h2>
+
+    <div class="card-form" data-aos="fade-up" data-aos-duration="1200">
+        <form [formGroup]="contactForm" (ngSubmit)="sendEmail()" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <div class="fiel-two">
+                <input formControlName="user_name" type="text" placeholder="Name"
+                    class="border border-gray-300 rounded-xl p-4 outline-none focus:border-blue-500 transition-colors">
+
+                <input formControlName="user_phone" type="text" placeholder="Phone"
+                    class="border border-gray-300 rounded-xl p-4 outline-none focus:border-blue-500 transition-colors">
+            </div>
+
+            <div class="fiel-two">
+                <input formControlName="user_email" type="email" placeholder="Email"
+                    class="border border-gray-300 rounded-xl p-4 outline-none focus:border-blue-500 transition-colors">
+
+                <input formControlName="user_company" type="text" placeholder="Company"
+                    class="border border-gray-300 rounded-xl p-4 outline-none focus:border-blue-500 transition-colors">
+            </div>
+            <div class="fiel-two">
+
+                <textarea formControlName="message" placeholder="Message" rows="4"
+                    class="md:col-span-2 border border-gray-300 rounded-xl p-4 outline-none focus:border-blue-500 transition-colors"></textarea>
+            </div>
+            <div class="containe-btn">
+
+
+                <button type="submit" class="btn-send" [disabled]="isSending || contactForm.invalid">
+                    {{ isSending ? 'Sending...' : 'Send' }}
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="map-container">
+        <iframe width="100%" height="100%" frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.851914101833!2d-80.16527502373752!3d25.692765377395013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b3620023023b%3A0xc3b8431872365287!2s104%20Crandon%20Blvd%20suite%20312%2C%20Key%20Biscayne%2C%20FL%2033149%2C%20EE.%20UU.!5e0!3m2!1ses!2s!4v1715000000000!5m2!1ses!2s"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <app-footer class="mob" backgroundMobile="'transparent'"></app-footer>
+
+</section>
+
+
+<app-footer class="desk" backgroundMobile="'transparent'"
+    background1920x1080="'/fondos responsive/1920x1080/03_CONNECT/03_INNOVATRIALS_FONDO_03.png'"
+    background2440x1800="'fondos responsive/2440x1800/03_CONNECT/03_INNOVATRIALS_FONDO_03_2440x1800.png'"></app-footer>

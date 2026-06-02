@@ -1,0 +1,100 @@
+<section class="full-screen-section purpose-hero" id="purposeInit">
+    <img id="gif1" class="gif" src="./gifs/MISCELANEA 001.gif" alt="Map">
+
+    <div class="purpose-container">
+        <div class="purpose-header" data-aos="fade-up" data-aos-duration="1200" data-aos-once="false">
+            <h1 class="purpose-title">
+                OUR COMMITMENT
+            </h1>
+        </div>
+
+        <div class="purpose-content" data-aos="fade-up" data-aos-duration="1200">
+            <p class="purpose-description">
+                We work hand in hand with our clients and partners to drive innovation in healthcare, with the goal of generating a positive impact and transforming the quality of life of people around the world.
+            </p>
+        </div>
+
+    </div>
+    <img id="gif2" class="gif" src="./gifs/MISCELANEA 001.gif" alt="Map">
+
+</section>
+<div class="purpose-execution-hero" id="purposeContent">
+    <section class="full-screen-section purpose-execution">
+
+        <div class="services-main-title-wrap" data-aos="fade-down" data-aos-duration="1200">
+            <h1 class="services-main-title">
+              YOUR CRO EXPERT FOR LATIN AMERICA
+            </h1>
+          </div>
+
+        <div class="purpose-execution-container">
+
+            <div class="purpose-execution-header" data-aos="fade-up" data-aos-duration="1200">
+                <h2 class="purpose-title services-title">
+                    OUR SERVICES
+                </h2>
+            </div>
+
+            <div class="purpose-execution-list-wrapper" data-aos="fade-up" data-aos-duration="1200">
+                <ul class="purpose-execution-list">
+                    <div class="purpose-selection-bar" [style.top.px]="barTop" [style.height.px]="barHeight">
+                    </div>
+                    <li *ngFor="let item of purposeItems; let i = index" class="purpose-item"
+                        (mouseenter)="onHoverItem(i, $event)" (click)="scrollToCard(i)"
+                        [class.active]="selectedIndex === i">
+                        {{ item.title }}
+                    </li>
+                </ul>
+                <img id="gif3" class="gif" src="./gifs/MISCELANEA 002.gif" alt="Map">
+
+            </div>
+        </div>
+
+    </section>
+    <section id="purpose-detail-section" class="purpose-detail">
+        <img id="gif4" class="gif" src="./gifs/MISCELANEA 004.gif" alt="Map">
+        <img id="gif6" class="gif" src="./gifs/MISCELANEA 002.gif" alt="Map">
+        <img id="gif8" class="gif" src="./gifs/MISCELANEA 002.gif" alt="Map">
+        <img id="gif9" class="gif" src="./gifs/MISCELANEA 005.gif" alt="Map">
+        <img id="gif10" class="gif" src="./gifs/MISCELANEA 002.gif" alt="Map">
+        <img id="gif11" class="gif" src="./gifs/MISCELANEA 001.gif" alt="Map">
+        <img id="gif12" class="gif" src="./gifs/MISCELANEA 004.gif" alt="Map">
+        <img id="gif13" class="gif" src="./gifs/MISCELANEA 002.gif" alt="Map">
+        <img id="gif14" class="gif" src="./gifs/MISCELANEA 002.gif" alt="Map">
+
+        <div *ngFor="let item of purposeItems; let i = index" class="detail-card" [attr.id]="'card-' + i"
+            [style.border-radius]="item.align === 'left' ? '20px 20px 20px 0px' : '20px 20px 20px 20px'">
+
+            <div class="detail-header-pill" [attr.data-aos-anchor]="'#card-' + i">
+                <span class="dot"></span>
+                <h3>{{ item.title }}</h3>
+            </div>
+
+            <div class="detail-content" [style.flex-direction]="item.align === 'left' ? 'row-reverse' : 'row'">
+
+                <div class="detail-info" [attr.data-aos]="item.align === 'left' ? 'fade-right' : 'fade-left'"
+                    data-aos-delay="500" data-aos-duration="800" [attr.data-aos-anchor]="'#card-' + i"
+                    [style.z-index]="item.align === 'left' ? '2':'1'"
+                    [style.border-radius]="item.align !== 'left' ? '0px 0px 0px 20px' : '0px 0px 20px 0px'">
+                    <p class="detail-description">{{ item.desc }}</p>
+                    <div class="detail-btn">
+                        <button class="btn-connect" [routerLink]="['/connect']" fragment="contact">
+                            CONNECT
+                        </button>
+                    </div>
+                </div>
+
+                <div class="detail-media" data-aos="fade" [attr.data-aos-anchor]="'#card-' + i"
+                    [style.z-index]="item.align === 'left' ? '1':'2'"> <img [src]="item.img"
+                        [style.border-radius]="item.align === 'left' ? '0px 0px 0px 20px' : '0px 0px 20px 0px'"
+                        [alt]="item.title">
+                </div>
+            </div>
+        </div>
+
+        <app-footer class="mob" backgroundMobile="'transparent'"></app-footer>
+    </section>
+</div>
+<app-footer class="desk" backgroundMobile="'transparent'"
+    background2440x1800="'/fondos responsive/2440x1800/01_PURPOSE/01_INNOVATRIALS_FONDO_07_2440x1800.webp'"
+    background1920x1080="'/fondos responsive/1920x1080/01_PURPOSE/01_INNOVATRIALS_FONDO_07.webp'"></app-footer>

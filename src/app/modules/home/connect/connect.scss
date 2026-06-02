@@ -1,0 +1,538 @@
+.gif {
+    height: 100%;
+    width: auto;
+    opacity: 0.9;
+}
+
+#gif1 {
+    height: auto;
+    position: absolute;
+    left: -2%;
+    top: 30%;
+    max-height: 270px;
+    transform: translateY(-50%) rotate(29deg);
+}
+
+.social-btn:hover img {
+    filter: brightness(1.1);
+}
+
+.social-btn:hover {
+    transform: scale(1.2);
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.connect-hero2 .connect-map {
+    display: none;
+}
+
+.connect-title {
+    color: #ffffff;
+    font-family: "Gotham", sans-serif;
+    font-size: 68px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0;
+    letter-spacing: -1px;
+    margin: 0px;
+    flex: 0.9;
+}
+.connect-subtitle {
+    color: #ffffff;
+    font-family: "Gotham", sans-serif;
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-right: 3%;
+    flex: 1.1;
+    text-align: left;
+}
+.title-connect-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+}
+.title-connect-container2 {
+    display: flex;
+    align-items: center;
+    background-color: #03172e;
+    width: 95%;
+    max-width: 1800px;
+    height: 350px;
+    border-radius: 350px 0 0 350px;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.connect-hero1 {
+    background-image: url("/fondos/connect1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #031629;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.connect-hero2 {
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 5%;
+
+    background-image: url("/fondos/connect2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #031629;
+}
+.connect-container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    max-height: 550px;
+}
+.connect-map {
+    display: flex;
+    align-items: center;
+    flex: 0.75;
+    height: 100%;
+}
+.connect-map img {
+    width: auto;
+    height: 100%;
+}
+.connect-red {
+    flex: 1.25;
+    justify-content: start;
+}
+.red {
+    width: 240px;
+    text-align: center;
+}
+.red img {
+    max-width: 85px;
+    margin-bottom: 10px;
+}
+.red h1 {
+    font-size: 18px;
+    color: white;
+    font-family: "Gotham", sans-serif;
+    font-weight: 500;
+    margin: 0px;
+}
+.red h2 {
+    font-size: 18px;
+    color: white;
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
+    margin: 0px;
+}
+.connect-red {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #01162d, #003d7a);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.connect-title-form {
+    color: #ffffff;
+    font-family: "Gotham", sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0px !important;
+    letter-spacing: -1px;
+    margin: auto;
+}
+
+.card-form {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    margin-top: 30px;
+    width: 70vw;
+    max-width: 1000px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+.map-container {
+    max-width: 1100px;
+    height: 300px;
+    width: 100%;
+}
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+.fiel-two {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+input,
+textarea {
+    width: auto;
+    border: 1px solid #d1d5db;
+    border-radius: 0.75rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    margin-top: 40px;
+    outline: none;
+    width: 100%;
+    font-weight: 300;
+    transition: border-color 0.2s;
+    font-family: "Gotham", sans-serif;
+    color: #645e5e;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #003d7a;
+}
+.containe-btn {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: end;
+}
+.btn-send {
+    background: linear-gradient(90deg, #03172d 0%, #022b4b 35%, #014471 70%, #02588f 100%);
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 20px;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+.connect-subtitle.mob {
+    display: none;
+}
+.connect-hero1 {
+    background-image: url("/fondos responsive/1920x1080/03_CONNECT/03_INNOVATRIALS_FONDO_01.webp");
+}
+.connect-hero2 {
+    background-image: url("/fondos responsive/1920x1080/03_CONNECT/03_INNOVATRIALS_FONDO_02.webp");
+}
+@media (min-width: 2400px) {
+    .connect-hero1 {
+        background-image: url("/fondos responsive/2440x1800/03_CONNECT/03_INNOVATRIALS_FONDO_01_2440x1800.webp");
+    }
+    .connect-hero2 {
+        background-image: url("/fondos responsive/2440x1800/03_CONNECT/03_INNOVATRIALS_FONDO_02_2440x1800.webp");
+    }
+    .title-connect-container2 {
+        width: 95%;
+        max-width: 90%;
+        height: 450px;
+    }
+    .connect-title {
+        font-size: 80px;
+        margin: 0px;
+        padding-left: 5%;
+    }
+    .red img {
+        max-width: 110px;
+    }
+    .red h2 {
+        font-size: 27px;
+    }
+    .red h1 {
+        font-size: 27px;
+    }
+    .red {
+        width: 360px;
+    }
+    .connect-map img {
+        max-height: 700px;
+    }
+    .connect-subtitle {
+        line-height: 1.5;
+        margin-right: 5%;
+    }
+    .connect-title-form {
+        font-size: 80px;
+    }
+    .card-form {
+        max-width: 1500px;
+    }
+
+    .map-container {
+        max-width: 1600px;
+        height: 300px;
+    }
+    #gif1 {
+        left: -2%;
+        top: 30%;
+        max-height: 300px;
+        height: 100%;
+    }
+}
+@media (max-width: 1500px) {
+    .connect-title {
+        font-size: 50px;
+        margin: 0px;
+    }
+    .connect-subtitle {
+        font-size: 1.5rem;
+        margin-right: 5%;
+    }
+    .purpose-title {
+        font-size: 40px;
+        line-height: 46px;
+    }
+}
+@media (max-width: 1441px) {
+    #gif1 {
+        top: 30%;
+        max-height: 200px;
+    }
+
+    .title-connect-container2 {
+        height: 230px;
+    }
+
+    .red img {
+        max-width: 55px;
+        margin-bottom: 10px;
+    }
+    .red {
+        width: 190px;
+    }
+
+    .red h2 {
+        font-size: 14px;
+    }
+
+    .connect-title-form {
+        color: #ffffff;
+        font-family: "Gotham", sans-serif;
+        font-size: 24px;
+    }
+    input,
+    textarea {
+        height: 25px;
+        padding: 5px 10px;
+        font-size: 1rem;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .btn-send {
+        padding: 5px 15px;
+        font-size: 1rem;
+    }
+    .card-form {
+        padding: 1rem 20px;
+        margin-top: 0px;
+        width: 70vw;
+    }
+    .containe-btn {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .map-container {
+        height: 300px;
+        width: 75%;
+    }
+}
+@media (max-width: 992px) {
+    .connect-container1 {
+        padding-left: 20px;
+    }
+    .connect-title {
+        font-size: 35px;
+    }
+    .connect-map img {
+        max-height: 220px;
+    }
+    .connect-subtitle {
+        font-size: 1.2rem;
+    }
+    .red h2 {
+        font-size: 12px;
+    }
+    .red h1 {
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .connect-container1 {
+        flex-direction: column;
+    }
+    .connect-map {
+        width: 100%;
+        img {
+            max-height: 500px;
+        }
+    }
+    .connect-subtitle {
+        font-size: 0.8rem;
+        margin-right: 5%;
+    }
+    .connect-title {
+        font-size: 28px;
+    }
+    .red img {
+        max-width: 40px;
+        margin-bottom: 10px;
+    }
+    .red h1 {
+        font-size: 13px;
+    }
+    .red h2 {
+        font-size: 9px;
+    }
+    .red {
+        width: 120px;
+    }
+}
+@media (max-width: 481px) {
+    #gif1 {
+        display: none;
+    }
+    .title-connect-container2 {
+        flex-direction: column-reverse;
+        background: none;
+        height: 100%;
+        box-shadow: none;
+        gap: 40px;
+        border-radius: 0px;
+    }
+    .connect-hero1 {
+        background-image: url("/fondos responsive/mobile/03_CONNECT/03_INNOVATRIALS_FONDO_01-2.webp");
+    }
+    .connect-hero2 {
+        margin-top: -10px;
+        background-image: url("/fondos responsive/mobile/03_CONNECT/03_INNOVATRIALS_FONDO_03-4.webp");
+    }
+    .title-connect-container {
+        flex-direction: column;
+        padding: 90px 20px 0px 20px;
+    }
+    .connect-container1 {
+        padding-left: 0px;
+    }
+    .connect-title {
+        font-size: 24px;
+    }
+    .connect-subtitle {
+        font-size: 13px;
+        text-align: center;
+        margin-right: 0px;
+    }
+    .connect-subtitle.desk {
+        display: none;
+    }
+
+    .connect-subtitle.mob {
+        display: flex;
+    }
+    .purpose-title {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .connect-container1 {
+        flex-direction: column;
+        max-height: 900px;
+    }
+    .connect-red {
+        flex-direction: column;
+        margin-top: 80px;
+        gap: 15px;
+    }
+    .connect-hero2 {
+        gap: 20px;
+        padding-bottom: 0px;
+    }
+    .connect-map img {
+        max-height: 163px;
+    }
+    .red {
+        width: 200px;
+    }
+    .connect-map {
+        background-color: #03172e;
+        border-radius: 100px 0px 0px 100px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .fiel-two {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .red img {
+        max-width: 53px;
+        margin-bottom: 5px;
+    }
+    .red h1 {
+        font-size: 13px;
+    }
+
+    .red h2 {
+        font-size: 13px;
+    }
+
+    .connect-title-form {
+        color: #ffffff;
+        font-family: "Gotham", sans-serif;
+        font-size: 24px;
+    }
+    input,
+    textarea {
+        height: 25px;
+        padding: 5px 10px;
+        font-size: 1rem;
+        margin: 10px 10px 0px 10px;
+        width: auto;
+    }
+    .btn-send {
+        padding: 5px 15px;
+        font-size: 1rem;
+    }
+    .card-form {
+        padding: 1rem 20px;
+        margin-top: 0px;
+        width: 70vw;
+    }
+    .containe-btn {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .map-container {
+        height: 100px;
+        width: 80%;
+    }
+}

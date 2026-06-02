@@ -1,0 +1,128 @@
+<div class="main-approach-container">
+    <section class="full-screen-section our-approach-hero1">
+        <img id="gif2" class="gif" src="./gifs/MISCELANEA 002.gif" alt="Map">
+
+        <img id="gif9" class="gif" src="./gifs/MISCELANEA 001.gif" alt="Map">
+        <img id="gif10" class="gif" src="./gifs/MISCELANEA 001.gif" alt="Map">
+        <img id="gif11" class="gif" src="./gifs/MISCELANEA 001.gif" alt="Map">
+
+        <div class="our-approach-container1">
+
+            <div class="our-approach-header" data-aos="fade-up" data-aos-duration="1200">
+                <h1 class="our-approach-title text-end desktop">
+                    WE PROVIDE <br> TAILORED <br> SOLUTIONS TO <br> GROW YOUR IMPACT
+                </h1>
+            
+                <h1 class="our-approach-title text-end mobile">
+                    WE PROVIDE <br> TAILORED SOLUTIONS <br> TO GROW YOUR IMPACT
+                </h1>
+            
+                <p class="our-approach-description text-end" data-aos="fade-up" data-aos-duration="1200">
+                    From early-phase studies to multinational trials,<br>
+                    Innova Trials delivers the insight, support, and<br>
+                    operational excellence you need to succeed<br>
+                    in Latin America and beyond.
+                </p>
+            </div>
+
+            <div class="our-approach-content" data-aos="fade-up" data-aos-duration="1200">
+                <div class="detail-header-pill desk ">
+
+                </div>
+                <img class="foto-grupal desk" src="/persons/02_INNOVATRIALS_FOTO INICIO.png" alt="">
+                <img class="foto-grupal mob" src="/persons/02_INNOVATRIALS_FOTO INICIO_mob.png" alt="">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="full-screen-section our-approach-hero2">
+
+        <img id="gif3" class="gif" src="./gifs/MISCELANEA 005.gif" alt="Map">
+        <img id="gif4" class="gif" src="./gifs/MISCELANEA 004.gif" alt="Map">
+        <img id="gif6" class="gif" src="./gifs/MISCELANEA 004.gif" alt="Map">
+        <img id="gif7" class="gif" src="./gifs/MISCELANEA 002.gif" alt="Map">
+        <img id="gif8" class="gif" src="./gifs/MISCELANEA 002.gif" alt="Map">
+
+        <div class="our-approach-content2" data-aos="fade-up" data-aos-duration="1200">
+
+            <div class="card-person-wrapper" *ngFor="let person of persons; let i = index"
+                [class.is-expanded]="expandedIndex === i">
+
+                <div class="card-mini-person" (click)="handleCardClick(i)" style="cursor: pointer;">
+                    <div class="card-mini-person-header">
+                        <h1>{{person.fullname}}</h1>
+                        <h2>{{person.position1}}</h2>
+                        <h2>{{person.position2}}</h2>
+                    </div>
+                    <div class="card-mini-img">
+                        <img class="img-desk img-p" [src]="person.img" alt="">
+                        <img class="img-mob img-p" [src]="person.imgMob" alt="">
+                        <div class="btn-card">
+                            <img [src]="expandedIndex === i ? '/persons/button2.png' : '/persons/button.png'"
+                                alt="Toggle Icon">
+                        </div>
+                    </div>
+                    <div class="container-in" (click)="goToExternalUrl(person.in)" style="cursor: pointer;">
+                        <img src="/persons/01_INNOVATRIALS_BOTON04 3.png" alt="Icono LinkedIn">
+                    </div>
+                </div>
+
+                <div class="card-mini-description " [class.active]="expandedIndex === i">
+                    <span> <strong>{{person.fullname}}</strong> <br> {{person.description}}</span>
+                </div>
+
+            </div>
+        </div>
+        <app-footer class="mob" backgroundMobile="'transparent'"></app-footer>
+
+    </section>
+
+
+
+    <section class="full-screen-section our-approach-hero3">
+        <div class="our-approach-content3">
+          <div class="card-large-person" [attr.id]="'person-' + i" *ngFor="let person of persons; let i = index">
+      
+            <div [attr.data-aos-anchor]="'#person-' + i" class="card-large-person-header">
+              <h1>{{ person.fullname }}</h1>
+              <h2>{{ person.position1 }}<br>{{ person.position2 }}</h2>
+            </div>
+      
+            <div class="card-large-content">
+              <span
+                data-aos="fade-left"
+                data-aos-delay="500"
+                data-aos-duration="1200"
+                [attr.data-aos-anchor]="'#person-' + i"
+                [innerHTML]="person.description">
+              </span>
+      
+              <div class="person-image-wrap">
+                <img
+                  class="img-person"
+                  data-aos="fade"
+                  [attr.data-aos-anchor]="'#person-' + i"
+                  [src]="person.imgMob"
+                  alt="">
+      
+                <div class="container-in2" (click)="goToExternalUrl(person.in)">
+                  <img src="/persons/01_INNOVATRIALS_BOTON04 3.png" alt="Icono LinkedIn">
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+
+    <app-footer class="desk" backgroundMobile="'transparent'"
+        background1920x1080="'/fondos responsive/1920x1080/02_OUR APROACH/02_INNOVATRIALS_FONDO_07.webp'"
+        background2440x1800="'fondos responsive/2440x1800/02_OUR APROACH/02_INNOVATRIALS_FONDO_07_2440x1800.webp'"></app-footer>
+
+
+</div>
