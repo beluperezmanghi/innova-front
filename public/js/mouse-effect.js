@@ -134,7 +134,7 @@ function updateGlobalScale() {
         // 2. ESCALA DINÁMICA: 
         // En lugar de 0.7 fijo, calculamos una escala que crezca si el aspect es pequeño.
         // Esto hace que el logo se agrande para llenar el ancho disponible.
-        const dynamicScale = Math.max(1, 1.6 * (0.4 / aspect));
+        const dynamicScale = Math.max(0.6, 1.2 * (0.4 / aspect));
 
         // Limitamos la escala para que no se salga de los bordes
         const finalScale = Math.min(dynamicScale, 2.2);
