@@ -109,8 +109,8 @@ const assets = {
 
 // Ajuste de geometrías según dispositivo
 const geoSizes = {
-    fondo: isMobile ? [160, 260] : isTablet ? [450, 300] : [310, 220],
-    particulas: isMobile ? [60, 100] : isTablet ? [160, 100] : [100, 60],
+    fondo: isMobile ? [120, 220] : isTablet ? [450, 300] : [310, 220],
+    particulas: isMobile ? [40, 80] : isTablet ? [160, 100] : [100, 60],
     luz: isMobile ? [100, 100] : isTablet ? [90, 90] : [60, 60]
 };
 // 3. FUNCIÓN DE ADAPTACIÓN (RESPONSIVE)
