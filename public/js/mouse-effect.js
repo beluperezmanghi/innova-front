@@ -109,8 +109,8 @@ const assets = {
 
 // Ajuste de geometrías según dispositivo
 const geoSizes = {
-    fondo: isMobile ? [120, 220] : isTablet ? [450, 300] : [310, 220],
-    particulas: isMobile ? [40, 80] : isTablet ? [160, 100] : [100, 60],
+    fondo: isMobile ? [160, 260] : isTablet ? [450, 300] : [310, 220],
+    particulas: isMobile ? [250, 100] : isTablet ? [160, 100] : [100, 60],
     luz: isMobile ? [100, 100] : isTablet ? [90, 90] : [60, 60]
 };
 // 3. FUNCIÓN DE ADAPTACIÓN (RESPONSIVE)
@@ -134,7 +134,7 @@ function updateGlobalScale() {
         // 2. ESCALA DINÁMICA: 
         // En lugar de 0.7 fijo, calculamos una escala que crezca si el aspect es pequeño.
         // Esto hace que el logo se agrande para llenar el ancho disponible.
-        const dynamicScale = Math.max(0.6, 1.2 * (0.4 / aspect));
+        const dynamicScale = Math.max(1.2, 1.8 * (0.4 / aspect));
 
         // Limitamos la escala para que no se salga de los bordes
         const finalScale = Math.min(dynamicScale, 2.2);
