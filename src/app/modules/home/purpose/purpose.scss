@@ -797,14 +797,12 @@
     }
     
     .purpose-execution .purpose-execution-list {
-        width: 82%;
-        margin: 0 auto 0 5%;
+        width: 82% !important;
+        margin: 0 auto 0 0 !important;
+        padding-left: 12px !important;
     }
     .purpose-detail {
         padding: 20% 0%;
-    }
-    .purpose-execution-list {
-        background: red !important;
     }
     .detail-header-pill {
         padding: 8px 20px;
