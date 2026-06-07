@@ -790,6 +790,16 @@
     .purpose-execution .purpose-execution-list {
         margin-top: 0px;
     }
+    .purpose-execution-list-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .purpose-execution .purpose-execution-list {
+        width: 82%;
+        margin: 0 auto 0 14%;
+    }
     .purpose-detail {
         padding: 20% 0%;
     }
