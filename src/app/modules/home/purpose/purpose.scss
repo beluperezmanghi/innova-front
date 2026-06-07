@@ -779,7 +779,13 @@
     }
     .purpose-execution .purpose-execution-list .purpose-item {
         font-size: 12px;
-        padding: 5px 10px;
+        line-height: 1.25;
+        padding: 6px 10px 6px 28px;
+    }  
+    .purpose-execution .purpose-execution-list .purpose-item::before {
+        left: 10px;
+        width: 5px;
+        height: 5px;
     }
     .purpose-execution .purpose-execution-list {
         margin-top: 0px;
