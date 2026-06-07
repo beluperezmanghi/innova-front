@@ -688,17 +688,20 @@
         left: -8%;
         top: 30%;
     }
+
     #gif2 {
         top: 40%;
         max-height: 150px;
         right: -10%;
     }
+
     #gif3 {
         max-height: 80px;
         left: -5%;
         top: 140%;
         transform: translateY(-50%) rotate(333deg);
     }
+
     #gif4,
     #gif6,
     #gif8,
@@ -711,25 +714,24 @@
         display: none;
     }
 
-    .purpose-detail {
-        padding: 40px 0% 0% 0% !important;
-        min-height: 100%;
-    }
-    .purpose-execution-header .purpose-title {
-        display: block;
-        margin-bottom: 15px;
-    }
-
     .purpose-hero {
+        padding: 130px 40px 50px 40px;
         background-size: cover;
         background-position: center;
         background-image: url("/fondos responsive/mobile/01_PURPOSE/01_INNOVATRIALS_FONDO_01NUEVO.webp");
     }
-    .purpose-execution {
-        background: none;
-    }
+
     .purpose-detail {
         background: none;
+        padding: 20% 0%;
+        min-height: 100%;
+    }
+
+    .purpose-execution {
+        background: none;
+        align-items: flex-start;
+        padding: 0px 5%;
+        margin-top: -28px;
     }
 
     #purposeContent {
@@ -737,112 +739,109 @@
         background-image:
             url("/fondos responsive/mobile/01_PURPOSE/01_INNOVATRIALS_FONDO_02_NUEVO.webp"),
             url("/fondos responsive/mobile/01_PURPOSE/01_INNOVATRIALS_FONDO_03_NUEVO.webp");
-
         background-size: 100% 50%;
-        background-position:
-            top center,
-            bottom center;
+        background-position: top center, bottom center;
         background-repeat: no-repeat;
     }
-    .purpose-hero {
-        padding: 130px 40px 50px 40px;
+
+    .purpose-execution-header .purpose-title {
+        display: block;
+        margin-bottom: 15px;
     }
+
+    .purpose-title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
     .purpose-description {
         font-size: 1rem;
         line-height: 1.4;
         margin: 10px 0px 40px 0px;
+        text-align: center;
     }
+
     .purpose-container {
         gap: 15px;
     }
+
+    .purpose-header {
+        flex: unset;
+    }
+
+    .purpose-content {
+        margin-top: 0px;
+        max-width: 850px;
+        text-align: center;
+    }
+
     .purpose-execution .purpose-execution-container {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
+
+    .purpose-execution-list-wrapper {
+        width: 100%;
+        display: block;
+    }
+
+    .purpose-execution .purpose-execution-list {
+        width: 100%;
+        max-width: 310px;
+        margin: 0 auto 0 28px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .purpose-execution .purpose-execution-list .purpose-item {
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.25;
+        padding: 6px 10px 6px 22px;
+        text-align: left;
+    }
+
+    .purpose-execution .purpose-execution-list .purpose-item::before {
+        left: 4px;
+        width: 5px;
+        height: 5px;
+    }
+
+    .detail-header-pill {
+        padding: 8px 20px;
+    }
+
     .detail-header-pill .dot {
         width: 5px;
         height: 5px;
         margin-right: 5px;
     }
-    .purpose-execution {
-        align-items: flex-start;
-        padding: 0px 5%;
-        margin-top: -28px;
-    }
-    .purpose-content {
-        margin-top: 0px;
-    }
-    .purpose-title {
-        font-size: 25px;
-        line-height: 30px;
-    }
-    .purpose-execution .purpose-execution-list .purpose-item {
-        font-size: 18px;
-        line-height: 1.3;
-        padding: 6px 10px 6px 26px;
-    }
-    .purpose-execution .purpose-execution-list .purpose-item::before {
-        left: 10px;
-        width: 5px;
-        height: 5px;
-    }
-    .purpose-execution .purpose-execution-list {
-        margin-top: 0px;
-    }
-    .purpose-execution-list-wrapper {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .purpose-execution .purpose-execution-list {
-        width: 82% !important;
-        margin: 0 auto 0 0 !important;
-        padding-left: 12px !important;
-    }
-    .purpose-execution-list-wrapper,
-.purpose-execution-list,
-.purpose-item {
-    text-align: left !important;
-}
-    .purpose-detail {
-        padding: 20% 0%;
-    }
-    .detail-header-pill {
-        padding: 8px 20px;
-    }
+
     .detail-header-pill h3 {
         font-size: 10.4px;
     }
+
+    .detail-content {
+        height: 130px;
+    }
+
+    .detail-content .detail-info {
+        padding: 20px;
+    }
+
     .detail-content .detail-info .detail-description {
         font-size: 8px;
         line-height: 8px;
         margin: 0px;
-    }
-    .detail-content .detail-info {
-        padding: 20px;
-    }
-    .detail-content {
-        height: 130px;
     }
 
     .btn-connect {
         padding: 3px 10px;
         font-size: 0.5rem;
     }
+
     .purpose-detail .detail-card {
         max-width: 90%;
-    }
-    .purpose-header {
-        flex: unset;
-    }
-    
-    .purpose-content {
-        max-width: 850px;
-        text-align: center;
-    }
-    
-    .purpose-description {
-        text-align: center;
     }
 }
