@@ -795,12 +795,16 @@
         display: flex;
         justify-content: flex-start;
     }
-    
     .purpose-execution .purpose-execution-list {
         width: 82% !important;
         margin: 0 auto 0 0 !important;
         padding-left: 12px !important;
     }
+    .purpose-execution-list-wrapper,
+.purpose-execution-list,
+.purpose-item {
+    text-align: left !important;
+}
     .purpose-detail {
         padding: 20% 0%;
     }
@@ -815,7 +819,6 @@
         line-height: 8px;
         margin: 0px;
     }
-
     .detail-content .detail-info {
         padding: 20px;
     }
