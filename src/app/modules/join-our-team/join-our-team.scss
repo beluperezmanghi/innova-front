@@ -140,3 +140,59 @@
     text-decoration: none;
     z-index: 3;
 }
+
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 70px;
+}
+
+.contact-card {
+    width: 360px;
+    min-height: 120px;
+    padding: 28px 32px;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    background: rgba(0, 26, 52, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+}
+
+.contact-icon img {
+    width: 62px;
+    height: 62px;
+    object-fit: contain;
+}
+
+.contact-divider {
+    width: 1px;
+    height: 72px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-family: "Gotham";
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin: 0 0 10px;
+    letter-spacing: 1px;
+}
+
+.contact-info p,
+.contact-info a {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #1ca4da;
+    text-decoration: none;
+    margin: 0;
+}
