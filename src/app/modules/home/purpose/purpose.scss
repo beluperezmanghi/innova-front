@@ -789,9 +789,10 @@
     .purpose-execution .purpose-execution-list {
         width: 100%;
         max-width: 310px;
-        margin: 0 auto 0 28px;
+        margin: 0 auto;
         padding: 0;
         text-align: left;
+        transform: translateX(-65px);
     }
 
     .purpose-execution .purpose-execution-list .purpose-item {
