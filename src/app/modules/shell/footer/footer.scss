@@ -81,6 +81,32 @@
     transform: scale(1.1);
 }
 
+.join-team-btn {
+    color: #0b4365 !important;
+    text-decoration: none !important;
+
+    font-family: "Gotham";
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
+}
+
+.join-team-btn {
+    transition: transform 0.3s ease;
+}
+
+.join-team-btn:hover {
+    opacity: 0.75;
+    transform: scale(1.05);
+}
+
 .footer-map {
     display: flex;
     align-items: center;

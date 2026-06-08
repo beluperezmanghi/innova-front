@@ -1,10 +1,11 @@
 import { isPlatformBrowser } from '@angular/common';
 import { Component, Inject, Input, PLATFORM_ID } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import * as AOS from 'aos'; 
 
 @Component({
   selector: 'app-footer',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
 })
