@@ -12,14 +12,6 @@
 }
 
 #gif2 {
-    top: 490px;
-    bottom: 10px;
-    right: 130px;
-    width: 140px;
-    transform: scaleX(-1) rotate(115deg);
-}
-
-#gif3 {
     top: 880px;
     right: 25px;
     width: 185px;
@@ -311,6 +303,10 @@
 
     .join-team-container {
         padding: 70px 7% 80px;
+        background: url('/fondos%20responsive/mobile/04_JOIN/02_INNOVATRIALS_FONDO_03-4.png') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
     }
 
     .join-team-container p {
