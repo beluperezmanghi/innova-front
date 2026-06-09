@@ -234,3 +234,72 @@
     line-height: 1.5;
     white-space: nowrap;
 }
+
+.desktop-video {
+    display: block;
+}
+
+.mobile-video {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-video {
+        display: none;
+    }
+
+    .mobile-video {
+        display: block;
+    }
+}
+
+@media (max-width: 481px) {
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        margin-top: 50px;
+    }
+
+    .contact-card,
+    .contact-card.location {
+        width: 88%;
+        min-height: auto;
+        padding: 26px 22px;
+        gap: 18px;
+    }
+
+    .contact-icon img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .contact-divider {
+        height: 65px;
+    }
+
+    .contact-info h3 {
+        font-size: 13px;
+    }
+
+    .contact-info a,
+    .contact-info p {
+        font-size: 12px;
+        line-height: 1.4;
+        white-space: normal;
+    }
+
+    .join-team-container {
+        padding: 70px 7% 80px;
+    }
+
+    .join-team-container p {
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+    .join-team-container > p:last-of-type {
+        font-size: 18px;
+    }
+}
+
