@@ -1,6 +1,5 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { Component, Inject, PLATFORM_ID } from '@angular/core';
-import * as AOS from 'aos';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';import * as AOS from 'aos';
 import { Footer } from '../../shell/footer/footer';
 
 @Component({
@@ -9,6 +8,7 @@ import { Footer } from '../../shell/footer/footer';
   templateUrl: './our-approach.html',
   styleUrl: './our-approach.scss',
 })
+
 export class OurApproach {
   persons: any = [
     {
