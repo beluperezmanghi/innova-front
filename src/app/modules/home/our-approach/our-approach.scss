@@ -807,6 +807,10 @@
 }
 
 @media (max-width: 481px) {
+    .our-approach-hero1 {
+        padding-bottom: 60px;
+    }
+    
     .desktop,
     .tablet { display: none; }
 
@@ -855,10 +859,10 @@
     #gif11 {
         height: auto;
         position: absolute;
-        left: 39%;
-        top: 106%;
+        left: 48%;
+        top: 90%;
         max-height: 150px;
-        transform: translateY(-50%) rotate(306deg);
+        transform: translateY(-50%) rotate(290deg);
     }
 
     #gif2,
