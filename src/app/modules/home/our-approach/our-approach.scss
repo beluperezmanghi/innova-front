@@ -809,8 +809,32 @@
 @media (max-width: 481px) {
     .our-approach-hero1 {
         padding-bottom: 70px;
+        position: relative;
     }
     
+    .our-approach-hero1::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 180px;
+        pointer-events: none;
+        z-index: 0;
+
+        background: linear-gradient(
+            to bottom,
+            rgba(3,37,65,0) 0%,
+            rgba(1, 23, 41,0.85) 70%,
+            rgba(1, 23, 41,1) 100%
+        );
+    }
+    
+    .our-approach-container1 {
+        position: relative;
+        z-index: 3;
+    }
+
     .desktop,
     .tablet { display: none; }
 
@@ -863,6 +887,7 @@
         top: 90%;
         max-height: 150px;
         transform: translateY(-50%) rotate(290deg);
+        z-index: 3;
     }
 
     #gif2,
@@ -925,7 +950,7 @@
         background:
             linear-gradient(
                 to bottom,
-                rgba(1, 23, 41, 0.75) 0%,
+                rgba(1, 23, 41, 1) 0%,
                 rgba(3,37,64,.55) 20%,
                 rgba(3,37,64,.55) 80%,
                 rgba(3,37,64,.95) 100%
