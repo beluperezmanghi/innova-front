@@ -179,13 +179,39 @@
 }
 
 @media (max-width: 481px) {
-    .join-team-btn {
-        font-size: 10px;
-        white-space: nowrap;
-        margin-left: 8px;
+
+    .footer-capsule {
+        justify-content: center !important;
+        gap: 8px !important;
+    }
+
+    .footer-logo {
+        flex: 0 0 auto !important;
+        padding-left: 0 !important;
+        padding-right: 10px;
+    }
+
+    .footer-logo img {
+        width: 100px !important;
+        max-width: none !important;
+        height: auto !important;
     }
 
     .footer-socials {
-        gap: 6px;
+        gap: 4px;
+        flex: 0 0 auto !important;
+        padding: 0 !important;
+    }
+
+    .social-btn img {
+        width: 19px !important;
+        height: 19px !important;
+    }
+
+    .join-team-btn {
+        font-size: 8.5px;
+        white-space: nowrap;
+        margin-left: 10px;
+        letter-spacing: 0.5px;
     }
 }
