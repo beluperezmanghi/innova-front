@@ -163,10 +163,10 @@
     background:
         linear-gradient(
             to bottom,
-            rgba(2,20,40,.95) 0%,
-            rgba(2,37,65,.55) 20%,
-            rgba(2,37,65,.55) 80%,
-            rgba(2,20,40,.95) 100%
+            rgba(3, 39, 70, 0.95) 0%,
+            rgba(3,35,63,.55) 20%,
+            rgba(3,35,63,.55) 80%,
+            rgba(3,37,65,.95) 100%
         );
 }
 
@@ -177,6 +177,14 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
+}
+
+.about-intro-video-desktop {
+    display: block;
+}
+
+.about-intro-video-mobile {
+    display: none;
 }
 
 .about-intro-content {
@@ -895,6 +903,63 @@
     .our-approach-hero2 {
         background: transparent !important;
         min-height: 100vh;
+    }
+    
+    .about-intro-video-desktop {
+        display: none !important;
+    }
+    
+    .about-intro-video-mobile {
+        display: block !important;
+    }
+    
+    .about-intro-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    
+        background:
+            linear-gradient(
+                to bottom,
+                rgba(3, 39, 70, 0.95) 0%,
+                rgba(3,35,63,.55) 20%,
+                rgba(3,35,63,.55) 80%,
+                rgba(3,37,65,.95) 100%
+            );
+    }
+
+    .about-intro {
+        min-height: auto;
+        padding: 90px 7% 70px;
+    }
+
+    .about-intro-content {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 24px !important;
+        width: 100% !important;
+    }
+
+    .about-intro-title,
+    .about-intro-text {
+        flex: none !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .about-intro-title h2 {
+        font-size: 23px;
+        line-height: 1.15;
+        text-align: center !important;
+    }
+
+    .about-intro-text p {
+        font-size: 14px;
+        line-height: 1.4;
+        text-align: center !important;
+        max-width: 300px;
+        margin: 0 auto;
     }
 
     .container-in {
