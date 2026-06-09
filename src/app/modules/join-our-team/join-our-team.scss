@@ -5,18 +5,27 @@
 }
 
 #gif1 {
-    top: 20px;
-    left: -40px;
+    bottom: 820px;
+    left: -70px;
     width: 240px;
-    transform: rotate(95deg);
+    transform: rotate(100deg);
 }
 
 #gif2 {
+    top: 490px;
     bottom: 10px;
-    right: 20px;
-    width: 210px;
-    transform: scaleX(-1) rotate(-230deg);
+    right: 130px;
+    width: 140px;
+    transform: scaleX(-1) rotate(115deg);
 }
+
+#gif3 {
+    top: 880px;
+    right: 25px;
+    width: 185px;
+    transform: rotate(150deg);
+}
+
 .join-hero {
     position: relative;
     min-height: 90vh;
