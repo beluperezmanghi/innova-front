@@ -39,8 +39,30 @@
 
     </section>
 
+    <section class="about-intro">
 
-
+      <video autoplay muted loop playsinline class="about-intro-video">
+          <source src="/fondos/adn1.mp4" type="video/mp4">
+      </video>
+  
+      <div class="about-intro-overlay"></div>
+  
+      <div class="about-intro-content" data-aos="fade-up" data-aos-duration="1200">
+          <div class="about-intro-title">
+              <h2>
+                  YOUR TRUSTED PARTNER IN CLINICAL RESEARCH INNOVATION
+              </h2>
+          </div>
+  
+          <div class="about-intro-text">
+              <p>
+                  At Innova Trials, we help pharmaceutical and biotech companies bring medical innovations to life through efficient, ethical, and patient centered clinical trial solutions. With deep regional expertise and global standards, we make research smoother, faster, and more impactful every step of the way.
+              </p>
+          </div>
+      </div>
+  
+  </section>
+ 
     <section class="full-screen-section our-approach-hero2">
 
         <img id="gif3" class="gif" src="./gifs/MISCELANEA 005.gif" alt="Map">
@@ -48,9 +70,8 @@
         <img id="gif6" class="gif" src="./gifs/MISCELANEA 004.gif" alt="Map">
         <img id="gif7" class="gif" src="./gifs/MISCELANEA 002.gif" alt="Map">
         <img id="gif8" class="gif" src="./gifs/MISCELANEA 002.gif" alt="Map">
-
+      
         <div class="our-approach-content2" data-aos="fade-up" data-aos-duration="1200">
-
             <div class="card-person-wrapper" *ngFor="let person of persons; let i = index"
                 [class.is-expanded]="expandedIndex === i">
 
