@@ -252,6 +252,53 @@
     .mobile-video {
         display: block;
     }
+
+    #gif1 {
+        bottom: 750px;
+        left: -70px;
+        width: 240px;
+        transform: rotate(100deg);
+    }
+    
+    #gif2 {
+        top: 790px;
+        right: 50px;
+        width: 200px;
+        transform: rotate(150deg);
+    }
+
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        margin-top: 50px;
+    }
+
+    .contact-card,
+    .contact-card.location {
+        width: 60%;
+        max-width: 330px;
+        min-height: 70px;
+        padding: 20px;
+    }
+
+    .contact-icon img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .contact-divider {
+        height: 55px;
+    }
+
+    .join-team-container {
+        padding: 80px 8% 100px;
+    }
+
+    .join-team-container p {
+        font-size: 20px;
+        line-height: 1.55;
+    }
 }
 
 @media (max-width: 481px) {

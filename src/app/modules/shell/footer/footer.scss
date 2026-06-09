@@ -15,7 +15,7 @@
     }
 
     @media (min-width: 768px) {
-        min-height: 100vh;
+        min-height: 40vh;
     }
 
     @media (min-width: 2400px) {
@@ -138,29 +138,77 @@
         height: 200px;
     }
 }
-@media (max-width: 768px) {
-    .social-btn img {
-        width: 35px !important;
-    }
-}
-@media (max-width: 768px) {
+@media (min-width: 482px) and (max-width: 768px) {
     .footer-capsule {
-        height: 120px;
+        height: 140px;
     }
+
     .footer-map {
         display: none;
     }
+
     .social-btn {
-        max-width: 30px;
-    }
-    .full-screen-section {
-        width: 100%;
-        height: 100% !important;
-        min-height: 210px;
+        max-width: 28px;
     }
 
     .social-btn img {
-        width: 25px !important;
+        width: 26px !important;
+    }
+
+    .full-screen-section {
+        width: 50%;
+        height: auto !important;
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 481px) {
+    .footer-capsule {
+        height: 80px;
+        justify-content: center !important;
+        gap: 8px !important;
+    }
+
+    .footer-logo {
+        flex: 0 0 auto !important;
+        padding-left: 0 !important;
+        padding-right: 10px;
+        
+        width: 100px !important;
+        max-width: none !important;
+        height: auto !important;
+    }
+
+    .footer-socials {
+        gap: 4px;
+        flex: 0 0 auto !important;
+        padding: 0 !important;
+    }
+
+    .footer-map {
+        display: none;
+    }
+
+    .social-btn {
+        max-width: 22px;
+    }
+
+    .social-btn img {
+        width: 19px !important;
+        height: 19px !important;
+    }
+
+    .join-team-btn {
+        font-size: 8.5px;
+        white-space: nowrap;
+        margin-left: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .full-screen-section {
+        width: 100%;
+        height: auto !important;
+        min-height: 190px;
     }
 }
 
@@ -176,42 +224,4 @@
 
 .social-btn:hover img {
     filter: brightness(1.1);
-}
-
-@media (max-width: 481px) {
-
-    .footer-capsule {
-        justify-content: center !important;
-        gap: 8px !important;
-    }
-
-    .footer-logo {
-        flex: 0 0 auto !important;
-        padding-left: 0 !important;
-        padding-right: 10px;
-    }
-
-    .footer-logo img {
-        width: 100px !important;
-        max-width: none !important;
-        height: auto !important;
-    }
-
-    .footer-socials {
-        gap: 4px;
-        flex: 0 0 auto !important;
-        padding: 0 !important;
-    }
-
-    .social-btn img {
-        width: 19px !important;
-        height: 19px !important;
-    }
-
-    .join-team-btn {
-        font-size: 8.5px;
-        white-space: nowrap;
-        margin-left: 10px;
-        letter-spacing: 0.5px;
-    }
 }
