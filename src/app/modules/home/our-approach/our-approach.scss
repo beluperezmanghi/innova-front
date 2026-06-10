@@ -831,6 +831,9 @@
     }
     
     .our-approach-hero2 {
+        min-height: auto !important;
+        height: auto !important;
+        padding-bottom: 120px;
         position: relative;
     }
     
@@ -1070,6 +1073,10 @@
         opacity: 0;
     }
 
+    .card-person-wrapper {
+        height: auto;
+    }
+       
     .card-person-wrapper.is-expanded .card-mini-description {
         grid-template-rows: 1fr;
         opacity: 1;
