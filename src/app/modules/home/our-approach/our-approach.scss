@@ -830,6 +830,25 @@
         );
     }
     
+    .our-approach-hero2 {
+        position: relative;
+    }
+    
+    .our-approach-hero2::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -1px;
+        height: 120px;
+    
+        background: linear-gradient(
+            to top,
+            rgba(1, 23, 41,1) 0%,
+            rgba(1, 23, 41,1) 100%
+        )!important;;
+    }
+    
     .our-approach-container1 {
         position: relative;
         z-index: 3;
