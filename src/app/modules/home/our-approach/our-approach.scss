@@ -831,8 +831,7 @@
     }
     
     .our-approach-hero2 {
-        min-height: auto !important;
-        height: auto !important;
+        min-height: 3000px;
         padding-bottom: 120px;
         position: relative;
     }
@@ -929,9 +928,7 @@
 
     .main-approach-container {
         width: 100%;
-        min-height: auto;
-        height: auto;
-        background-size: 100% 33.34%, 100% 33.34%;
+        min-height: 2400px;
         position: relative;
 
         background-image:
@@ -1076,7 +1073,7 @@
     .card-person-wrapper {
         height: auto;
     }
-       
+
     .card-person-wrapper.is-expanded .card-mini-description {
         grid-template-rows: 1fr;
         opacity: 1;
