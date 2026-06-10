@@ -926,7 +926,9 @@
 
     .main-approach-container {
         width: 100%;
-        min-height: 2400px;
+        min-height: auto;
+        height: auto;
+        background-size: 100% 33.34%, 100% 33.34%;
         position: relative;
 
         background-image:
