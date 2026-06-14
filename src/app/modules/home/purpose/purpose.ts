@@ -77,6 +77,39 @@ export class Purpose {
         offset: 50,
         startEvent: 'DOMContentLoaded',
       });
+      setTimeout(() => {
+        if (sessionStorage.getItem('scrollToCroExpert') === 'true') {
+          sessionStorage.removeItem('scrollToCroExpert');
+      
+          const el = document.getElementById('cro-expert-section');
+      
+          if (el) {
+            const y = el.getBoundingClientRect().top + window.scrollY - 100;
+      
+            window.scrollTo({
+              top: y,
+              behavior: 'smooth'
+            });
+          }
+        }
+      }, 100);
+
+      setTimeout(() => {
+        if (sessionStorage.getItem('scrollToLatinAmerica') === 'true') {
+          sessionStorage.removeItem('scrollToLatinAmerica');
+      
+          const el = document.getElementById('latin-america-section');
+      
+          if (el) {
+            const y = el.getBoundingClientRect().top + window.scrollY - 100;
+      
+            window.scrollTo({
+              top: y,
+              behavior: 'smooth'
+            });
+          }
+        }
+      }, 100);
     }
     if (typeof window !== 'undefined') {
 

@@ -58,6 +58,22 @@ export class OurApproach {
         once: false,
         mirror: true,
       });
+      setTimeout(() => {
+        if (sessionStorage.getItem('scrollToInnovation') === 'true') {
+          sessionStorage.removeItem('scrollToInnovation');
+      
+          const el = document.getElementById('innovation-section');
+      
+          if (el) {
+            const y = el.getBoundingClientRect().top + window.scrollY - 100;
+      
+            window.scrollTo({
+              top: y,
+              behavior: 'smooth'
+            });
+          }
+        }
+      }, 100);
     }
   }
   scrollToPerson(index: number): void {

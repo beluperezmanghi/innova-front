@@ -368,7 +368,7 @@ window.initParticlesLogo = function () {
 
 
     // Etiquetas de Texto
-    function createTextLabel(text, x, y, z) {
+    function createTextLabel(text, x, y, z, link) {
         const canvas = document.createElement('canvas');
 const ctx = canvas.getContext('2d');
 
@@ -401,6 +401,8 @@ ctx.fillText(text, canvas.width / 2, canvas.height / 2);
             new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(canvas), transparent: true, opacity: 0.8 })
         );
         mesh.position.set(x, y, z);
+        mesh.userData.link = link;
+        mesh.userData.isTextLabel = true;
         midGroup.add(mesh);
         textLabels.push(mesh);
     }
@@ -424,19 +426,19 @@ ctx.fillText(text, canvas.width / 2, canvas.height / 2);
         const isMobile = width < 768;
     
         if (isSmallMobile) {
-            createTextLabel('Latin America', -5.5, 3.5, 2);
-            createTextLabel('Innovation', 6, -5, 2);
-            createTextLabel('CRO Expert', 4.5, 8, 2);
+            createTextLabel('Latin America', -5.5, 3.5, 2, 'latin-america');
+            createTextLabel('Innovation', 6, -5, 2, 'innovation');
+            createTextLabel('CRO Expert', 4.5, 8, 2, 'cro-expert');
     
         } else if (isMobile) {
-            createTextLabel('Latin America', -12, 3.5, 2);
-            createTextLabel('Innovation', 15, -5.8, 2);
-            createTextLabel('CRO Expert', 11, 11.5, 2);
+            createTextLabel('Latin America', -12, 3.5, 2, 'latin-america');
+            createTextLabel('Innovation', 15, -5.8, 2, 'innovation');
+            createTextLabel('CRO Expert', 11, 11.5, 2, 'cro-expert');
     
         } else {
-            createTextLabel('Latin America', -9, 0.5, 2);
-            createTextLabel('Innovation', 7, -3.5, 2);
-            createTextLabel('CRO Expert', 6.5, 6, 2);
+            createTextLabel('Latin America', -9, 0.5, 2, 'latin-america');
+            createTextLabel('Innovation', 7, -3.5, 2, 'innovation');
+            createTextLabel('CRO Expert', 6.5, 6, 2, 'cro-expert');
         }
     }
     
@@ -452,7 +454,31 @@ ctx.fillText(text, canvas.width / 2, canvas.height / 2);
 
         // Detectar si el click fue sobre el logo
         raycaster.setFromCamera(mouseUV, camera);
-        const intersects = raycaster.intersectObjects(midGroup.children);
+        const intersects = raycaster.intersectObjects(textLabels, true);
+        const clickedLabel = intersects.find(i => i.object.userData?.isTextLabel);
+
+        if (clickedLabel) {
+const link = clickedLabel.object.userData.link;
+
+if (link === 'innovation') {
+    sessionStorage.setItem('scrollToInnovation', 'true');
+    window.location.href = '/our-approach';
+    return;
+}
+if (link === 'cro-expert') {
+    sessionStorage.setItem('scrollToCroExpert', 'true');
+    window.location.href = '/purpose';
+    return;
+}
+
+if (link === 'latin-america') {
+    sessionStorage.setItem('scrollToLatinAmerica', 'true');
+    window.location.href = '/purpose';
+    return;
+}
+
+window.location.href = link;
+        }
 
         const clickedLogo = intersects.find(i => i.object.name === "LOGO_PRINCIPAL");
 

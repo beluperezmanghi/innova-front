@@ -185,6 +185,49 @@
     font-weight: 400;
 }
 
+.purpose-latam {
+    min-height: 100vh;
+    padding: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/home/03_INNOVATRIALS_FONDO_02_2440x1800.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.purpose-latam-content {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    max-width: 1500px;
+    width: 100%;
+}
+
+.purpose-latam-text {
+    flex: 1;
+    color: white;
+}
+
+.purpose-latam-text h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin: 0 0 24px;
+}
+
+.purpose-latam-text p {
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+.purpose-latam-map {
+    flex: 1;
+    max-width: 520px;
+    width: 100%;
+    filter: drop-shadow(0 0 25px rgba(28, 164, 218, 0.6));
+}
+
 @media (max-width: 992px) {
     #gif1 {
         max-height: 250px;
