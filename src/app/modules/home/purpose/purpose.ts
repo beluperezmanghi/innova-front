@@ -37,7 +37,7 @@ export class Purpose {
     },
     {
       title: 'Budget and contract\u00A0negotiation',
-      desc: 'We design and structure the regulatory strategy and documentation for each country, guiding submissions to IRBs, Ethics Committees, and Health Authorities through a controlled and transparent\u00A0process.',
+      desc: 'We support sponsors in the development, review, and negotiation of study budgets and clinical trial agreements. Our team works closely with sites and stakeholders to facilitate efficient negotiations, helping ensure financial transparency, contractual compliance, and timely study\u00A0activation.',
       img: '/home/gota4.png',
       align: 'left'
     },
