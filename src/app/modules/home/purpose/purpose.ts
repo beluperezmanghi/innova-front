@@ -59,8 +59,8 @@ export class Purpose {
       img: '/home/gota7.png',
       align: 'right'
     }, {
-      title: 'Cutting-edge technology for clinical trial management\u00A0(Alpha-CR)',
-      desc: 'From early-phase studies to multinational trials, we provide operational clarity, regional expertise, and disciplined execution across Latin\u00A0America.',
+      title: 'Clinical research powered by our alliance with\u00A0Alpha-CR',
+      desc: 'We combine our operational expertise with Alpha-CR, an ISO 27001-certified platform validated under FDA 21 CFR Part 11 and EMA Annex 11, delivering agile execution and highest-quality data for\u00A0sponsors.',
       img: '/home/gota8.png',
       align: 'left'
     },

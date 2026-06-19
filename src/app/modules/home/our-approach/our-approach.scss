@@ -146,10 +146,10 @@
     max-width: 1600px;
     min-height: 430px;
     overflow: hidden;
+    isolation: isolate;
     display: flex;
     align-items: center;
     justify-content: center;
-    
     gap: 40px;
     padding: 70px 8%;
     margin: 0;
@@ -177,6 +177,9 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
+    pointer-events: none;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
 }
 
 .about-intro-video-desktop {
@@ -191,27 +194,28 @@
     position: relative;
     z-index: 5;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 30px;
     width: 100%;
     max-width: 1400px;
-    text-align: center;
+    text-align: left;
 }
 
 
 .about-intro-title {
-    width: 100%;
+    width: 60%;
 }
 
 .about-intro-title h2 {
     font-family: "Gotham";
-    font-size: 38px;
+    font-size: 44px;
     font-weight: 500;
-    line-height: 1.1;
+    line-height: 1.2;
     color: white;
     margin: 0;
+    text-align: right !important;
 }
 
 .about-intro-text {
@@ -221,8 +225,8 @@
 
 .about-intro-text p {
     font-family: "Gotham";
-    font-size: 16px;
-    line-height: 1.3;
+    font-size: 14.75px;
+    line-height: 1.2;
     color: white;
     margin: 0;
 }
@@ -807,6 +811,14 @@
 
 .img-mob {
     display: none;
+
+    .about-intro-video-desktop {
+        display: none;
+    }
+
+    .about-intro-video-mobile {
+        display: block;
+    }
 }
 
 @media (max-width: 481px) {
