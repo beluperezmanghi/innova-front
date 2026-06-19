@@ -1,3 +1,10 @@
+:host {
+    display: block;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  
 .gif {
     position: absolute;
     z-index: -2;
@@ -5,14 +12,14 @@
 }
 
 #gif1 {
-    bottom: 570px;
-    left: -70px;
+    bottom: 360px;
+    left: -90px;
     width: 260px;
     transform: rotate(100deg);
 }
 
 #gif2 {
-    top: 600px;
+    top: 380px;
     right: 65px;
     width: 280px;
     transform: rotate(140deg);
@@ -20,7 +27,7 @@
 
 .join-hero {
     position: relative;
-    min-height: 94vh;
+    min-height: clamp(500px, 60vh, 700px);
     overflow: hidden;
 
     display: flex;
@@ -57,21 +64,21 @@
 .join-hero-content {
     position: relative;
     z-index: 4;
-    max-width: 900px;
-    padding: 0 40px;
+    max-width: min(900px, 90vw);
+    padding: 0 var(--section-x);
     color: white;
 }
 
 .join-hero-content h1 {
     font-family: "Gotham";
-    font-size: 62px;
+    font-size: var(--title-lg);
     font-weight: 500;
     margin-bottom: 5px;
 }
 
 .join-hero-content p {
     font-family: "Gotham";
-    font-size: 35px;
+    font-size: var(--text-lg);
     line-height: 1.5;
     margin-top: 0;
 }
@@ -110,7 +117,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    padding: 100px 10% 140px;
+    padding: var(--section-y) var(--section-x);
     box-sizing: border-box;
 
     color: white;
@@ -123,14 +130,17 @@
 .join-team-container h1 {
     font-family: "Gotham";
     font-weight: 500;
-    font-size: 60px;
+    font-size: var(--title-lg);
     margin-bottom: 30px;
 }
 
 .join-team-container p {
-    font-size: 24px;
+    font-size: var(--text-lg);
     line-height: 1.6;
     font-weight: 400;
+    max-width: 85ch;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 3;
 }
 
@@ -149,20 +159,20 @@
 .contact-cards {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: var(--gap-md);
     max-width: 1500px;
-    margin: 70px auto 0;
+    margin: var(--gap-lg) auto 0;
     flex-wrap: nowrap;
 }
 
 .contact-card {
-    width: 390px;
-    min-height: 120px;
-    padding: 24px;
+    width: clamp(380px, 22vw, 520px);
+    min-height: auto;
+    padding: clamp(20px, 1.5vw, 28px);
+    gap: clamp(14px, 1.5vw, 20px);
 
     display: flex;
     align-items: center;
-    gap: 20px;
 
     background: rgba(0, 26, 52, 0.35);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -182,18 +192,18 @@
 }
 
 .contact-card.location {
-    width: 520px;
+    width: clamp(450px, 28vw, 650px);
 }
 
 .contact-icon img {
-    width: 70px;
-    height: 70px;
+    width: clamp(50px, 4vw, 70px);
+    height: clamp(50px, 4vw, 70px);
     object-fit: contain;
 }
 
 .contact-divider {
     width: 1px;
-    height: 90px;
+    height: clamp(55px, 4vw, 75px);
     background: rgba(255, 255, 255, 0.2);
     flex-shrink: 0;
 }
@@ -209,7 +219,7 @@
     margin: 0 0 12px;
     color: white;
     font-family: "Gotham";
-    font-size: 16px;
+    font-size: var(--text-sm);
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -218,7 +228,7 @@
 .contact-info p {
     margin: 0;
     color: #1ca4da;
-    font-size: 15px;
+    font-size: var(--text-sm);
     line-height: 1.5;
     text-decoration: none;
 }
@@ -296,20 +306,20 @@
     }
 
     .join-team-container p {
-        font-size: 20px;
+        font-size: var(--text-md);
         line-height: 1.55;
     }
 }
 
 @media (max-width: 481px) {
     .join-hero-content h1 {
-        font-size: 46px; // probá 48px si lo querés más chico
+        font-size: clamp(36px, 10vw, 46px);
         line-height: 1.10;
         padding-bottom: 8px;
     }
 
     .join-hero-content p {
-        font-size: 24px;
+        font-size: clamp(20px, 6vw, 24px);
         line-height: 1.3;
     }
 
@@ -372,7 +382,7 @@
     }
 
     .join-team-container p {
-        font-size: 16px;
+        font-size: var(--text-md);
         line-height: 1.55;
     }
 
