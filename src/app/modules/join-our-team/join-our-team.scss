@@ -5,23 +5,23 @@
     overflow: hidden;
   }
   
-.gif {
+  .gif {
     position: absolute;
     pointer-events: none;
 }
 
 #gif1 {
-    bottom: 360px;
-    left: -90px;
-    width: 260px;
+    bottom: clamp(380px, 25vw, 550px);
+    left: clamp(-120px, -5vw, -70px);
+    width: clamp(220px, 12vw, 380px);
     transform: rotate(100deg);
     z-index: 0;
 }
 
 #gif2 {
-    top: 330px;
-    right: 65px;
-    width: 280px;
+    top: clamp(340px, 23vw, 530px);
+    right: clamp(20px, 4vw, 80px);
+    width: clamp(240px, 13vw, 420px);
     transform: rotate(140deg);
 }
 
@@ -272,7 +272,58 @@
     display: none;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 2400px) {
+
+    #gif1 {
+        top: 5%;
+        bottom: auto;
+        left: -4%;
+        width: clamp(360px, 15vw, 520px);
+        transform: rotate(90deg);
+      }
+    
+      #gif2 {
+        top: 45%;
+        right: 4%;
+        width: clamp(380px, 16vw, 560px);
+      }
+
+    .contact-cards {
+        gap: 40px;
+        margin-top: 60px;
+    }
+
+    .contact-card {
+        width: 550px;
+        padding: 32px;
+        gap: 28px;
+    }
+
+    .contact-card.location {
+        width: 700px;
+    }
+
+    .contact-icon img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contact-divider {
+        height: 80px;
+    }
+
+    .contact-info h3 {
+        font-size: 24px;
+    }
+
+    .contact-info a,
+    .contact-info p {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 1024px) {
 
     .join-hero {
         min-height: 446px;
@@ -328,6 +379,46 @@
     .contact-divider {
         height: 65px;
     }
+
+    .contact-info h3 {
+        font-size: clamp(13px, 1.4vw, 18px);
+    }
+    
+    .contact-info a,
+    .contact-info p {
+        font-size: clamp(12px, 1.2vw, 16px);
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+
+    .contact-cards {
+        gap: 14px;
+    }
+
+    .contact-card {
+        width: clamp(220px, 28vw, 320px);
+        padding: 18px;
+    }
+
+    .contact-card.location {
+        width: clamp(260px, 34vw, 380px);
+    }
+
+    .contact-icon img {
+        width: clamp(40px, 4vw, 55px);
+        height: clamp(40px, 4vw, 55px);
+    }
+
+    .contact-info h3 {
+        font-size: clamp(12px, 1vw, 14px);
+    }
+
+    .contact-info a,
+    .contact-info p {
+        font-size: clamp(11px, 0.9vw, 13px);
+    }
 }
 
 @media (max-width: 768px) {
@@ -344,16 +435,17 @@
     }
 
     #gif1 {
-        bottom: 320px;
-        left: -70px;
-        width: 240px;
-        transform: rotate(90deg);
+        top: 10%;
+        bottom: auto;
+        left: -95px;
+        width: clamp(190px, 52vw, 230px);
+        transform: rotate(0deg);
     }
-    
+
     #gif2 {
-        top: 360px;
-        right: 60px;
-        width: 250px;
+        top: 68%;
+        right: -20px;
+        width: clamp(150px, 43vw, 205px);
         transform: rotate(150deg);
     }
 
@@ -366,10 +458,10 @@
 
     .contact-card,
     .contact-card.location {
-        width: 72%;
+        width: min(72%, 360px);
         max-width: 420px;
         min-height: 70px;
-        padding: 20px;
+        padding: 20px 22px;
     }
 
     .contact-icon img {
@@ -379,6 +471,17 @@
     
     .contact-divider {
         height: 55px;
+    }
+
+    .contact-info h3 {
+        font-size: clamp(13px, 1.9vw, 15px);
+    }
+    
+    .contact-info a,
+    .contact-info p {
+        font-size: clamp(12px, 1.7vw, 14px);
+        line-height: 1.4;
+        white-space: normal;
     }
 
     .join-team-container {
@@ -412,7 +515,7 @@
       }
 
     .join-hero-content h1 {
-        font-size: clamp(34px, 8vw, 46px);
+        font-size: clamp(28px, 8vw, 46px);
         white-space: nowrap;
         line-height: 1;
         padding-top: 50px;
@@ -425,19 +528,19 @@
     }
 
     #gif1 {
-        bottom: 750px;
+        top: 5%;
+        bottom: auto;
         left: -105px;
-        width: 230px;
+        width: clamp(190px, 52vw, 230px);
         transform: rotate(100deg);
     }
-    
+
     #gif2 {
-        top: 750px;
-        right: 25px;
-        width: 185px;
+        top: 83%;
+        right: -20px;
+        width: clamp(150px, 43vw, 185px);
         transform: rotate(150deg);
     }
-
 
     .contact-cards {
         flex-direction: column;
@@ -448,9 +551,9 @@
 
     .contact-card,
     .contact-card.location {
-        width: 100%;
+        width: clamp(270px, 82vw, 320px);
+        padding: clamp(18px, 5vw, 26px) clamp(16px, 5vw, 22px);
         min-height: auto;
-        padding: 26px 22px;
         gap: 18px;
     }
 
@@ -463,13 +566,18 @@
         height: 65px;
     }
 
+    .contact-info {
+        min-width: 0;
+        flex: 1;
+    }
+
     .contact-info h3 {
-        font-size: 13px;
+        font-size: clamp(13px, 3.2vw, 15px);
     }
 
     .contact-info a,
     .contact-info p {
-        font-size: 12.5px;
+        font-size: clamp(10.5px, 3vw, 14px);
         line-height: 1.4;
         white-space: normal;
     }
@@ -480,18 +588,20 @@
         background-size: cover !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        position: relative;
+        overflow: hidden;
     }
 
     .join-team-container p {
         max-width: 92%;
         margin: 0 auto;
-        font-size: 14px;
+        font-size: clamp(12px, 3.7vw, 15.5px);
         line-height: 1.6;
     }
 
     .join-team-container > p:last-of-type {
         margin-top: 32px;
-        font-size: 18px;
+        font-size: clamp(14px, 4.2vw, 20px);
     }
 }
 
