@@ -7,7 +7,6 @@
   
 .gif {
     position: absolute;
-    z-index: -2;
     pointer-events: none;
 }
 
@@ -16,7 +15,7 @@
     left: -90px;
     width: 260px;
     transform: rotate(100deg);
-    z-index: 2;
+    z-index: 0;
 }
 
 #gif2 {
