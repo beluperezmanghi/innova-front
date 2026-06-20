@@ -19,7 +19,7 @@
 }
 
 #gif2 {
-    top: 380px;
+    top: 330px;
     right: 65px;
     width: 280px;
     transform: rotate(140deg);
@@ -27,7 +27,7 @@
 
 .join-hero {
     position: relative;
-    min-height: clamp(500px, 60vh, 700px);
+    min-height: clamp(300px, 60vh, 500px);
     overflow: hidden;
 
     display: flex;
@@ -117,7 +117,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    padding: var(--section-y) var(--section-x);
+    padding: clamp(30px, 6vw, 50px) var(--section-x) var(--section-y);
     box-sizing: border-box;
 
     color: white;
@@ -156,7 +156,7 @@
     font-size: var(--text-lg);
     line-height: 1.6;
     font-weight: 400;
-    max-width: 85ch;
+    max-width: 100ch;
     margin-left: auto;
     margin-right: auto;
     z-index: 3;

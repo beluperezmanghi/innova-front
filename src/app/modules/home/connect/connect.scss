@@ -27,11 +27,13 @@
     letter-spacing: -1px;
     text-align: center;
     flex: unset;
+    padding-bottom: 40px;
 }
 .title-connect-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 .title-connect-container2 {
     display: flex;
@@ -39,7 +41,7 @@
     background-color: #03172e;
     width: 95%;
     max-width: 1800px;
-    height: clamp(170px, 16vw, 330px);
+    height: clamp(140px, 14vw, 330px);
     border-radius: 350px 0 0 350px;
     justify-content: space-between;
     padding: 0;
@@ -58,12 +60,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: clamp(90px, 8vw, 150px) 0 clamp(60px, 6vw, 110px);
+    padding: clamp(60px, 6vw, 150px) 0 clamp(40px, 4vw, 110px);
     box-sizing: border-box;
 }
 .connect-hero2 {
     flex-direction: column;
-    gap: 40px;
+    gap: 10px;
+    padding-top: 40px;
     padding-bottom: 5%;
 
     background-image: url("/fondos/connect2.png");
@@ -127,7 +130,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: clamp(70px, 7vw, 130px) 2rem clamp(90px, 8vw, 150px);
+    padding: clamp(40px, 5vw, 130px) 2rem clamp(50px, 5vw, 150px);
 }
 
 .connect-title-form {
@@ -146,14 +149,15 @@
     border-radius: 20px;
     padding: clamp(22px, 3vw, 48px);
     margin-top: clamp(20px, 2vw, 35px);
-    width: min(72vw, 1200px);
+    width: min(72vw, 1650px);
     max-width: none;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
 }
 .map-container {
-    max-width: 1100px;
-    height: clamp(160px, 16vw, 300px);
-    width: 100%;
+    max-width: none;
+    height: clamp(250px, 18vw, 500px);
+    width: min(72vw, 1650px);
 }
 .map-container iframe {
     width: 100%;
@@ -215,23 +219,26 @@ textarea:focus {
 @media (min-width: 2400px) {
     .connect-hero1 {
         background-image: url("/fondos responsive/2440x1800/03_CONNECT/03_INNOVATRIALS_FONDO_01_2440x1800.webp");
+        min-height: 1080px;
     }
     .connect-hero2 {
         background-image: url("/fondos responsive/2440x1800/03_CONNECT/03_INNOVATRIALS_FONDO_02_2440x1800.webp");
+    padding-top: 80px;
     }
     .title-connect-container2 {
-        max-width: 2000px;
+        max-width: 2200px;
       }
     .connect-title {
-        font-size: 80px;
-        margin: 0px;
-        padding-left: 5%;
+        font-size: 95px;
+        padding-left: 0;
+        padding-bottom: 50px;
+        white-space: nowrap;
     }
     .red img {
         max-width: 110px;
     }
     .red h2 {
-        font-size: 27px;
+        font-size: 26px;
     }
     .red h1 {
         font-size: 27px;
@@ -250,12 +257,12 @@ textarea:focus {
         font-size: 80px;
     }
     .card-form {
-        max-width: 1500px;
+        max-width: 1650px;
     }
 
     .map-container {
-        max-width: 1600px;
-        height: 300px;
+        max-width: 1650px;
+        height: 500px;
     }
     #gif1 {
         left: -2%;
@@ -264,6 +271,214 @@ textarea:focus {
         height: 100%;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1100px) {
+
+    .connect-hero1 {
+        background-size: cover;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: clamp(90px, 8vw, 150px) 0 clamp(60px, 6vw, 110px);
+    }
+
+    .title-connect-container {
+        padding: 40px 0 0;
+    }
+
+    .connect-title {
+        font-size: clamp(40px, 5vw, 80px);
+        margin-bottom: 30px;
+    }
+
+    .connect-title {
+        font-size: clamp(40px, 5vw, 80px);
+    }
+    
+    .red img {
+        width: clamp(120px, 15vw, 170px);
+        height: clamp(40px, 5vw, 70px);
+    }
+    
+    .red h1 {
+        font-size: clamp(12px, 1.2vw, 20px);
+    }
+    
+    .red h2 {
+        font-size: clamp(11px, 1vw, 18px);
+        line-height: 1.2;
+    }
+
+    .title-connect-container2 {
+        height: 150px;
+    }
+
+    .connect-hero2 {
+        min-height: auto !important;
+        gap: 20px;
+        padding-bottom: 80px;
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+
+    .main-container {
+        padding: 30px 2rem 40px;
+    }
+
+    .card-form {
+        width: 85vw;
+        margin-bottom: 30px;
+    }
+
+    .map-container {
+        width: 85vw;
+        height: 280px;
+        margin-top: 10;
+    }
+
+    .connect-map {
+        flex: 0.55;
+    }
+    
+    .connect-red {
+        flex: 1.45;
+    }
+}
+
+@media (min-width: 482px) and (max-width: 767px) {
+
+    .connect-hero1 {
+        min-height: auto;
+        padding: 60px 0 45px;
+    }
+
+    .title-connect-container {
+        padding: 30px 20px 0;
+    }
+
+    .connect-title {
+        font-size: clamp(42px, 8vw, 56px);
+        padding-top: 20px;
+        margin-bottom: -5px;
+        white-space: nowrap;
+    }
+
+    .title-connect-container2 {
+        flex-direction: column;
+        background: transparent;
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+        overflow: visible;
+    }
+
+    .connect-map {
+        display: none;
+    }
+
+    .connect-red {
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        gap: 18px;
+        margin: 0 auto;
+    }
+
+    .red {
+        width: 100%;
+        min-height: 92px;
+        padding: 18px 20px;
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        border: 1px solid rgba(255,255,255,.15);
+        border-radius: 18px;
+        background: rgba(0,26,52,.35);
+        backdrop-filter: blur(10px);
+        text-align: left;
+    }
+
+    .red .social-btn {
+        width: 45px;
+        height: 45px;
+        flex-shrink: 0;
+    }
+
+    .red img {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+        margin: 0;
+    }
+
+    .red-divider {
+        width: 1px;
+        height: 55px;
+        background: rgba(255,255,255,.2);
+        flex-shrink: 0;
+    }
+
+    .red-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .red-info h1 {
+        font-size: clamp(13px, 2.4vw, 17px);
+        margin: 0 0 5px;
+        line-height: 1.1;
+    }
+
+    .red-info h2 {
+        font-size: clamp(11.5px, 2.1vw, 15px);
+        line-height: 1.35;
+        margin: 0;
+    }
+
+    .connect-hero2 {
+        margin-top: -20px;
+        padding-top: 0;
+        gap: 14px;
+    }
+
+    .main-container {
+        padding: 50px 1.5rem 80px;
+    }
+
+    .connect-title-form {
+        padding-top: 30px;
+    }
+
+    .fiel-two {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card-form {
+        width: 78vw;
+        padding: 1.4rem 20px;
+        margin-top: 5px;
+    }
+
+    .map-container {
+        width: 77%;
+        height: 170px;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+}
+
 @media (max-width: 481px) {
     .title-connect-container2 {
         flex-direction: column;
@@ -413,13 +628,13 @@ textarea:focus {
       }
     
       .red-info h1 {
-        font-size: 14px;
+        font-size: clamp(13px, 1.7vw, 14px);
         margin: 0 0 5px;
         line-height: 1.1;
       }
     
       .red-info h2 {
-        font-size: 12.5px;
+        font-size: clamp(11px, 1.5vw, 12.5px);
         line-height: 1.35;
         margin: 0;
       }
@@ -452,6 +667,7 @@ textarea:focus {
         width: 78vw;
         padding: 1.4rem 20px;
         margin-top: 18px;
+        margin-bottom: 20px;
     }
     .containe-btn {
         margin-top: 20px;
@@ -459,8 +675,8 @@ textarea:focus {
         text-align: center;
     }
     .map-container {
-        width: 80%;
-        height: 120px;
+        width: 77%;
+        height: 200px;
         margin-top: 10px;
     }
 }
