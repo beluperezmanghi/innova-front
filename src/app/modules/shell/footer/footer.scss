@@ -133,6 +133,17 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-bg {
+        background-image: var(--bg-large);
+        min-height: 376px;
+    }
+
+.footer-capsule {
+    height: 180px;
+    }
+}
+
 @media (min-width: 482px) and (max-width: 768px) {
     .footer-capsule {
         height: 140px;

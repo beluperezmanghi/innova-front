@@ -257,27 +257,66 @@
 @media (min-width: 769px) and (max-width: 1024px) {
 
     .join-hero {
-        min-height: 420px;
+        min-height: 446px;
+    }
+
+    .join-hero-content {
+        margin-bottom: -60px;
+    }
+    
+    .join-hero-content h1 {
+        font-size: clamp(56px, 8vw, 68px);    
+    }
+
+    .join-hero-content p {
+        font-size: clamp(18px, 2.5vw, 28px);
+        margin-top: 13px;
     }
 
     .join-team-container {
-        padding-top: 50px;
+        padding: 40px 10% 90px;
     }
 
+    .join-team-container p {
+        line-height: 1.7;
+    }
+    
     #gif1 {
-        bottom: 350px;
-        left: -90px;
-        width: 220px;
+        bottom: 340px;
+        left: -75px;
+        width: 210px;
+        transform: rotate(80deg);
     }
     
     #gif2 {
-        top: 350px;
-        right: 50px;
-        width: 190px;
+        top: 320px;
+        right: 40px;
+        width: 220px;
+    }
+
+    .contact-card,
+    .contact-card.location {
+        width: 88%;
+        max-width: 420px;
+        min-height: 60px;
+        padding: 23px;
+    }
+
+    .contact-icon img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .contact-divider {
+        height: 65px;
     }
 }
 
 @media (max-width: 768px) {
+    .join-hero {
+        min-height: 300px;
+      }
+      
     .desktop-video {
         display: none;
     }
@@ -287,30 +326,30 @@
     }
 
     #gif1 {
-        bottom: 750px;
+        bottom: 320px;
         left: -70px;
         width: 240px;
-        transform: rotate(100deg);
+        transform: rotate(90deg);
     }
     
     #gif2 {
-        top: 790px;
-        right: 50px;
-        width: 200px;
+        top: 360px;
+        right: 60px;
+        width: 250px;
         transform: rotate(150deg);
     }
 
     .contact-cards {
         flex-direction: column;
         align-items: center;
-        gap: 24px;
-        margin-top: 50px;
+        margin-top: 24px;
+        gap: 18px;
     }
 
     .contact-card,
     .contact-card.location {
-        width: 60%;
-        max-width: 330px;
+        width: 72%;
+        max-width: 420px;
         min-height: 70px;
         padding: 20px;
     }
@@ -325,13 +364,18 @@
     }
 
     .join-team-container {
-        padding: 80px 8% 100px;
+        padding: 20px 8% 45px;
     }
 
     .join-team-container p {
         font-size: var(--text-md);
         line-height: 1.55;
+        max-width: 90ch;
+        margin: 0 auto;
     }
+    .join-team-container > p:last-of-type {
+        margin-top: 18px;
+      }
 }
 
 @media (max-width: 481px) {
