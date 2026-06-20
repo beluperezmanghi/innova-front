@@ -16,6 +16,7 @@
     left: -90px;
     width: 260px;
     transform: rotate(100deg);
+    z-index: 2;
 }
 
 #gif2 {
@@ -125,6 +126,23 @@
     position: relative;
     isolation: isolate;
     z-index: 2;
+    overflow: hidden;
+}
+
+.join-team-container::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 140px;
+
+    background: linear-gradient(
+        to bottom,
+        #051728 0%,
+        rgba(2, 24, 45, 0) 100%
+    );
+
+    z-index: -1;
+    pointer-events: none;
 }
 
 .join-team-container h1 {
@@ -132,6 +150,7 @@
     font-weight: 500;
     font-size: var(--title-lg);
     margin-bottom: 30px;
+    z-index: 2;
 }
 
 .join-team-container p {
@@ -282,7 +301,7 @@
     }
     
     #gif1 {
-        bottom: 340px;
+        bottom: 330px;
         left: -75px;
         width: 210px;
         transform: rotate(80deg);
