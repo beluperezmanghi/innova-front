@@ -630,4 +630,13 @@
       width: 70px;
       height: 70px;
     }
+
+    .join-team-container p {
+        font-size: (12px, 3.7vw, 15.5px);
+    }
+
+    .join-team-container > p:last-of-type {
+        margin-top: 32px;
+        font-size: clamp(14px, 4.2vw, 20px);
+    }
   }
