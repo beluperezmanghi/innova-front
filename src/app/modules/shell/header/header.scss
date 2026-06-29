@@ -78,12 +78,22 @@
   transition: all 0.3s ease;
 }
 @media (min-width: 2400px) {
+  .navbar {
+    padding:clamp(40px, calc(2.36vw - 17px), 80px)
+            clamp(60px, calc(3.54vw - 25px), 120px);
+  }
+  .nav-links li:not(:last-child)::after {
+    content: "•";
+    color: #ffffff;
+    margin: 0 clamp(55px, calc(3.83vw - 37px), 120px);
+    font-size: clamp(35px, calc(1.42vw - 1px), 56px);
+  }
   .nav-links a {
-    font-size: 2rem;
-    letter-spacing: 2.5px;
+    font-size: clamp(2.5rem, calc(3vw - 3rem), 4.5rem);
+    letter-spacing: 3px;
   }
   .logo img {
-    height: 95px;
+    height: clamp(100px, calc(4.72vw - 13px), 180px);
   }
 }
 @media (max-width: 992px) {

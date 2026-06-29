@@ -139,8 +139,22 @@
     width: 100%;
     display: block;
     border-radius: 0 0 0 30px;
-    margin-top: -6px;
 }
+
+.our-approach-header {
+    flex: 1.05;
+}
+
+.our-approach-content {
+    flex: 0.95;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
 
 .about-intro {
     position: relative;
@@ -248,19 +262,6 @@
     line-height: 1.65;
     color: white;
     margin: 0;
-}
-
-.our-approach-header {
-    flex: 1.05;
-}
-
-.our-approach-content {
-    flex: 0.95;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    text-align: center;
-    flex-direction: column;
 }
 
 //card persons
@@ -559,7 +560,8 @@
         position: absolute;
         left: -2%;
         top: 30%;
-        max-height: 550px;
+        max-height: none;
+        height: clamp(360px, 20vw, 800px);
         transform: translateY(-50%) rotate(27deg);
     }
 
@@ -590,47 +592,93 @@
         width: 100%;
     }
 
-    .detail-header-pill {
-        padding: 48px 50px;
-        max-width: 1200px;
-    }
-
     .our-approach-container1 {
         width: 100%;
         max-width: none;
         margin-inline: 0;
-        gap: clamp(8px, 1vw, 24px);
-        padding-top: clamp(40px, 7vw, 80px);
-        padding-left: clamp(120px, 7vw, 180px);
+        gap: 35px;
+        padding-top: clamp(36px, calc(6.3vw - 10px), 72px);
+        padding-left: clamp(100px, 4vw, 150px);
     }
 
     .our-approach-content {
-        flex: 0 0 clamp(900px, 47vw, 1180px);
-        align-self: end;
+        flex: 0 0 clamp(900px, calc(48vw - 180px), 2400px);
+        align-self: flex-end;
         max-width: none;
         margin-left: auto;
     }
 
+    
+    .detail-header-pill {
+        padding: clamp(28px, calc(2.4vw - 12px), 80px);
+        border-radius: clamp(18px, 1.2vw, 45px) 0 0 clamp(18px, 1.2vw, 45px);
+        max-width: none;
+    }
+    
     .foto-grupal {
         width: 100%;
         max-width: none;
-    }
-
-    .our-approach-title {
-        font-size: clamp(70px, 3.3vw, 86px);
-        line-height: 1.35;
+        border-radius: 0 0 0 clamp(70px, calc(2.65vw + 6px), 120px);
     }
 
     .our-approach-header {
-        flex: 0 1 clamp(760px, 44vw, 980px);
+        flex: 0 1 clamp(800px, calc(38vw - 180px), 1800px);
+        margin-left: clamp(330px, calc(180px + 7vw), 450px);
         padding-left: 0;
     }
 
+    .our-approach-title {
+        font-size: clamp(55px, 3vw, 130px);
+        line-height: 1.35;
+    }
+
     .our-approach-description {
-        font-size: clamp(28px, 1.23vw, 34px);
-        max-width: clamp(800px, 37vw, 940px);
+        font-size: clamp(24px, calc(1.45vw - 4px), 56px);
+        max-width: clamp(650px, calc(40vw - 80px), 1500px);
         line-height: 1.4;
     }
+
+    .about-intro {
+        width: 100%;
+        max-width: none;
+        min-height: clamp(760px, calc(40vw - 80px), 1600px);
+        height: auto;
+        padding-block: clamp(60px, calc(4vw - 25px), 160px);
+        gap: clamp(40px, 5vw, 140px);
+        margin: 0;
+    }
+    
+    .about-intro-content {
+        margin: 0 auto;
+        grid-template-columns: 1fr 2fr;
+        gap: clamp(60px, calc(4vw - 20px), 150px);
+        width: auto;
+        max-width: clamp(1100px, calc(72vw + 200px), 3000px);
+        align-items: center;
+    }
+    
+    
+    .about-intro-title {
+    width: 100%;
+    flex: 1 0 clamp(340px, calc(29vw + 20px), 900px);
+    padding-top: clamp(30px, 2vw, 70px);
+    }
+
+    .about-intro-title h2 {
+        font-size: clamp(36px, calc(3.2vw - 12px), 115px);
+        line-height: 1.2;
+    }
+    
+    .about-intro-text {
+        width: 100%;
+        flex: 1;
+        max-width: clamp(1000px, 50vw, 1800px);
+    }
+    
+    .about-intro-text p {
+    font-size: clamp(20px, calc(1.35vw - 8px), 44px);
+    line-height: 1.65;
+}
 
     .card-mini-person {
         flex: 1 1 600px;
