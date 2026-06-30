@@ -564,6 +564,15 @@
         height: clamp(360px, 20vw, 800px);
         transform: translateY(-50%) rotate(27deg);
     }
+    
+    .full-screen-section.our-approach-hero1 {
+        height: clamp(1020px, calc(59.55vw - 409px), 2030px);
+        min-height: clamp(1020px, calc(59.55vw - 409px), 2030px);
+
+        padding-top: clamp(135px, calc(12.68vw - 169px), 350px);
+        padding-bottom: 0;
+        box-sizing: border-box;
+    }
 
     .our-approach-hero1 {
         background-image: url("/fondos responsive/2440x1800/02_OUR APROACH/02_INNOVATRIALS_FONDO_01_2440x1800.webp");
@@ -598,13 +607,13 @@
         margin-inline: 0;
         gap: 35px;
         padding-top: clamp(36px, calc(6.3vw - 10px), 72px);
-        padding-left: clamp(100px, 4vw, 150px);
+        padding-left: clamp(40px, calc(-3.54vw + 185px), 100px);
     }
 
     .our-approach-content {
-        flex: 0 0 clamp(900px, calc(48vw - 180px), 2400px);
+        flex: 0 0 clamp(970px, calc(57.7vw - 412px), 2100px);
+        max-width: clamp(970px, calc(57.7vw - 412px), 2100px);
         align-self: flex-end;
-        max-width: none;
         margin-left: auto;
     }
 
@@ -735,9 +744,14 @@
     }
 }
 
-@media (min-width: 1442px) and (max-width: 2399px) {
+@media (min-width: 1442px) and (max-width: 2399.5px) {
     .mobile {
         display: none;
+    }
+
+    .full-screen-section.our-approach-hero1 {
+        height: clamp(725px, calc(42.84vw + 107px), 1135px);
+        min-height: clamp(725px, calc(42.84vw + 107px), 1135px);
     }
 
     #gif2 {
@@ -745,44 +759,56 @@
         position: absolute;
         left: -2%;
         top: 30%;
-        max-height: 550px;
+        max-height: clamp(220px, calc(20.9vw - 81px), 420px);
         transform: translateY(-50%) rotate(27deg);
-    }
+      }
 
     .our-approach-container1 {
         width: 100%;
         max-width: none;
         margin-inline: 0;
-        gap: clamp(80px, 4vw, 140px);
-        padding-top: clamp(40px, 7vw, 80px);
-        padding-left: clamp(120px, 7vw, 180px);
+        gap: clamp(24px, calc(6.06vw - 63px), 82px);
+        padding-top: clamp(20px, calc(9.4vw - 116px), 110px);
+        padding-left: clamp(55px, calc(3.66vw + 2px), 90px);
+        padding-right: 0;
     }
 
     .our-approach-content {
-        flex: 0 0 clamp(900px, 47vw, 1180px);
+        flex: 0 0 clamp(710px, calc(39.2vw + 145px), 1085px);
+        max-width: clamp(710px, calc(39.2vw + 145px), 1085px);
         align-self: end;
-        max-width: none;
         margin-left: auto;
+      }
+
+    .detail-header-pill {
+        padding: clamp(28px, calc(2.4vw - 12px), 80px);
+        border-radius: clamp(18px, 1.2vw, 45px) 0 0 clamp(18px, 1.2vw, 45px);
+        max-width: none;
     }
 
     .foto-grupal {
+        display: block;
         width: 100%;
+        height: auto;
         max-width: none;
-    }
-
-    .our-approach-title {
-        font-size: clamp(70px, 3.3vw, 86px);
-        line-height: 1.35;
-    }
+        margin-left: auto;
+        border-radius: 0 0 0 clamp(45px, calc(2.61vw + 7px), 70px);
+      }
 
     .our-approach-header {
-        flex: 0 1 clamp(760px, 44vw, 980px);
+        flex: 0 0 clamp(480px, calc(29.26vw + 58px), 760px);
+        max-width: clamp(480px, calc(29.26vw + 58px), 760px);
         padding-left: 0;
     }
 
+    .our-approach-title {
+        font-size: clamp(54px, calc(3.34vw + 5.8px), 86px);
+        line-height: 1.22;
+    }
+
     .our-approach-description {
-        font-size: clamp(28px, 1.23vw, 34px);
-        max-width: clamp(800px, 37vw, 940px);
+        font-size: clamp(22px, calc(0.84vw + 9.9px), 30px);
+        max-width: clamp(520px, calc(25.08vw + 158px), 760px);
         line-height: 1.4;
     }
 }

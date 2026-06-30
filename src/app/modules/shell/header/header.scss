@@ -96,6 +96,29 @@
     height: clamp(100px, calc(4.72vw - 13px), 180px);
   }
 }
+@media (min-width: 1442px) and (max-width: 2399.5px) {
+  .navbar {
+    padding:
+      clamp(28px, calc(1.25vw + 10px), 40px)
+      clamp(55px, calc(3.66vw + 2px), 90px);
+  }
+
+  .logo img {
+    height: clamp(70px, calc(5.75vw - 13px), 125px);
+  }
+
+  .nav-links a {
+    font-size: clamp(28px, calc(1.25vw + 10px), 40px);
+    letter-spacing: clamp(2px, calc(0.1vw + 0.6px), 3px);
+  }
+
+  .nav-links li:not(:last-child)::after {
+    content: "•";
+    color: #ffffff;
+    margin: 0 clamp(22px, calc(3.45vw - 28px), 55px);
+    font-size: clamp(18px, calc(1.78vw - 8px), 35px);
+  }
+}
 @media (max-width: 992px) {
   .nav-links a {
     font-family: "Gotham", sans-serif;
