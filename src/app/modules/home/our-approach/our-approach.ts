@@ -14,7 +14,7 @@ export class OurApproach {
     {
       in: "https://www.linkedin.com/in/federico-p%C3%A9rez-manghi-md-cpi-91770925",
       img: "/persons/person1.jpg",
-      imgMob: "/persons/person1-mob.jpg",
+      imgMob: "/persons/person1-mob.png",
       fullname: "Federico\nPérez\u00A0Manghi",
       position1: "Co-Founder and Chief Medical Officer – Innova\u00A0Trials (United\u00A0States)",
       position2: "Founder, President and CEO -\u00A0CINME\u00A0(Argentina)",
@@ -23,7 +23,7 @@ export class OurApproach {
     {
       in: "https://www.linkedin.com/in/milagros-p%C3%A9rez-manghi-93153512a/",
       img: "/persons/person2.jpg",
-      imgMob: "/persons/person2-mob.jpg",
+      imgMob: "/persons/person2-mob.png",
       fullname: "Milagros\nPérez\u00a0Manghi ",
       position1: "Co-Founder and Chief Executive Officer – Innova\u00A0Trials (United\u00A0States)",
       position2: "Chief Operating Officer – CINME\u00A0(Argentina)",
@@ -32,7 +32,7 @@ export class OurApproach {
     {
       in: "https://www.linkedin.com/in/santiagoip/en",
       img: "/persons/person3.jpg",
-      imgMob: "/persons/person3-mob.jpg",
+      imgMob: "/persons/person3-mob.png",
       fullname: "Santiago\nIsbert\u00a0Perlender ",
       position1: "Co-Founder and Chief Financial Officer – Innova\u00A0Trials (United\u00A0States)",
       position2: "Chief Financial Officer – CINME\u00A0(Argentina)",
@@ -41,7 +41,7 @@ export class OurApproach {
     {
       in: "https://www.linkedin.com/in/daniel-a-cascon-57a19b7",
       img: "/persons/person4.jpg",
-      imgMob: "/persons/person4-mob.jpg",
+      imgMob: "/persons/person4-mob.png",
       fullname: "Daniel Cascon",
       position1: "Co-Founder and Chief Strategy\u00A0Officer",
       description: "Daniel Cascon is an Argentine-American entrepreneur with over three decades of leadership experience in executive sales and marketing roles across multinational corporations throughout the United States and Latin America. Known for his strategic vision and business acumen, Daniel has also served as a trusted advisor and board member for a variety of companies across the LATAM region, helping guide growth, innovation, and operational excellence.\n\nDaniel is the Co-Founder and Chief Strategy Officer of Innova Trials, a forward-thinking Clinical Research Organization (CRO) headquartered in Key Biscayne, Florida. Founded in 2024, Innova Trials is committed to modernizing clinical research through strategic partnerships, regional expertise, and a patient-centered approach. Under Daniel’s leadership, the company bridges global research standards with local execution, delivering high-quality solutions to sponsors and research sites alike.\n\nIn addition to his work in healthcare innovation, Daniel is also the Founder of Baires International Realty, a venture that showcases his longstanding passion for real estate development and investment. His diverse portfolio reflects a deep commitment to building impactful businesses that serve both people and progress."

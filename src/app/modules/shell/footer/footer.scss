@@ -60,7 +60,8 @@
 .social-btn {
     width: 100%;
     height: 100%;
-    max-width: 70px;
+    max-width: none;
+    width: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,18 +120,65 @@
 }
 @media (min-width: 2400px) {
     .footer-bg {
-        background-image: var(--bg-large);
-        min-height: 420px;
-    }
-    .footer-capsule {
-        max-width: 2000px;
-    }
-    .footer-logo img {
-        max-width: 340px;
-    }
-    .social-btn img {
-        width: 60px !important;
-    }
+        min-height: clamp(530px, calc(18.87vw + 77px), 850px);
+        background-size: cover;
+        background-position: center;
+      }
+    
+      .footer-capsule {
+        width: clamp(2140px, calc(93.16vw - 96px), 3720px);
+        max-width: none;
+    
+        height: clamp(410px, calc(17.1vw), 700px);
+        border-radius: clamp(410px, calc(17.1vw), 700px) 0 0
+                       clamp(410px, calc(17.1vw), 700px);
+    
+        margin-left: auto;
+      }
+    
+      .footer-capsule .footer-logo {
+        flex: 1.15;
+        padding-left: clamp(8%, calc(5vw - 3%), 12%);
+      }
+    
+      .footer-capsule .footer-logo img {
+        width: clamp(360px, calc(20.05vw - 121px), 700px) !important;
+        max-width: none;
+        height: auto;
+        display: block;
+      }
+    
+      .footer-capsule .footer-socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(16px, calc(1vw - 10px), 26px);
+        padding: clamp(5%, calc(2vw + 1%), 7%);
+      }
+    
+      .footer-capsule .footer-socials .social-btn {
+        flex: 0 0 clamp(90px, calc(4.72vw - 23px), 170px);
+        width: clamp(90px, calc(4.72vw - 23px), 170px);
+        height: clamp(90px, calc(4.72vw - 23px), 170px);
+        max-width: none;
+      }
+    
+      .footer-capsule .footer-socials .social-btn img {
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        object-fit: contain;
+        display: block;
+      }
+    
+      .join-team-btn {
+        font-size: clamp(40px, calc(1.89vw - 5.3px), 72px);
+        margin-left: clamp(55px, calc(2.95vw - 15.8px), 105px);
+      }
+      
+      .footer-map img {
+        height: 100%;
+      }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
