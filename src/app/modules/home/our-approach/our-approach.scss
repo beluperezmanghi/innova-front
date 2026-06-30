@@ -769,13 +769,13 @@
         margin-inline: 0;
         gap: clamp(24px, calc(6.06vw - 63px), 82px);
         padding-top: clamp(20px, calc(9.4vw - 116px), 110px);
-        padding-left: clamp(55px, calc(3.66vw + 2px), 90px);
+        padding-left: clamp(50px, calc(14.63vw - 161px), 190px);
         padding-right: 0;
     }
 
     .our-approach-content {
-        flex: 0 0 clamp(710px, calc(39.2vw + 145px), 1085px);
-        max-width: clamp(710px, calc(39.2vw + 145px), 1085px);
+        flex: 0 0 clamp(680px, calc(42.32vw + 70px), 1085px);
+        max-width: clamp(680px, calc(42.32vw + 70px), 1085px);
         align-self: end;
         margin-left: auto;
       }
@@ -794,23 +794,22 @@
         margin-left: auto;
         border-radius: 0 0 0 clamp(45px, calc(2.61vw + 7px), 70px);
       }
-
-    .our-approach-header {
-        flex: 0 0 clamp(480px, calc(29.26vw + 58px), 760px);
-        max-width: clamp(480px, calc(29.26vw + 58px), 760px);
+      .our-approach-header {
+        flex: 0 0 clamp(620px, calc(32.4vw + 153px), 930px);
+        max-width: clamp(620px, calc(32.4vw + 153px), 930px);
         padding-left: 0;
-    }
-
-    .our-approach-title {
-        font-size: clamp(54px, calc(3.34vw + 5.8px), 86px);
-        line-height: 1.22;
-    }
-
-    .our-approach-description {
-        font-size: clamp(22px, calc(0.84vw + 9.9px), 30px);
-        max-width: clamp(520px, calc(25.08vw + 158px), 760px);
-        line-height: 1.4;
-    }
+      }
+      
+      .our-approach-title {
+        font-size: clamp(51px, calc(3.03vw + 7.3px), 80px);
+        line-height: 1.15;
+      }
+      
+      .our-approach-description {
+        font-size: clamp(20px, calc(1.25vw + 2px), 32px);
+        max-width: clamp(540px, calc(26.13vw + 163px), 790px);
+        line-height: 1.36;
+      }
 }
 
 @media (max-width: 1441px) {
