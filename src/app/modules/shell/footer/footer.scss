@@ -272,18 +272,27 @@
 }
 
 @media (max-width: 481px) {
+    .footer-bg {
+        min-height: 150px;
+        background-size: cover;
+        background-position: center;
+      }
+
     .footer-capsule {
-        height: 80px;
+        height: 90px;
         justify-content: center !important;
         gap: 8px !important;
+        margin-bottom: 50px;
+
     }
 
     .footer-logo {
         flex: 0 0 auto !important;
         padding-left: 0 !important;
         padding-right: 10px;
+        margin-left: -15px;
         
-        width: 100px !important;
+        width: 95px !important;
         max-width: none !important;
         height: auto !important;
     }
@@ -292,6 +301,7 @@
         gap: 4px;
         flex: 0 0 auto !important;
         padding: 0 !important;
+        margin-left: -2px;
     }
 
     .footer-map {
@@ -308,10 +318,10 @@
     }
 
     .join-team-btn {
-        font-size: 8.5px;
+      font-size: clamp(8.6px, calc(1.56vw + 2.51px), 10px);
         white-space: nowrap;
         margin-left: 10px;
-        letter-spacing: 0.5px;
+        letter-spacing: 1px;
     }
 
     .full-screen-section {
