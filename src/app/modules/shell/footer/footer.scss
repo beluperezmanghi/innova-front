@@ -289,10 +289,11 @@
     .footer-logo {
         flex: 0 0 auto !important;
         padding-left: 0 !important;
-        padding-right: 10px;
-        margin-left: -15px;
+        padding-right: 5px;
+        margin-right: clamp(0px, calc(11.11vw - 43.33px), 10px);
+        margin-left: -10px;
         
-        width: 95px !important;
+        width: clamp(95px, calc(27.78vw - 13.33px), 120px) !important;
         max-width: none !important;
         height: auto !important;
     }
@@ -313,14 +314,14 @@
     }
 
     .social-btn img {
-        width: 19px !important;
-        height: 19px !important;
+      width: clamp(19px, calc(3.33vw + 6px), 22px) !important;
+      height: clamp(19px, calc(3.33vw + 6px), 22px) !important;
     }
 
     .join-team-btn {
-      font-size: clamp(8.6px, calc(1.56vw + 2.51px), 10px);
+      font-size: clamp(8.6px, calc(1.63vw + 2.51px), 11px);
         white-space: nowrap;
-        margin-left: 10px;
+        margin-left: clamp(10px, calc(5.56vw - 11.7px), 15px);
         letter-spacing: 1px;
     }
 
