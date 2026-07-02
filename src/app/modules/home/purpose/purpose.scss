@@ -853,6 +853,53 @@
         transform: translateX(-55px);
     }
 
+    .purpose-latam {
+        min-height: auto;
+        padding: 90px 28px 80px;
+        align-items: flex-start;
+        justify-content: center;
+        background-position: center top !important;
+      }
+    
+      .purpose-latam-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        max-width: 100%;
+        width: 100%;
+      }
+    
+      .purpose-latam-text {
+        flex: unset;
+        width: 100%;
+        max-width: 310px;
+        text-align: center;
+      }
+    
+      .purpose-latam-text h1 {
+        font-size: clamp(30px, calc(5.56vw + 8.3px), 35px);
+        line-height: 1.15;
+        margin: 0 auto 22px;
+        text-align: center;
+      }
+    
+      .purpose-latam-text p {
+        font-size: clamp(12.5px, calc(1.67vw + 6px), 14px);
+        line-height: 1.45;
+        font-weight: 300;
+
+        text-align: center;
+        margin: 0 auto;
+      }
+    
+      .purpose-latam-map {
+        flex: unset;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      
     .purpose-execution .purpose-execution-list .purpose-item {
         width: 100%;
         font-size: 15px;
