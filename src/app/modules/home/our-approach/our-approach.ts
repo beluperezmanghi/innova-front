@@ -99,7 +99,7 @@ export class OurApproach {
   expandedIndex: number | null = null;
 
   handleCardClick(index: number) {
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 1024;
 
     if (isMobile) {
       this.expandedIndex = this.expandedIndex === index ? null : index;
