@@ -117,7 +117,7 @@
     z-index: 0;
 }
 #purpose-detail-section {
-    padding: 10% 0px;
+    padding: 6% 0px;
     position: relative;
 }
 .purpose-hero {
@@ -186,14 +186,14 @@
 }
 
 .purpose-latam {
-    min-height: 100vh;
-    padding: 8%;
+    min-height: clamp(460px, 48vw, 640px);
+    padding: clamp(45px, 5vw, 75px) 8%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url("/home/03_INNOVATRIALS_FONDO_02_2440x1800.png") !important;
     background-size: cover !important;
-    background-position: center !important;
+    background-position: center 36% !important;
     background-repeat: no-repeat !important;
 }
 
@@ -291,7 +291,10 @@
     position: relative;
     display: flex;
     align-items: center;
+    min-height: clamp(560px, 58vw, 760px);
     padding: 0 5%;
+    box-sizing: border-box;
+
     background-image: url("/fondos/purpose2.png");
     background-size: cover;
     background-position: center;
@@ -299,9 +302,9 @@
 
     .purpose-execution-container {
         display: grid;
-        grid-template-columns: 0.9fr 1.1fr;
+        grid-template-columns: 0.7fr 1.3fr;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .purpose-execution-list {
@@ -326,10 +329,10 @@
         .purpose-item {
             position: relative;
             z-index: 2;
-            padding: 18px 20px 18px 40px;
+            padding: 18px 0px 18px 50px;
             color: rgba(255, 255, 255, 1);
             cursor: pointer;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             line-height: 1.2;
             font-family: "Gotham", sans-serif;
             font-weight: 200;
@@ -353,14 +356,14 @@
         }
     }
 }
-//pate 3
+//parte 3
 .purpose-detail {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-    gap: 115px;
-    height: 100%;
+    gap: 60px;
+    height: auto;
 
     background-position:
         center center,
@@ -482,7 +485,8 @@
 .services-main-title-wrap {
     width: 100%;
     text-align: center;
-    margin-bottom: 45px;
+    margin-top: clamp(55px, 6vw, 90px);
+    margin-bottom: 15px;
     z-index: 5;
   }
   
@@ -503,7 +507,7 @@
   }
   
   h2.services-title {
-    font-size: 42px !important;
+    font-size: 46px !important;
     line-height: 34px !important;
   }
 
@@ -518,11 +522,49 @@
   }
 
 @media (min-width: 2400px) {
+    #gif1 {
+        height: clamp(370px, calc(18.28vw - 69px), 680px) !important;
+        top: 25%;
+        max-height: none !important;
+        width: auto !important;
+    }
+    
+      #gif2 {
+        height: clamp(330px, calc(20.64vw - 165px), 680px) !important;
+        max-height: none !important;
+        width: auto !important;
+        rotate: -15deg;
+        top: 75%;
+        left: 85%;
+    }
+
     .purpose-hero {
         background-image: url("/fondos responsive/2440x1800/01_PURPOSE/01_INNOVATRIALS_FONDO_01_2440x1800.webp");
+        min-height: clamp(820px, calc(48.35vw - 340px), 1640px);
     }
+    
+    .purpose-container {
+        width: clamp(1850px, calc(91.39vw - 343px), 3400px);
+        max-width: none;
+    } 
+    .purpose-title {
+        font-size: clamp(90px, calc(4.72vw - 23px), 170px);
+        line-height: 1.12;
+      }
+    
+      .purpose-description {
+        font-size: clamp(44px, calc(2.12vw - 6.9px), 80px);
+        line-height: 1.45;
+        margin-top: clamp(20px, calc(2.36vw - 36.6px), 60px);
+      }
     .purpose-execution {
         background-image: url("/fondos responsive/2440x1800/01_PURPOSE/01_INNOVATRIALS_FONDO_02_2440x1800.webp");
+        align-items: flex-start;
+        min-height: clamp(760px, calc(30.66vw + 24px), 1280px);
+        padding: clamp(80px, calc(4.13vw - 19px), 150px) 4%;
+    }
+    h1.services-main-title {
+        font-size: clamp(70px, calc(3.54vw - 15px), 130px) !important;
     }
     .purpose-detail {
         background-image: url("/fondos responsive/2440x1800/01_PURPOSE/01_INNOVATRIALS_FONDO_03LARGO_2440x7200.webp");
@@ -544,15 +586,6 @@
     .btn-connect {
         font-size: 1.8rem;
     }
-    .purpose-container {
-        max-width: 2440px;
-    }
-    .purpose-description {
-        font-size: 2.7rem;
-    }
-    .purpose-title {
-        font-size: 80px;
-    }
     .purpose-execution .purpose-execution-list .purpose-item {
         font-size: 2.5rem;
     }
@@ -572,25 +605,36 @@
 }
 
 @media (max-width: 1441px) {
-    .purpose-hero {
-        min-height: max(100vh, 800px);
+    #gif2 {
+        right: 0;
+        top: 79%;
+        max-height: 220px;
     }
+
+    .purpose-hero {
+        min-height: clamp(370px, 39vw, 500px);
+    }
+
     .purpose-execution {
         align-items: flex-start;
-        padding: 20% 60px;
+        min-height: clamp(480px, 48vw, 590px);
+        padding: clamp(30px, 4vw, 55px) 4%;
     }
+
     .purpose-title {
         font-size: 44px;
         line-height: 46px;
     }
     .purpose-execution .purpose-execution-list .purpose-item {
-        font-size: 1.5rem;
+        font-size: 1.55rem;
     }
     .purpose-execution .purpose-execution-list {
-        margin-top: 50px;
+        margin-top: 30px;
+        width: 100%;
     }
     .purpose-detail {
         padding: 20% 60px;
+        min-height: auto;
     }
     h1.services-main-title {
         margin-top: 60px;
@@ -601,10 +645,6 @@
         box-sizing: border-box;
     }
     
-    .purpose-execution .purpose-execution-list {
-        width: 100%;
-    }
-
     .detail-header-pill h3 {
         font-size: 1.3rem;
     }

@@ -467,13 +467,13 @@ if (link === 'innovation') {
 }
 if (link === 'cro-expert') {
     sessionStorage.setItem('scrollToCroExpert', 'true');
-    window.location.href = '/purpose';
+    window.location.href = '/';
     return;
 }
 
 if (link === 'latin-america') {
     sessionStorage.setItem('scrollToLatinAmerica', 'true');
-    window.location.href = '/purpose';
+    window.location.href = '/';
     return;
 }
 
