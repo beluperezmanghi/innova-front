@@ -2042,7 +2042,14 @@
         z-index: 999;
         margin-left: 10px;
     }
-    
+    .card-person-wrapper {
+      margin-bottom: 28px !important;
+  }
+
+  .card-person-wrapper:last-child {
+      margin-bottom: 0 !important;
+  }
+  
     .card-mini-description span {
         padding: 20px;
         font-size: 13.5px;
