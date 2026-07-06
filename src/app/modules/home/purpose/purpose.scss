@@ -1528,14 +1528,7 @@
     top: 85% !important;
   }
 
-  #gif3 {
-    display: block;
-    max-height: clamp(40px, calc(18px + 8vw), 62px) !important;
-    left: clamp(-6%, calc(-10% + 2vw), -3%) !important;
-    top: 140% !important;
-    transform: translateY(-50%) rotate(333deg) !important;
-  }
-
+  #gif3,
   #gif4,
   #gif6,
   #gif8,
