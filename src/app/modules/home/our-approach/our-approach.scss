@@ -1988,16 +1988,19 @@
     }
 
     .our-approach-content2 {
-        flex-direction: column;
-        padding: 30px 0 0 0;
-        margin-bottom: 70px;
-    }
+      flex-direction: column;
+      align-items: center;
+      gap: 26px;
+      padding: 30px 0 0 0;
+      margin-bottom: 70px;
+  }
 
     .card-mini-person {
-        flex: 1 1 398px;
-        max-width: 350px;
-        margin: auto;
-    }
+      flex: none;
+      width: 100%;
+      max-width: 350px;
+      margin: 0 auto;
+  }
 
     .card-mini-person-header {
         height: 95px;
@@ -2060,7 +2063,7 @@
         opacity: 1;
         padding: 20px 0;
         max-width: 350px;
-        margin: auto;
+        margin: 0 auto;
     }
     
     .our-approach-hero3 {
