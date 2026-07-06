@@ -73,7 +73,11 @@
 }
 
 .social-btn:hover {
-    transform: scale(1.1);
+  transform: scale(1.15) rotate(-15deg);
+}
+
+.social-btn:hover img {
+  filter: brightness(1.1);
 }
 
 .join-team-btn {
@@ -179,6 +183,60 @@
       }
 }
 
+@media (min-width: 482px) and (max-width: 2399px) {
+
+    .footer-bg {
+        min-height: clamp(190px, 22vw, 520px);
+        align-items: center;
+    }
+
+    .footer-capsule {
+        width: 96%;
+        height: clamp(150px, 15vw, 360px);
+        border-radius: clamp(150px, 15vw, 360px) 0 0 clamp(150px, 15vw, 360px);
+        margin-left: auto;
+    }
+
+    .footer-logo {
+        flex: 1.15;
+        padding-left: 7%;
+    }
+
+    .footer-logo img {
+        width: clamp(120px, 15vw, 390px);
+        max-width: none;
+    }
+
+    .footer-socials {
+        flex: 1.05;
+        gap: clamp(7px, 1.35vw, 36px);
+        padding: 0 10%;
+    }
+
+    .social-btn {
+        flex: 0 0 clamp(20px, 3vw, 78px);
+        width: clamp(20px, 3vw, 78px);
+        height: clamp(20px, 3vw, 78px);
+        max-width: none;
+    }
+
+    .join-team-btn {
+        font-size: clamp(8px, 1.1vw, 27px);
+        margin-left: clamp(8px, 2vw, 48px);
+    }
+
+    .footer-map {
+        display: flex;
+        flex: 0.95;
+        height: 100%;
+    }
+
+    .footer-map img {
+        height: 100%;
+        width: auto;
+    }
+}
+
 @media (max-width: 481px) {
     .footer-bg {
         min-height: 150px;
@@ -238,18 +296,4 @@
         height: auto !important;
         min-height: 190px;
     }
-}
-
-.social-btn img {
-    width: 50px; 
-    height: auto;
-    display: block;
-}
-
-.social-btn:hover {
-    transform: scale(1.15) rotate(-15deg);
-}
-
-.social-btn:hover img {
-    filter: brightness(1.1);
 }
