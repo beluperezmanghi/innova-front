@@ -37,7 +37,7 @@ export class Purpose {
     },
     {
       title: 'Budget and contract\u00A0negotiation',
-      desc: 'We support sponsors in the development, review, and negotiation of study budgets and clinical trial agreements. Our team works closely with sites and stakeholders to facilitate efficient negotiations, helping ensure financial transparency, contractual compliance, and timely study\u00A0start-up.',
+      desc: 'We support sponsors in the development, review, and negotiation of study budgets and clinical trial agreements. Our team works closely with sites and stakeholders to facilitate efficient negotiations, helping ensure financial transparency, contractual compliance, and timely study start-up.',
       img: '/home/gota4.png',
       align: 'left'
     },
