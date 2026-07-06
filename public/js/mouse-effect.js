@@ -86,9 +86,9 @@ const assets = {
 
 // Ajuste de geometrías según dispositivo
 const geoSizes = {
-    fondo: isMobile ? [135, 230] : isTablet ? [450, 300] : [310, 220],
-    particulas: isMobile ? [360, 130] : isTablet ? [160, 100] : [100, 60],
-    luz: isMobile ? [90, 90] : isTablet ? [90, 90] : [60, 60]
+    fondo: isMobile ? [105, 185] : isTablet ? [450, 300] : [310, 220],
+    particulas: isMobile ? [240, 95] : isTablet ? [160, 100] : [100, 60],
+    luz: isMobile ? [65, 65] : isTablet ? [90, 90] : [60, 60]
 };
 // 3. FUNCIÓN DE ADAPTACIÓN (RESPONSIVE)
 function updateGlobalScale() {
@@ -315,7 +315,7 @@ window.initParticlesLogo = function () {
         texture.magFilter = THREE.LinearFilter;
         texture.generateMipmaps = false;
         texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
-        
+
         const light = new THREE.Mesh(
             new THREE.PlaneGeometry(geoSizes.luz[0], geoSizes.luz[1]),
             new THREE.MeshBasicMaterial({
