@@ -1,6 +1,7 @@
 // 1. VARIABLES GLOBALES (Accesibles para el evento Resize)
 let backGroup, midGroup, frontGroup, camera, renderer, scene;
 let backgroundMat;
+let meshLogoBase;
 let isDragging = false;
 let mouseX = 0, mouseY = 0;
 let dragX = 0, dragY = 0;
@@ -47,35 +48,11 @@ function setupVideoMesh() {
     midGroup.add(meshLogoBase);
 }
 
-// Si el video ya tiene metadata (caché), ejecutamos. Si no, esperamos.
-if (video.readyState >= 1) {
-    setupVideoMesh();
-} else {
-    video.onloadedmetadata = setupVideoMesh;
-}
 // Llama a playVideo cuando el video esté listo
 video.oncanplaythrough = () => {
     playVideo();
 };
 
-// Reemplazo del loader de imagen por el video transparente
-video.onloadedmetadata = function () {
-    const videoAspect = video.videoWidth / video.videoHeight;
-    // Cambiamos 15 por 30 para duplicar el tamaño base
-    const geometry = new THREE.PlaneGeometry(30 * videoAspect, 30);
-
-    const material = new THREE.MeshBasicMaterial({
-        map: videoTexture,
-        transparent: true,
-        // Usamos NormalBlending si el WebM ya es transparente
-        // Usamos AdditiveBlending si quieres que brille mucho
-        blending: THREE.NormalBlending
-    });
-
-    meshLogoBase = new THREE.Mesh(geometry, material);
-    meshLogoBase.name = "LOGO_PRINCIPAL";
-    midGroup.add(meshLogoBase);
-};
 // 2. SHADERS
 const _VERTEX_SHADER = `
     varying vec2 vUv;
@@ -109,53 +86,54 @@ const assets = {
 
 // Ajuste de geometrías según dispositivo
 const geoSizes = {
-    fondo: isMobile ? [160, 260] : isTablet ? [450, 300] : [310, 220],
-    particulas: isMobile ? [640, 100] : isTablet ? [160, 100] : [100, 60],
-    luz: isMobile ? [100, 100] : isTablet ? [90, 90] : [60, 60]
+    fondo: isMobile ? [135, 230] : isTablet ? [450, 300] : [310, 220],
+    particulas: isMobile ? [360, 130] : isTablet ? [160, 100] : [100, 60],
+    luz: isMobile ? [90, 90] : isTablet ? [90, 90] : [60, 60]
 };
 // 3. FUNCIÓN DE ADAPTACIÓN (RESPONSIVE)
 function updateGlobalScale() {
-    if (!camera || !midGroup) return;
+    if (!camera || !midGroup || !frontGroup) return;
 
     const width = window.innerWidth;
     const height = window.innerHeight;
     const aspect = width / height;
-    const isMobile = width < 768;
 
-    if (isMobile) {
-        // --- LÓGICA PARA MÓVILES ---
+    let config;
 
-        // 1. Ajustamos el FOV dinámicamente según qué tan estrecho sea el celular
-        // Si el celular es muy flaco (aspect < 0.5), abrimos más el ángulo
-        const baseFov = 75;
-        const adjFov = aspect < 0.5 ? baseFov + (0.5 - aspect) * 60 : baseFov;
-        gsap.to(camera, { fov: adjFov, duration: 0.8 });
-
-        // 2. ESCALA DINÁMICA: 
-        // En lugar de 0.7 fijo, calculamos una escala que crezca si el aspect es pequeño.
-        // Esto hace que el logo se agrande para llenar el ancho disponible.
-        const dynamicScale = Math.max(1.2, 1.8 * (0.4 / aspect));
-
-        // Limitamos la escala para que no se salga de los bordes
-        const finalScale = Math.min(dynamicScale, 2.2);
-
-        gsap.to(midGroup.scale, { x: finalScale, y: finalScale, z: finalScale, duration: 0.8 });
-        gsap.to(frontGroup.scale, { x: finalScale, y: finalScale, z: finalScale, duration: 0.8 });
-
-        // 3. POSICIÓN DE CÁMARA:
-        // Acercamos la cámara. Estaba en 55 (muy lejos), probemos con 40 o 45.
-        gsap.to(camera.position, { z: 42, duration: 0.8 });
-
-
+    if (width <= 360) {
+        config = { fov: 65.5, scale: 1.22, z: 49 };
+    } else if (width <= 481) {
+        config = { fov: 63.5, scale: 1.33, z: 47 };
+    } else if (width <= 768 && aspect < 1) {
+        config = { fov: 60, scale: 1.45, z: 44 };
+    } else if (width <= 932 && aspect < 1) {
+        config = { fov: 58, scale: 1.35, z: 46 };
+    } else if (width <= 1199 && aspect < 1) {
+        config = { fov: 56, scale: 1.28, z: 48 };
+    } else if (width <= 1199) {
+        config = { fov: 58, scale: 1.45, z: 38 };
     } else {
-        // --- LÓGICA PARA DESKTOP ---
-        gsap.to(camera, { fov: 60, duration: 0.8 });
-        // Si quieres que sea un 50% más grande que el tamaño de la geometría:
-        gsap.to(midGroup.scale, { x: 1.5, y: 1.5, z: 1.5, duration: 0.8 });
-        gsap.to(frontGroup.scale, { x: 1.5, y: 1.5, z: 1.5, duration: 0.8 });
-        gsap.to(camera.position, { z: 28, duration: 0.8 });
+        config = { fov: 58, scale: 1.55, z: 30 };
     }
 
+    gsap.to(camera, { fov: config.fov, duration: 0.8 });
+    gsap.to(camera.position, { z: config.z, duration: 0.8 });
+
+    gsap.to(midGroup.scale, {
+        x: config.scale,
+        y: config.scale,
+        z: config.scale,
+        duration: 0.8
+    });
+
+    gsap.to(frontGroup.scale, {
+        x: config.scale,
+        y: config.scale,
+        z: config.scale,
+        duration: 0.8
+    });
+
+    camera.aspect = width / height;
     camera.updateProjectionMatrix();
 }
 
@@ -288,6 +266,11 @@ window.initParticlesLogo = function () {
 
     // Carga de Fondo (Shader)
     loader.load(assets.fondo, (texture) => {
+        texture.minFilter = THREE.LinearFilter;
+        texture.magFilter = THREE.LinearFilter;
+        texture.generateMipmaps = false;
+        texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
+
         backgroundMat = new THREE.ShaderMaterial({
             vertexShader: _VERTEX_SHADER,
             fragmentShader: _FRAGMENT_SHADER,
@@ -300,13 +283,18 @@ window.initParticlesLogo = function () {
             backgroundMat
         );
         bg.position.z = -50;
-        bg.scale.set(1.6, 1.6, 1);
+        bg.scale.set(isMobile ? 1.25 : 1.6, isMobile ? 1.25 : 1.6, 1);
 
         scene.add(bg);
     });
 
     // Carga de Partículas
     loader.load(assets.particulas, (texture) => {
+        texture.minFilter = THREE.LinearFilter;
+        texture.magFilter = THREE.LinearFilter;
+        texture.generateMipmaps = false;
+        texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
+
         const mat = new THREE.MeshBasicMaterial({
             map: texture,
             transparent: true,
@@ -323,6 +311,11 @@ window.initParticlesLogo = function () {
 
     // Carga de Luz
     loader.load(assets.luz, (texture) => {
+        texture.minFilter = THREE.LinearFilter;
+        texture.magFilter = THREE.LinearFilter;
+        texture.generateMipmaps = false;
+        texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
+        
         const light = new THREE.Mesh(
             new THREE.PlaneGeometry(geoSizes.luz[0], geoSizes.luz[1]),
             new THREE.MeshBasicMaterial({
@@ -335,10 +328,7 @@ window.initParticlesLogo = function () {
         light.position.z = -5;
         midGroup.add(light);
     });
-    let meshLogoBase; // Declara esta variable arriba con las globales
-    // --- REEMPLAZO DE IMAGEN POR VIDEO ---
-    // Nota: Como el video no pasa por el TextureLoader, 
-    // definimos el tamaño manualmente o esperamos a que el video cargue sus metadatos.
+
     video.onloadedmetadata = function () {
         const videoAspect = video.videoWidth / video.videoHeight;
         const geometry = new THREE.PlaneGeometry(15 * videoAspect, 15);
@@ -573,12 +563,17 @@ const isTablet = width >= 768 && width < 1200;
                 // Mantenemos la respiración y la flotación independiente
                 const breath = 1 + Math.sin(time * 0.5) * 0.02;
 
-if (child.name === "LOGO_PRINCIPAL") {
-    const logoSize = isSmallMobile ? 1.3 : isMobile ? 2.4 : isTablet ? 2.2 : 1.15;
-    child.scale.set(breath * logoSize, breath * logoSize, breath * logoSize);
-} else {
-    child.scale.set(breath, breath, breath);
-}
+                if (child.name === "LOGO_PRINCIPAL") {
+                    const logoSize =
+                        isSmallMobile ? 1.15 :
+                        isMobile ? 1.25 :
+                        isTablet ? 1.18 :
+                        1.08;
+                
+                    child.scale.set(breath * logoSize, breath * logoSize, breath * logoSize);
+                } else {
+                    child.scale.set(breath, breath, breath);
+                }
 
                 if (Math.abs(child.position.x) < 0.5) {
                     child.position.y = Math.sin(time * 0.7) * floatIntensity;
