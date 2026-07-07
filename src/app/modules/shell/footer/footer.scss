@@ -23,7 +23,7 @@
     background-color: white;
     width: 95%; 
     max-width: 1800px;
-    height: clamp(200px, 18vw, 320px);
+    height: clamp(170px, 15vw, 280px);
     border-radius: 350px 0 0 350px;
 
     justify-content: space-between;
@@ -48,18 +48,19 @@
 }
 
 .footer-socials {
-    flex: 1.2;
+    flex: 0 0 auto;
     padding: 5%;
     display: flex;
-    justify-content: center; 
-    justify-content: space-around;
+    gap: clamp(12px, 1.2vw, 28px);
+    justify-content: center;
+    align-items: center;
 }
 
 .social-btn {
     width: 100%;
     height: 100%;
     max-width: none;
-    width: 70px;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,115 +121,145 @@
     opacity: 1;
     margin: 10px 0px;
 }
-@media (min-width: 2400px) {
-    .footer-bg {
-        min-height: clamp(530px, calc(18.87vw + 77px), 850px);
-        background-size: cover;
-        background-position: center;
-      }
-    
-      .footer-capsule {
-        width: clamp(2140px, calc(93.16vw - 96px), 3720px);
-        max-width: none;
-    
-        height: clamp(410px, calc(17.1vw), 700px);
-        border-radius: clamp(410px, calc(17.1vw), 700px) 0 0
-                       clamp(410px, calc(17.1vw), 700px);
-    
-        margin-left: auto;
-      }
-    
-      .footer-capsule .footer-logo {
-        flex: 1.15;
-        padding-left: clamp(8%, calc(5vw - 3%), 12%);
-      }
-    
-      .footer-capsule .footer-logo img {
-        width: clamp(360px, calc(20.05vw - 121px), 700px) !important;
-        max-width: none;
-        height: auto;
-        display: block;
-      }
-    
-      .footer-capsule .footer-socials {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: clamp(16px, calc(1vw - 10px), 26px);
-        padding: clamp(5%, calc(2vw + 1%), 7%);
-      }
-    
-      .footer-capsule .footer-socials .social-btn {
-        flex: 0 0 clamp(90px, calc(4.72vw - 23px), 170px);
-        width: clamp(90px, calc(4.72vw - 23px), 170px);
-        height: clamp(90px, calc(4.72vw - 23px), 170px);
-        max-width: none;
-      }
-    
-      .footer-capsule .footer-socials .social-btn img {
-        width: 100%;
-        height: 100%;
-        max-width: none;
-        object-fit: contain;
-        display: block;
-      }
-    
-      .join-team-btn {
-        font-size: clamp(40px, calc(1.89vw - 5.3px), 72px);
-        margin-left: clamp(55px, calc(2.95vw - 15.8px), 105px);
-      }
-      
-      .footer-map img {
-        height: 100%;
-      }
+
+@media (min-width: 1900px) {
+  .footer-bg {
+      min-height: clamp(390px, calc(15.9vw + 88px), 850px);
+      background-size: cover;
+      background-position: center;
+  }
+
+  .footer-capsule {
+      width: clamp(1680px, calc(91.2vw - 50px), 3720px);
+      max-width: none;
+
+      height: clamp(285px, calc(10.9vw + 78px), 700px);
+      border-radius: clamp(285px, calc(10.9vw + 78px), 700px) 0 0
+                     clamp(285px, calc(10.9vw + 78px), 700px);
+
+      margin-left: auto;
+      position: relative;
+      justify-content: flex-start;
+      overflow: hidden;
+
+      padding-left: clamp(100px, 5.5vw, 300px);
+      padding-right: clamp(300px, calc(10vw + 20px), 600px);
+      gap: clamp(60px, 4.4vw, 180px);
+  }
+
+  .footer-capsule .footer-logo {
+    flex: 0 0 clamp(360px, 15vw, 520px);
+    padding-left: 0 !important;
 }
 
-@media (min-width: 482px) and (max-width: 2399px) {
+  .footer-capsule .footer-logo img {
+      width: clamp(340px, calc(12.6vw + 101px), 700px) !important;
+      max-width: none;
+      height: auto;
+      display: block;
+  }
 
+  .footer-capsule .footer-socials {
+      flex: 0.8;
+      gap: clamp(8px, 0.6vw, 20px) !important;
+      padding: 0 !important;
+  }
+
+  .footer-capsule .footer-socials .social-btn {
+      flex: 0 0 clamp(60px, calc(2.65vw + 10px), 130px);
+      width: clamp(60px, calc(2.65vw + 10px), 130px);
+      height: clamp(60px, calc(2.65vw + 10px), 130px);
+      max-width: none;
+  }
+  
+  .footer-capsule .footer-socials .social-btn img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+  }
+
+  .join-team-btn {
+      font-size: clamp(25px, calc(1.04vw + 5px), 48px);
+      margin-left: 40px !important;
+  }
+
+  .footer-capsule .footer-map {
+    position:absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    pointer-events: none;
+    width: clamp(330px, 17vw, 700px);
+  }
+
+  .footer-map img {
+      height: 100%;
+      width: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
     .footer-bg {
-        min-height: clamp(190px, 22vw, 520px);
-        align-items: center;
+        min-height: clamp(170px, calc(9.77vw + 95px), 195px);
     }
 
     .footer-capsule {
         width: 96%;
-        height: clamp(150px, 15vw, 360px);
-        border-radius: clamp(150px, 15vw, 360px) 0 0 clamp(150px, 15vw, 360px);
-        margin-left: auto;
+        height: clamp(110px, calc(13.67vw + 5px), 145px) !important;
+        justify-content: flex-start;
+        gap: clamp(10px, calc(3.9vw - 20px), 20px);
+        padding-left: clamp(32px, calc(6.25vw - 16px), 48px);
+        padding-right: clamp(80px, calc(19.53vw - 70px), 130px);
     }
 
     .footer-logo {
-        flex: 1.15;
-        padding-left: 7%;
+        flex: 0 0 auto;
+        padding-left: 0 !important;
+        margin-left: 10px;
     }
 
     .footer-logo img {
-        width: clamp(120px, 15vw, 390px);
+        width: clamp(130px, calc(13.67vw + 25px), 165px);
         max-width: none;
     }
 
     .footer-socials {
-        flex: 1.05;
-        gap: clamp(7px, 1.35vw, 36px);
-        padding: 0 10%;
+        flex: 0.85;
+        gap: clamp(10px, calc(3.9vw - 20px), 20px);
+        padding: 0 !important;
     }
 
     .social-btn {
-        flex: 0 0 clamp(20px, 3vw, 78px);
-        width: clamp(20px, 3vw, 78px);
-        height: clamp(20px, 3vw, 78px);
+        flex: 0 0 clamp(24px, calc(4.3vw - 9px), 35px);
+        width: clamp(24px, calc(4.3vw - 9px), 35px);
+        height: clamp(24px, calc(4.3vw - 9px), 35px);
         max-width: none;
     }
 
+    .social-btn img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
     .join-team-btn {
-        font-size: clamp(8px, 1.1vw, 27px);
-        margin-left: clamp(8px, 2vw, 48px);
+        font-size: clamp(10px, calc(1.95vw - 5px), 15px);
+        margin-left: 15px;
+        margin-right: 0;
+        white-space: nowrap;
     }
 
     .footer-map {
-        display: flex;
-        flex: 0.95;
+        position: absolute;
+        right: 0;
+        top: 0;
         height: 100%;
+        width: clamp(80px, calc(19.53vw - 70px), 130px);
+        display: flex;
+        justify-content: flex-end;
+        pointer-events: none;
     }
 
     .footer-map img {
@@ -237,18 +268,69 @@
     }
 }
 
+@media (min-width: 463px) and (max-width: 767.5px) {
+  .footer-bg {
+    min-height: clamp(135px, 18vw, 165px);
+  }
+
+  .footer-capsule {
+    width: 88%;
+    height: clamp(85px, 15vw, 110px);
+    margin-left: auto;
+    justify-content: center;
+    gap: clamp(10px, 3vw, 23px);
+    padding-left: clamp(18px, 4vw, 28px);
+    padding-right: 0;
+    position: relative;
+  }
+
+  .footer-logo {
+    flex: 0 0 auto;
+    padding-left: 0 !important;
+  }
+
+  .footer-logo img {
+    width: clamp(105px, 18vw, 145px);
+    max-width: none;
+  }
+
+  .footer-socials {
+    flex: 0 0 auto !important;
+    width: fit-content !important;
+    gap: clamp(5px, 1.4vw, 10px);
+    padding: 0 !important;
+  }
+
+  .social-btn {
+    flex: 0 0 clamp(19px, 3.2vw, 27px);
+    width: clamp(19px, 3.2vw, 27px);
+    height: clamp(19px, 3.2vw, 27px);
+    max-width: none;
+  }
+
+  .join-team-btn {
+    font-size: clamp(8px, 1.7vw, 13px);
+    margin-left: 8px;
+    white-space: nowrap;
+  }
+
+  .footer-capsule .footer-map {
+    display: none;
+  }
+}
+
 @media (max-width: 481px) {
     .footer-bg {
-        min-height: 150px;
+        min-height: clamp(110px, 24vw, 130px);
         background-size: cover;
         background-position: center;
       }
 
     .footer-capsule {
-        height: 90px;
+        height: clamp(72px, 17vw, 90px);
         justify-content: center !important;
         gap: 8px !important;
-        margin-bottom: 50px;
+        margin-bottom: 0;
 
     }
 
@@ -259,7 +341,7 @@
         margin-right: clamp(0px, calc(11.11vw - 43.33px), 10px);
         margin-left: -10px;
         
-        width: clamp(95px, calc(27.78vw - 13.33px), 120px) !important;
+        width: clamp(82px, calc(22vw - 8px), 105px) !important;
         max-width: none !important;
         height: auto !important;
     }
@@ -276,16 +358,16 @@
     }
 
     .social-btn {
-        max-width: 22px;
+        max-width: clamp(17px, 4vw, 22px);
     }
 
     .social-btn img {
-      width: clamp(19px, calc(3.33vw + 6px), 22px) !important;
-      height: clamp(19px, calc(3.33vw + 6px), 22px) !important;
+        width: clamp(16px, calc(2.8vw + 5px), 19px) !important;
+        height: clamp(16px, calc(2.8vw + 5px), 19px) !important;
     }
 
     .join-team-btn {
-      font-size: clamp(8.6px, calc(1.63vw + 2.51px), 11px);
+        font-size: clamp(7.2px, calc(1.35vw + 2px), 9.2px);
         white-space: nowrap;
         margin-left: clamp(10px, calc(5.56vw - 11.7px), 15px);
         letter-spacing: 1px;
