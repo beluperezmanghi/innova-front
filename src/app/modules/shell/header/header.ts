@@ -115,11 +115,11 @@ export class Header {
 private applyStaticTranslations(lang: 'en' | 'es' | 'pt') {
   document.querySelectorAll('[data-i18n]').forEach((el) => {
     if (!this.originalTexts.has(el)) {
-      this.originalTexts.set(el, el.textContent?.trim() || '');
+      this.originalTexts.set(el, el.innerHTML.trim() || '');
     }
 
     if (lang === 'en') {
-      el.textContent = this.originalTexts.get(el) || '';
+      el.innerHTML = this.originalTexts.get(el) || '';
       return;
     }
 
@@ -127,7 +127,7 @@ private applyStaticTranslations(lang: 'en' | 'es' | 'pt') {
     if (!key) return;
 
     this.translate.get(key).subscribe((translated) => {
-      el.textContent = translated;
+      el.innerHTML = translated;
     });
   });
 }

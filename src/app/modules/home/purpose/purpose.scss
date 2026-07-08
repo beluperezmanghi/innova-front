@@ -282,7 +282,7 @@
             padding: 18px 0px 18px 50px;
             color: rgba(255, 255, 255, 1);
             cursor: pointer;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             line-height: 1.2;
             font-family: "Gotham", sans-serif;
             font-weight: 200;
@@ -312,7 +312,7 @@
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  gap: clamp(54px, 4.8vw, 78px);
+  gap: clamp(42px, 3.8vw, 62px);
   height: auto;
 
   background-position:
@@ -342,8 +342,8 @@
   z-index: 100;
 
     .dot {
-        width: 8px;
-        height: 8px;
+        width: 6px;
+        height: 6px;
         background: white;
         border-radius: 50%;
         margin-right: 15px;
@@ -352,17 +352,19 @@
     h3 {
         margin: 0;
         font-family: "Gotham", sans-serif;
-        font-size: clamp(1.35rem, calc(0.25rem + 1.72vw), 1.8rem);
+        font-size: clamp(20px, 1.6vw, 32px);
         font-weight: 500;
     }
 }
 
 .detail-content {
   display: flex;
-  min-height: clamp(225px, 17vw, 245px);
+  min-height: clamp(225px, 17vw, 290px);
+  max-height: clamp(285px, 22vw, 360px); // nuevo
   background: transparent;
   padding: 0px 2px;
-  margin-top: -16px;
+  margin-top: -14px;
+  overflow: hidden; // nuevo
     &.row {
         flex-direction: row;
     }
@@ -373,7 +375,9 @@
 
     .detail-info {
       flex: 1;
-      padding: clamp(24px, calc(0.58rem + 1.44vw), 30px) clamp(28px, calc(0.52rem + 1.92vw), 36px);
+      padding:
+      clamp(18px, calc(0.4rem + 1vw), 24px)
+      clamp(22px, calc(0.45rem + 1.4vw), 30px);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -383,9 +387,9 @@
 
         .detail-description {
             color: #0c0b0b;
-            font-size: clamp(1.28rem, calc(0.73rem + 0.97vw), 1.6rem);
-            line-height: clamp(25px, calc(15px + 0.95vw), 32px);
-            margin: 10px auto 20px auto;
+            font-size: clamp(1rem, calc(0.62rem + 0.62vw), 1.28rem);
+            line-height: clamp(21px, calc(14px + 0.65vw), 27px);
+            margin: 8px auto 16px auto;
             font-weight: 300;
         }
     }
@@ -397,6 +401,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center 45%;
             position: relative;
         }
     }
@@ -406,11 +411,11 @@
     background: linear-gradient(90deg, #03172d 0%, #022b4b 35%, #014471 70%, #02588f 100%);
     color: white;
     border: none;
-    padding: clamp(11px, calc(1px + 0.96vw), 15px) clamp(26px, calc(6px + 1.92vw), 34px);
+    padding: clamp(8px, 0.75vw, 12px) clamp(22px, 1.6vw, 30px);
     border-radius: 999px;
     width: fit-content;
     cursor: pointer;
-    font-size: clamp(0.95rem, calc(0.34rem + 0.96vw), 1.2rem);
+    font-size: clamp(0.82rem, 0.75vw, 1rem);
     font-family: "Gotham", sans-serif;
     font-weight: 300;
     transition: transform 0.2s;
@@ -457,7 +462,7 @@
   }
   
   h2.services-title {
-    font-size: 46px !important;
+    font-size: 38px !important;
     line-height: 34px !important;
   }
 
@@ -562,8 +567,8 @@
       .purpose-execution {
         background-image: url("/fondos responsive/2440x1800/01_PURPOSE/01_INNOVATRIALS_FONDO_02_2440x1800.webp");
         display: grid !important;
-        grid-template-columns: 0.9fr 1.1fr;
-        column-gap: clamp(120px, 7vw, 280px);
+        grid-template-columns: minmax(360px, 0.85fr) minmax(520px, 1.15fr);
+        column-gap: 80px;
         grid-template-rows: auto auto;
         grid-template-areas:
           "main-title services-list"

@@ -416,16 +416,20 @@
 }
 
 .card-large-person-header {
-    background-image: linear-gradient(135deg, #02182d 0%, #0067a8 100%);
-    border-radius: 28px;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    z-index: 2;
+  background-image: linear-gradient(135deg, #02182d 0%, #0067a8 100%);
+  border-radius: clamp(20px, 1.5vw, 28px);
+  width: 100%;
+  box-sizing: border-box;
+
+  min-height: clamp(72px, 5vw, 125px);
+  padding: clamp(14px, 1.5vw, 32px) clamp(24px, 3vw, 70px);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(18px, 2vw, 54px);
+
+  z-index: 2;
 }
 
 .card-large-content {
@@ -834,11 +838,11 @@
 
   .card-large-person-header {
     padding:
-      clamp(38px, calc(1.65vw - 2px), 66px)
+      clamp(26px, calc(1.05vw + 1px), 44px)
       clamp(44px, calc(2.12vw - 7px), 80px);
   
-    min-height: clamp(140px, calc(7.08vw - 30px), 260px);
-    border-radius: clamp(28px, calc(1.18vw), 48px);
+    min-height: clamp(95px, calc(3.2vw + 18px), 150px);
+    border-radius: clamp(24px, calc(1vw), 40px);
   
     display: flex;
     align-items: center;
@@ -847,19 +851,22 @@
   }
   
   .card-large-person-header h1 {
-    font-size: clamp(34px, calc(1.77vw - 8px), 64px);
-    line-height: 1.08;
-    margin: 0;
+    font-size: clamp(30px, calc(1.45vw - 3px), 54px);
+    line-height: 1.04;
   
     flex: 0 0 clamp(260px, calc(8.84vw + 48px), 410px);
     max-width: clamp(260px, calc(8.84vw + 48px), 410px);
     white-space: normal;
   }
   
+  .card-large-person-header h1 {
+    font-size: clamp(30px, calc(1.45vw - 3px), 54px);
+    line-height: 1.04;
+  }
+  
   .card-large-person-header h2 {
-    font-size: clamp(30px, calc(1.53vw - 7px), 56px);
-    line-height: 1.15;
-    margin: 0;
+    font-size: clamp(24px, calc(1.2vw - 2px), 44px);
+    line-height: 1.12;
   
     flex: 1 1 auto;
     min-width: 0;
@@ -1419,22 +1426,6 @@
       .container-in img {
         width: 100%;
         display: block;
-      }
-
-      .card-large-person-header {
-        padding:
-          clamp(12px, calc(1.92vw - 7.7px), 20px)
-          clamp(14px, calc(1.44vw - 0.8px), 20px);
-
-        padding-left: clamp(20px, calc(1.92vw + 0.3px), 28px);
-
-        min-height: clamp(82px, calc(9.62vw - 16.6px), 122px);
-        gap: clamp(16px, calc(0.96vw + 6.15px), 20px);
-        border-radius: clamp(20px, calc(1.92vw + 0.3px), 28px);
-    
-        display: flex;
-        align-items: center;
-        box-sizing: border-box;
       }
     
       .card-large-person-header h1 {
