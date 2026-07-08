@@ -244,6 +244,9 @@ window.initParticlesLogo = function () {
     backGroup = new THREE.Group();
     midGroup = new THREE.Group();
     frontGroup = new THREE.Group();
+
+    meshLogoBase = null;
+    
     scene.add(backGroup, midGroup, frontGroup);
 
     const clock = new THREE.Clock();
@@ -333,32 +336,30 @@ window.initParticlesLogo = function () {
         midGroup.add(light);
     });
 
-    video.onloadedmetadata = function () {
-        const videoAspect = video.videoWidth / video.videoHeight;
+    function createVideoLogoMesh() {
+        if (!midGroup || meshLogoBase) return;
+    
+        const videoAspect = video.videoWidth / video.videoHeight || 1.77;
         const geometry = new THREE.PlaneGeometry(15 * videoAspect, 15);
-
-        // Usamos MeshBasicMaterial con la textura de video
+    
         const material = new THREE.MeshBasicMaterial({
             map: videoTexture,
             transparent: true,
             blending: THREE.AdditiveBlending
         });
-
-        /*
-        const material = new THREE.MeshBasicMaterial({
-            map: videoTexture,
-            transparent: true,
-            blending: THREE.NormalBlending, 
-            depthWrite: true,               
-            opacity: 0.6,                  
-            alphaTest: 0.05                
-        });
-        */
-
+    
         meshLogoBase = new THREE.Mesh(geometry, material);
         meshLogoBase.name = "LOGO_PRINCIPAL";
         midGroup.add(meshLogoBase);
-    };
+    
+        playVideo();
+    }
+    
+    if (video.readyState >= 1) {
+        createVideoLogoMesh();
+    } else {
+        video.addEventListener('loadedmetadata', createVideoLogoMesh, { once: true });
+    }
 
 
     // Etiquetas de Texto
