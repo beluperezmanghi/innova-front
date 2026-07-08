@@ -22,7 +22,9 @@ export class Purpose {
     @Inject(PLATFORM_ID) private platformId: Object,
     private translate: TranslateService
   ) {
-    this.loadPurposeItems();
+    setTimeout(() => {
+      this.loadPurposeItems();
+    });
   
     this.translate.onLangChange.subscribe(() => {
       this.loadPurposeItems();

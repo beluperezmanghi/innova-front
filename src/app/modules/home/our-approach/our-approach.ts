@@ -1,11 +1,11 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Component, Inject, PLATFORM_ID } from '@angular/core';import * as AOS from 'aos';
 import { Footer } from '../../shell/footer/footer';
-import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-our-approach',
-  imports: [CommonModule, Footer, TranslatePipe],
+  imports: [CommonModule, Footer],
   templateUrl: './our-approach.html',
   styleUrl: './our-approach.scss',
 })
@@ -13,15 +13,18 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 export class OurApproach {
   persons: any[] = [];
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object,
-  private translate: TranslateService
-) {
-  this.loadPersons();
-
-  this.translate.onLangChange.subscribe(() => {
-    this.loadPersons();
-  });
-}
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private translate: TranslateService
+  ) {
+    setTimeout(() => {
+      this.loadPersons();
+    });
+  
+    this.translate.onLangChange.subscribe(() => {
+      this.loadPersons();
+    });
+  }
 
 loadPersons() {
   this.translate.get(['TEAM', 'TEAM_LARGE']).subscribe((res) => {
