@@ -235,6 +235,10 @@ window.initParticlesLogo = function () {
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     container.appendChild(renderer.domElement);
+    
+    // El canvas queda visual, pero no toca/captura clicks
+    container.style.pointerEvents = 'none';
+    renderer.domElement.style.pointerEvents = 'none';
 
     // Inicializamos Grupos (Sin 'const')
     backGroup = new THREE.Group();
@@ -438,52 +442,6 @@ ctx.fillText(text, canvas.width / 2, canvas.height / 2);
         renderTextLabels();
     });
 
-    // Eventos de Mouse
-    window.addEventListener('mousedown', () => {
-        isDragging = true;
-
-        // Detectar si el click fue sobre el logo
-        raycaster.setFromCamera(mouseUV, camera);
-        const intersects = raycaster.intersectObjects(textLabels, true);
-        const clickedLabel = intersects.find(i => i.object.userData?.isTextLabel);
-
-        if (clickedLabel) {
-const link = clickedLabel.object.userData.link;
-
-if (link === 'innovation') {
-    sessionStorage.setItem('scrollToInnovation', 'true');
-    window.location.href = '/our-approach';
-    return;
-}
-if (link === 'cro-expert') {
-    sessionStorage.setItem('scrollToCroExpert', 'true');
-    window.location.href = '/';
-    return;
-}
-
-if (link === 'latin-america') {
-    sessionStorage.setItem('scrollToLatinAmerica', 'true');
-    window.location.href = '/';
-    return;
-}
-
-window.location.href = link;
-        }
-
-        const clickedLogo = intersects.find(i => i.object.name === "LOGO_PRINCIPAL");
-
-        if (clickedLogo) {
-            // EFECTO: Un pequeño brinco de escala usando GSAP (que ya lo tienes en el resize)
-            gsap.to(clickedLogo.object.scale, {
-                x: 1.3, y: 1.3, z: 1.3,
-                duration: 0.1,
-                yoyo: true,
-                repeat: 1,
-                ease: "power2.out"
-            });
-        }
-    });
-    window.addEventListener('mouseup', () => isDragging = false);
     window.addEventListener('mousemove', (e) => {
         mouseX = (e.clientX / window.innerWidth) - 0.5;
         mouseY = (e.clientY / window.innerHeight) - 0.5;
