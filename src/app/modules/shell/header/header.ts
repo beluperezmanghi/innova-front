@@ -1,6 +1,7 @@
 import { Component, HostListener } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule, NavigationEnd } from '@angular/router';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -16,17 +17,71 @@ export class Header {
 
   currentLang: 'en' | 'pt' | 'es' = 'en';
 
-  constructor(private translate: TranslateService) {
+  constructor(
+    private translate: TranslateService,
+    private router: Router
+  ) {
     this.translate.setFallbackLang('en');
+  
+    const savedLang = localStorage.getItem('selectedLanguage') as 'en' | 'pt' | 'es' | null;
+    this.currentLang = savedLang || 'en';
+  
     this.translate.use(this.currentLang);
   }
 
+  ngOnInit() {
+    const savedLang = localStorage.getItem('selectedLanguage') as 'en' | 'pt' | 'es' | null;
+  
+    if (savedLang) {
+      this.currentLang = savedLang;
+  
+      this.translate.use(savedLang).subscribe(() => {
+        setTimeout(() => {
+          this.applyStaticTranslations(savedLang);
+          this.applyStaticPlaceholders(savedLang);
+        }, 100);
+      });
+    }
+  
+    window.addEventListener('languageChanged', ((event: Event) => {
+      const customEvent = event as CustomEvent<'en' | 'pt' | 'es'>;
+      const lang = customEvent.detail;
+  
+      this.currentLang = lang;
+  
+      this.translate.use(lang).subscribe(() => {
+        setTimeout(() => {
+          this.applyStaticTranslations(lang);
+          this.applyStaticPlaceholders(lang);
+        }, 100);
+      });
+    }) as EventListener);
+
+    this.router.events
+  .pipe(filter(event => event instanceof NavigationEnd))
+  .subscribe(() => {
+    const savedLang = localStorage.getItem('selectedLanguage') as 'en' | 'pt' | 'es' | null;
+    const lang = savedLang || this.currentLang;
+
+    setTimeout(() => {
+      this.translate.use(lang).subscribe(() => {
+        this.applyStaticTranslations(lang);
+        this.applyStaticPlaceholders(lang);
+      });
+    }, 250);
+  });
+  }
+
   changeLanguage(lang: 'en' | 'pt' | 'es') {
+    localStorage.setItem('selectedLanguage', lang);
+  
     this.currentLang = lang;
+  
     this.translate.use(lang).subscribe(() => {
       this.applyStaticTranslations(lang);
       this.applyStaticPlaceholders(lang);
     });
+  
     this.closeMenu();
   }
 
