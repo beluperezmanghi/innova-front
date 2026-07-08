@@ -35,7 +35,8 @@
               "src/styles.scss"
             ],
             "allowedCommonJsDependencies": [
-              "aos"
+              "aos",
+              "sweetalert2"
             ]
           },
           "configurations": {
