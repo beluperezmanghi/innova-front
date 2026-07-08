@@ -1,0 +1,153 @@
+{
+    "NAV": {
+      "HOME": "HOME",
+      "ABOUT": "ABOUT US",
+      "CONTACT": "CONTACT US"
+    },
+    "FOOTER": {
+      "JOIN": "JOIN OUR TEAM"
+    },
+    "COMMITMENT": {
+      "TITLE": "OUR COMMITMENT",
+      "TEXT": " We work hand in hand with our clients and partners to drive innovation in healthcare, with the goal of generating a positive impact and transforming the quality of life of people around the world."
+    },
+    "SERVICES": {
+      "MAIN": "YOUR CRO EXPERT FOR LATIN AMERICA",
+      "TITLE": "OUR SERVICES",
+      "FEASIBILITY": "Feasibility and site selection",
+      "REGULATORY": "Regulatory requirements to conduct the study",
+      "STARTUP": "Study set-up and start-up phase",
+      "BUDGET": "Budget and contract negotiation",
+      "LOGISTICS": "Logistics and importation process",
+      "VENDORS": "Vendor selection and management",
+      "MONITORING": "Project overview and monitoring",
+      "ALLIANCE": "Clinical research powered by our alliance with Alpha-CR"
+    },
+    "LATAM": {
+        "TITLE": "WHY LATIN AMERICA?",
+        "TEXT": "Latin America offers sponsors a powerful combination of cost efficiency, patient engagement, and high-quality execution. Lower operational costs compared to the U.S. and Europe help optimize clinical development budgets without compromising quality. Strong physician-patient relationships foster trust, adherence, and continuity throughout studies, contributing to lower dropout rates. This improves data quality, reduces recruitment replacement needs, and supports more reliable outcomes. Combined with experienced investigators and faster enrollment potential, LATAM helps accelerate timelines while maintaining scientific rigor."
+    },
+    "COMMON": {
+      "BUTTON": "CONNECT"
+    },
+    "SERVICE_DETAILS": {
+      "FEASIBILITY": {
+        "TITLE": "Feasibility and site selection",
+        "TEXT": "We have a pre-qualified sites network working with us in the different countries across Latam. These sites have gone through a rigorous feasibility process assessing patient availability, site capabilities and working procedures. We prioritize high-performing sites with proven track records to ensure fast recruitment, compliance, and study success."
+      },
+      "REGULATORY": {
+        "TITLE": "Regulatory requirements to conduct the study",
+        "TEXT": "We provide our clients with a clear overview of the regulatory requirements needed to initiate a clinical trial in each country. Our team ensures all necessary documents required in each step to obtain the study approval from the IRBs, ECs, MoH (Institutional Review Board, Ethics Committee, Ministry of Health)."
+      },
+      "STARTUP": {
+        "TITLE": "Study set-up and start-up phase",
+        "TEXT": "Efficient coordination of all startup activities to ensure a fast and compliant study launch. Our proactive approach minimizes delays and identifies potential obstacles to ensure a smooth study launch and avoid unnecessary and predictable hold-ups."
+      },
+      "BUDGET": {
+        "TITLE": "Budget and contract negotiation",
+        "TEXT": "We support sponsors in the development, review, and negotiation of study budgets and clinical trial agreements. Our team works closely with sites and stakeholders to facilitate efficient negotiations, helping ensure financial transparency, contractual compliance, and timely study start-up."
+      },
+      "LOGISTICS": {
+        "TITLE": "Logistics and importation process",
+        "TEXT": "We manage the end-to-end importation and logistics of clinical supplies, ensuring regulatory compliance and timely delivery to the depot. Our expertise helps navigating customs processes efficiently avoiding potential delays. A smooth importation process is key in any study success."
+      },
+      "VENDORS": {
+        "TITLE": "Vendor selection and management",
+        "TEXT": "We contribute in identifying the external vendors needed along the study and oversee them during the clinical trial to ensure high-quality performance, compliance with regulatory requirements and alignment to study timelines and objectives."
+      },
+      "MONITORING": {
+        "TITLE": "Project overview and monitoring",
+        "TEXT": "We provide ongoing coordination and oversight of study progress through on-site and/or remote monitoring, risk assessment and performance tracking. Our team ensures adherence to protocol and local and international regulations, timelines and quality standards, keeping our clients informed at every stage."
+      },
+      "ALLIANCE": {
+        "TITLE": "Clinical research powered by our alliance with Alpha-CR",
+        "TEXT": "We combine our operational expertise with Alpha-CR, an ISO 27001-certified platform validated under FDA 21 CFR Part 11 and EMA Annex 11, delivering agile execution and highest-quality data for sponsors."
+      }
+    },
+    "CTA": {
+      "TITLE": "WE PROVIDE TAILORED SOLUTIONS TO GROW YOUR IMPACT",
+      "TEXT": " From early-phase studies to multinational trials, Innova Trials delivers the insight, support, and operational excellence you need to succeed in Latin America and beyond."
+    },
+    "ABOUT": {
+      "TITLE": "YOUR TRUSTED PARTNER IN CLINICAL RESEARCH INNOVATION",
+      "P1": "At Innova Trials, we help pharmaceutical and biotech companies bring medical innovations to life through efficient, ethical, and patient centered clinical trial solutions. With deep regional expertise and global standards, we make research smoother, faster, and more impactful every step of the way.",
+      "P2": "Our team provides comprehensive support throughout the entire clinical development process, from study planning and site selection to regulatory submissions, patient recruitment, study execution, and closeout activities. By combining local knowledge with international quality standards, we help sponsors navigate complex challenges, accelerate timelines, and ensure operational excellence across Latin America.",
+      "P3": "Through a collaborative and transparent approach, we build long-term partnerships focused on delivering reliable results, high-quality data, and successful clinical outcomes."
+    },
+    "TEAM": {
+      "FEDERICO": {
+        "NAME": "Federico Pérez Manghi",
+        "ROLE1": "Co-Founder and Chief Medical Officer – Innova Trials (United States)",
+        "ROLE2": "Founder and President - CINME (Argentina)"
+      },
+      "MILAGROS": {
+        "NAME": "Milagros Pérez Manghi",
+        "ROLE1": "Co-Founder and Chief Executive Officer – Innova Trials (United States)",
+        "ROLE2": "Chief Administrative Officer – CINME (Argentina)"
+      },
+      "SANTIAGO": {
+        "NAME": "Santiago Isbert Perlender",
+        "ROLE1": "Co-Founder and Chief Financial Officer – Innova Trials (United States)",
+        "ROLE2": "Chief Strategy and Financial Officer – CINME (Argentina)"
+      },
+      "DANIEL": {
+        "NAME": "Daniel Cascon",
+        "ROLE1": "Co-Founder and Chief Strategy Officer",
+        "ROLE2": ""
+      }
+    },
+    "TEAM_LARGE": {
+      "FEDERICO": {
+        "NAME": "Federico Pérez Manghi",
+        "ROLE1": "Co-Founder and Chief Medical Officer – Innova Trials (United States)",
+        "ROLE2": "Founder and President - CINME (Argentina)",
+        "BIO1": "Dr. Federico Pérez Manghi is the Founder and Chief Medical Officer of Innova Trials, a U.S.-based Clinical Research Organization headquartered in Key Biscayne, Florida. He leads the organization’s medical and scientific vision, ensuring clinical excellence, regulatory compliance, and patient safety across all trials. His leadership is central to Innova’s mission of expanding access to high-quality research in Latin America and beyond.",
+        "BIO2": "In addition to his role at Innova Trials, Dr. Pérez Manghi serves as Founder and President of CINME, a leading clinical research center in Argentina. With over 20 years of experience in clinical practice and research operations, he has built a reputation for bridging global pharmaceutical standards with local expertise. His work continues to impact drug development pipelines and improve patient outcomes across the region.",
+        "BIO3": "Throughout his career, Dr. Pérez Manghi has served as Principal Investigator in numerous Phase II–IV clinical trials, with a particular focus on diabetology, obesity, cardiovascular and renal outcomes research. He is an ACRP Certified Principal Investigator and has also contributed to the publication of clinical research findings in collaboration with leading pharmaceutical companies through peer-reviewed scientific journals, reflecting his commitment to advancing medical knowledge and evidence-based healthcare."
+      },
+      "MILAGROS": {
+        "NAME": "Milagros Pérez Manghi",
+        "ROLE1": "Co-Founder and Chief Executive Officer – Innova Trials (United States)",
+        "ROLE2": "Chief Administrative Officer – CINME (Argentina)",
+        "BIO1": "Milagros Pérez Manghi is an accomplished executive with a dual leadership role in the clinical research and healthcare sectors across the U.S. and Latin America. She currently serves as CEO of Innova Trials, a U.S.-based Clinical Research Organization (CRO) focused on accelerating innovation, operational excellence, and global partnerships in clinical development.",
+        "BIO2": "In parallel, she holds the position of CAO at CINME (Centro de Investigaciones Metabólicas) in Buenos Aires, where she oversees administrative operations and plays a key role in aligning clinical operations with international regulatory and quality standards.",
+        "BIO3": "With a degree in International Trade from UADE and extensive experience working with global pharmaceutical sponsors and CROs, Milagros brings a unique blend of financial acumen, strategic vision, and operational leadership. Her work is defined by a commitment to transparency, cross-border collaboration, and raising the standard of clinical research in Latin America."
+      },
+      "SANTIAGO": {
+        "NAME": "Santiago Isbert Perlender",
+        "ROLE1": "Co-Founder and Chief Financial Officer – Innova Trials (United States)",
+        "ROLE2": "Chief Strategy and Financial Officer – CINME (Argentina)",
+        "BIO1": "Santiago Isbert Perlender is the Chief Financial Officer of Innova Trials, a clinical research organization based in Miami dedicated to accelerating drug development through innovative trial management and global site integration. As CFO, Santiago oversees financial strategy, capital allocation, and international expansion, playing a key role in driving the company’s growth across the U.S. and Latin America. His leadership ensures operational scalability while aligning financial discipline with Innova’s mission to transform the future of clinical trials.",
+        "BIO2": "Santiago also serves as Chief Strategy and Financial Officer of CINME (Centro de Investigaciones Metabólicas), one of Argentina’s leading research centers. In this role, he has spearheaded institutional restructuring, operational modernization, and strategic partnerships with both public and private stakeholders. His cross-continental experience gives him a unique perspective on the intersection of healthcare innovation, finance, and regulatory ecosystems. With a career bridging executive finance and clinical research operations, Santiago is known for his ability to align business performance with patient-focused research outcomes. His work continues to shape the way clinical research organizations scale responsibly and globally.",
+        "BIO3": ""
+      },
+      "DANIEL": {
+        "NAME": "Daniel Cascon",
+        "ROLE1": "Co-Founder and Chief Strategy Officer",
+        "ROLE2": "",
+        "BIO1": "Daniel Cascon is an Argentine-American entrepreneur with over three decades of leadership experience in executive sales and marketing roles across multinational corporations throughout the United States and Latin America. Known for his strategic vision and business acumen, Daniel has also served as a trusted advisor and board member for a variety of companies across the LATAM region, helping guide growth, innovation, and operational excellence.",
+        "BIO2": "Daniel is the Co-Founder and Chief Strategy Officer of Innova Trials, a forward-thinking Clinical Research Organization (CRO) headquartered in Key Biscayne, Florida. Founded in 2024, Innova Trials is committed to modernizing clinical research through strategic partnerships, regional expertise, and a patient-centered approach. Under Daniel’s leadership, the company bridges global research standards with local execution, delivering high-quality solutions to sponsors and research sites alike.",
+        "BIO3": "In addition to his work in healthcare innovation, Daniel is also the Founder of Baires International Realty, a venture that showcases his longstanding passion for real estate development and investment. His diverse portfolio reflects a deep commitment to building impactful businesses that serve both people and progress."
+      }
+    },
+    "JOIN": {
+      "TITLE": "JOIN OUR TEAM",
+      "TEXT": "At Innova Trials, we are more than a clinical research organization. We are a team fueled by curiosity, driven by purpose, and united through collaboration. Every day, we challenge conventions, explore bold ideas, and push boundaries to advance healthcare. If you are passionate about making a real impact, thrive in a culture where growth is encouraged, voices are heard, and your journey truly matters, this is your place. Whether you are an experienced professional or just starting your career, your path to purpose begins here.",
+      "RESUME": "Please send us your resume to",
+      "EMAIL": "E-MAIL",
+      "LOCATION": "LOCATION",
+      "PHONE": "PHONE"
+    },
+    "CONTACT": {
+      "TITLE": "CONTACT US",
+      "EMAIL": "E-mail",
+      "PHONE": "Phone number",
+      "ADDRESS": "Address",
+      "FORM_TITLE": "LET'S CONNECT",
+      "NAME": "Name",
+      "PHONE_FIELD": "Phone",
+      "EMAIL_FIELD": "E-mail",
+      "COMPANY": "Company",
+      "MESSAGE": "Message"
+    }
+  }

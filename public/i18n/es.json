@@ -1,0 +1,153 @@
+{
+    "NAV": {
+      "HOME": "INICIO",
+      "ABOUT": "SOBRE NOSOTROS",
+      "CONTACT": "CONTACTO"
+    },
+    "FOOTER": {
+      "JOIN": "SUMATE AL EQUIPO"
+    },
+    "COMMITMENT": {
+      "TITLE": "NUESTRO COMPROMISO",
+    "TEXT": "Trabajamos de la mano con nuestros clientes y socios para impulsar la innovación en el ámbito de la salud, con el propósito de generar un impacto positivo y transformar la calidad de vida de las personas en todo el mundo."
+    },
+    "SERVICES": {
+      "MAIN": "SU CRO EXPERTA PARA AMÉRICA LATINA",
+      "TITLE": "NUESTROS SERVICIOS",
+      "FEASIBILITY": "Factibilidad y selección de centros",
+      "REGULATORY": "Requisitos regulatorios para llevar a cabo el estudio",
+      "STARTUP": "Preparación del estudio y fase de inicio",
+      "BUDGET": "Negociación de presupuesto y contratos",
+      "LOGISTICS": "Logística y proceso de importación",
+      "VENDORS": "Selección y gestión de proveedores",
+      "MONITORING": "Supervisión y monitoreo del proyecto",
+      "ALLIANCE": "Investigación clínica impulsada por nuestra alianza con Alpha-CR"
+    },
+    "LATAM": {
+        "TITLE": "¿POR QUÉ AMÉRICA LATINA?",
+       "TEXT": "América Latina ofrece a los patrocinadores una combinación única de eficiencia en costos, compromiso de los pacientes y excelencia en la ejecución de los estudios. En comparación con Estados Unidos y Europa, los menores costos operativos permiten optimizar los presupuestos de desarrollo clínico sin comprometer la calidad. Una sólida relación entre los médicos y sus pacientes fomenta la confianza, la adherencia y la continuidad a lo largo de los estudios, contribuyendo a reducir las tasas de abandono. Esto mejora la calidad de los datos, disminuye la necesidad de reemplazar participantes y favorece resultados más confiables. Combinado con investigadores experimentados y un mayor potencial de reclutamiento ágil, América Latina contribuye a acelerar los plazos de los estudios manteniendo el máximo rigor científico."
+    },
+    "COMMON": {
+      "BUTTON": "CONTACTAR"
+    },
+    "SERVICE_DETAILS": {
+      "FEASIBILITY": {
+        "TITLE": "Factibilidad y selección de centros",
+        "TEXT": "Contamos con una red de centros previamente calificados en distintos países de América Latina. Cada uno ha atravesado un riguroso proceso de evaluación de factibilidad que contempla la disponibilidad de pacientes, las capacidades del centro y sus procedimientos operativos. Priorizamos centros de alto desempeño con experiencia comprobada para garantizar un reclutamiento ágil, el cumplimiento regulatorio y el éxito del estudio."
+      },
+      "REGULATORY": {
+        "TITLE": "Requisitos regulatorios para llevar a cabo el estudio",
+        "TEXT": "Brindamos a nuestros clientes una visión clara de los requisitos regulatorios necesarios para iniciar un ensayo clínico en cada país. Nuestro equipo garantiza la preparación y gestión de toda la documentación requerida en cada etapa para obtener la aprobación del estudio por parte de los Comités de Ética, los IRB y los Ministerios de Salud."
+      },
+      "STARTUP": {
+        "TITLE": "Preparación del estudio y fase de inicio",
+        "TEXT": "Coordinamos de manera eficiente todas las actividades de inicio para garantizar el lanzamiento del estudio de forma ágil y conforme a los requisitos regulatorios. Nuestro enfoque proactivo minimiza demoras e identifica posibles obstáculos para asegurar una puesta en marcha fluida y evitar retrasos innecesarios y previsibles."
+      },
+      "BUDGET": {
+        "TITLE": "Negociación de presupuesto y contratos",
+        "TEXT": "Acompañamos a los patrocinadores en el desarrollo, la revisión y la negociación de presupuestos y acuerdos para ensayos clínicos. Trabajamos en estrecha colaboración con los centros y las partes involucradas para facilitar negociaciones eficientes, garantizando transparencia financiera, cumplimiento contractual y un inicio oportuno del estudio."
+      },
+      "LOGISTICS": {
+        "TITLE": "Logística y proceso de importación",
+        "TEXT": "Gestionamos de manera integral la importación y la logística de los suministros clínicos, asegurando el cumplimiento regulatorio y la entrega en tiempo y forma al depósito. Nuestra experiencia nos permite gestionar eficientemente los procesos aduaneros, evitando posibles demoras. Un proceso de importación eficiente es fundamental para el éxito de cualquier estudio."
+      },
+      "VENDORS": {
+        "TITLE": "Selección y gestión de proveedores",
+        "TEXT": "Colaboramos en la identificación de los proveedores externos necesarios para cada estudio y supervisamos su desempeño durante todo el ensayo clínico, garantizando altos estándares de calidad, cumplimiento regulatorio y alineación con los plazos y objetivos del proyecto."
+      },
+      "MONITORING": {
+        "TITLE": "Supervisión y monitoreo del proyecto",
+        "TEXT": "Brindamos coordinación y supervisión continua del progreso del estudio mediante monitoreo presencial y/o remoto, evaluación de riesgos y seguimiento del desempeño. Nuestro equipo garantiza el cumplimiento del protocolo, de las normativas locales e internacionales, de los plazos y de los estándares de calidad, manteniendo a nuestros clientes informados en cada etapa."
+      },
+      "ALLIANCE": {
+        "TITLE": "Investigación clínica impulsada por nuestra alianza con Alpha-CR",
+        "TEXT": "Combinamos nuestra experiencia operativa con Alpha-CR, una plataforma certificada bajo la norma ISO 27001 y validada conforme a FDA 21 CFR Part 11 y EMA Annex 11, para ofrecer una ejecución ágil y datos de la más alta calidad a nuestros patrocinadores."
+      }
+    },
+    "CTA": {
+      "TITLE": "BRINDAMOS SOLUCIONES A MEDIDA PARA POTENCIAR SU IMPACTO",
+      "TEXT": "Desde estudios en fases tempranas hasta ensayos clínicos multinacionales, Innova Trials ofrece la experiencia, el acompañamiento y la excelencia operativa que necesita para alcanzar el éxito en América Latina y más allá."
+    },
+    "ABOUT": {
+      "TITLE": "SU SOCIO DE CONFIANZA EN LA INNOVACIÓN DE LA INVESTIGACIÓN CLÍNICA",
+      "P1": "En Innova Trials ayudamos a compañías farmacéuticas y biotecnológicas a convertir las innovaciones médicas en realidad mediante soluciones para ensayos clínicos eficientes, éticas y centradas en el paciente. Gracias a nuestra experiencia regional y a los estándares internacionales con los que trabajamos, hacemos que la investigación sea más ágil, eficiente y de mayor impacto en cada etapa.",
+      "P2": "Nuestro equipo brinda un acompañamiento integral durante todo el proceso de desarrollo clínico, desde la planificación del estudio y la selección de centros hasta las presentaciones regulatorias, el reclutamiento de pacientes, la ejecución del estudio y las actividades de cierre. Al combinar conocimiento local con estándares internacionales de calidad, ayudamos a los patrocinadores a afrontar desafíos complejos, acelerar los plazos y garantizar la excelencia operativa en toda América Latina.",
+      "P3": "A través de un enfoque colaborativo y transparente, construimos relaciones de largo plazo orientadas a ofrecer resultados confiables, datos de alta calidad y estudios clínicos exitosos."
+    },
+    "TEAM": {
+      "FEDERICO": {
+        "NAME": "Federico Pérez Manghi",
+        "ROLE1": "Co-Fundador y Director Médico – Innova Trials (Estados Unidos)",
+        "ROLE2": "Fundador y Presidente - CINME (Argentina)"
+      },
+      "MILAGROS": {
+        "NAME": "Milagros Pérez Manghi",
+        "ROLE1": "Co-Fundadora y Directora Ejecutiva – Innova Trials (Estados Unidos)",
+        "ROLE2": "Directora Administrativa – CINME (Argentina)"
+      },
+      "SANTIAGO": {
+        "NAME": "Santiago Isbert Perlender",
+        "ROLE1": "Co-Fundador y Director Financiero – Innova Trials (Estados Unidos)",
+        "ROLE2": "Director Estratégico y Financiero – CINME (Argentina)"
+      },
+      "DANIEL": {
+        "NAME": "Daniel Cascon",
+        "ROLE1": "Co-Fundador y Director Estratégico",
+        "ROLE2": ""
+      }
+    },
+    "TEAM_LARGE": {
+      "FEDERICO": {
+        "NAME": "Federico Pérez Manghi",
+        "ROLE1": "Co-Fundador y Director Médico – Innova Trials (Estados Unidos)",
+        "ROLE2": "Fundador y Presidente – CINME (Argentina)",
+        "BIO1": "El Dr. Federico Pérez Manghi es Co-fundador y Director Médico de Innova Trials, una Organización de Investigación Clínica con sede en Estados Unidos, ubicada en Key Biscayne, Florida. Lidera la visión médica y científica de la organización, garantizando la excelencia clínica, el cumplimiento regulatorio y la seguridad de los pacientes en todos los estudios.",
+        "BIO2": "Además de su función en Innova Trials, el Dr. Pérez Manghi es Fundador y Presidente de CINME, uno de los principales centros de investigación clínica de Argentina. Con más de 20 años de experiencia en práctica clínica y operaciones de investigación, ha construido una trayectoria reconocida por integrar estándares farmacéuticos internacionales con experiencia local.",
+        "BIO3": "A lo largo de su carrera, el Dr. Pérez Manghi se ha desempeñado como Investigador Principal en numerosos estudios clínicos de Fase II a IV, con un enfoque principal en diabetología, obesidad y estudios de resultados cardiovasculares y renales. Es Investigador Principal Certificado por ACRP y también ha contribuido a la publicación de resultados de investigaciones clínicas en colaboración con importantes compañías farmacéuticas en revistas científicas con revisión por pares."
+      },
+      "MILAGROS": {
+        "NAME": "Milagros Pérez Manghi",
+        "ROLE1": "Co-Fundadora y Directora Ejecutiva – Innova Trials (Estados Unidos)",
+        "ROLE2": "Directora Administrativa – CINME (Argentina)",
+        "BIO1": "Milagros Pérez Manghi es una ejecutiva con una destacada trayectoria en los sectores de investigación clínica y salud en Estados Unidos y América Latina. Actualmente se desempeña como CEO de Innova Trials, una Organización de Investigación Clínica con sede en Estados Unidos enfocada en acelerar la innovación, la excelencia operativa y las alianzas globales en el desarrollo clínico.",
+        "BIO2": "Paralelamente, ocupa el cargo de CAO de CINME, en Buenos Aires, donde supervisa la estrategia administrativa y desempeña un papel clave en la alineación de las operaciones clínicas con los estándares internacionales de calidad y regulación.",
+        "BIO3": "Licenciada en Comercio Internacional por la UADE y con amplia experiencia trabajando junto a patrocinadores farmacéuticos globales y CROs, Milagros combina visión estratégica, liderazgo operativo y conocimiento financiero. Su trabajo se caracteriza por el compromiso con la transparencia, la colaboración internacional y la mejora continua de los estándares de investigación clínica en América Latina."
+      },
+      "SANTIAGO": {
+        "NAME": "Santiago Isbert Perlender",
+        "ROLE1": "Co-Fundador y Director Financiero – Innova Trials (Estados Unidos)",
+        "ROLE2": "Director Estratégico y Financiero – CINME (Argentina)",
+        "BIO1": "Santiago Isbert Perlender es Director Financiero de Innova Trials, una organización de investigación clínica con sede en Miami dedicada a acelerar el desarrollo de medicamentos mediante una gestión innovadora de ensayos clínicos y la integración global de centros de investigación. Como CFO, lidera la estrategia financiera, la asignación de capital y la expansión internacional, desempeñando un papel clave en el crecimiento de la compañía en Estados Unidos y América Latina. Su liderazgo garantiza la escalabilidad operativa, alineando la disciplina financiera con la misión de Innova de transformar el futuro de la investigación clínica.",
+        "BIO2": "Santiago también se desempeña como Director Estratégico y Financiero de CINME, uno de los principales centros de investigación de Argentina. Su experiencia internacional le brinda una perspectiva única sobre la convergencia entre la innovación en salud, las finanzas y los entornos regulatorios. Es reconocido por su capacidad para alinear el desempeño empresarial con resultados de investigación centrados en los pacientes.",
+        "BIO3": ""
+      },
+      "DANIEL": {
+        "NAME": "Daniel Cascon",
+        "ROLE1": "Co-Fundador y Director Estratégico",
+        "ROLE2": "",
+        "BIO1": "Daniel Cascon es un emprendedor argentino-estadounidense con más de tres décadas de experiencia en posiciones ejecutivas de liderazgo en ventas y marketing dentro de compañías multinacionales en Estados Unidos y América Latina.",
+        "BIO2": "Es Co-fundador y Director de Estrategia de Innova Trials, una Organización de Investigación Clínica con sede en Key Biscayne, Florida. Fundada en 2024, Innova Trials tiene como misión modernizar la investigación clínica mediante alianzas estratégicas, experiencia regional y un enfoque centrado en el paciente.",
+        "BIO3": "Además de su trabajo en innovación en salud, Daniel es fundador de Baires International Realty, reflejando su amplia trayectoria en desarrollo e inversión inmobiliaria. Su diversa experiencia demuestra un fuerte compromiso con la creación de empresas que generan un impacto positivo."
+      }
+    },
+    "JOIN": {
+      "TITLE": "SUMATE A NUESTRO EQUIPO",
+      "TEXT": "En Innova Trials somos mucho más que una organización de investigación clínica. Somos un equipo impulsado por la curiosidad, guiado por un propósito y unido por la colaboración. Cada día desafiamos lo establecido, exploramos nuevas ideas y superamos los límites para impulsar el avance de la salud. Si te apasiona generar un impacto real y crecer en una cultura donde se valora tu desarrollo, tu voz es escuchada y tu camino realmente importa, este es tu lugar. Ya seas un profesional con experiencia o estés dando tus primeros pasos, tu camino con propósito comienza aquí.",
+      "RESUME": "Envíanos tu currículum a",
+      "EMAIL": "CORREO ELECTRÓNICO",
+      "LOCATION": "DIRECCIÓN",
+      "PHONE": "TELÉFONO"
+    },
+    "CONTACT": {
+      "TITLE": "CONTÁCTANOS",
+      "EMAIL": "Correo electrónico",
+      "PHONE": "Teléfono",
+      "ADDRESS": "Dirección",
+      "FORM_TITLE": "HABLEMOS",
+      "NAME": "Nombre",
+      "PHONE_FIELD": "Teléfono",
+      "EMAIL_FIELD": "Correo electrónico",
+      "COMPANY": "Empresa",
+      "MESSAGE": "Mensaje"
+    }
+  }

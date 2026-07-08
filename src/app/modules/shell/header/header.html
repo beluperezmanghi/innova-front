@@ -1,7 +1,9 @@
 <nav class="navbar" [class.scrolled]="isScrolled">
 
   <div class="logo">
-    <a href="/home"><img src="/header/LOGO_INNOVA BLANCO.png" alt="Innova Trials"></a>
+    <a href="/home">
+      <img src="/header/LOGO_INNOVA BLANCO.png" alt="Innova Trials">
+    </a>
   </div>
 
   <button class="menu-toggle" (click)="toggleMenu()" [class.open]="isMenuOpen">
@@ -9,14 +11,30 @@
     <span></span>
     <span></span>
   </button>
+
   <ul class="nav-links" [class.active]="isMenuOpen">
     <li>
-      <a routerLink="/home" routerLinkActive="active-link" (click)="closeMenu()">HOME</a>
+      <a routerLink="/home" routerLinkActive="active-link" (click)="closeMenu()">
+        {{ 'NAV.HOME' | translate }}
+      </a>
     </li>
+
     <li>
-      <a routerLink="/our-approach" routerLinkActive="active-link" (click)="closeMenu()">ABOUT US</a>
+      <a routerLink="/our-approach" routerLinkActive="active-link" (click)="closeMenu()">
+        {{ 'NAV.ABOUT' | translate }}
+      </a>
     </li>
+
     <li>
-      <a routerLink="/connect" routerLinkActive="active-link" (click)="closeMenu()">CONTACT US</a>
+      <a routerLink="/connect" routerLinkActive="active-link" (click)="closeMenu()">
+        {{ 'NAV.CONTACT' | translate }}
+      </a>
+    </li>
+
+    <li class="lang-switch">
+      <button (click)="changeLanguage('en')" [class.active]="currentLang === 'en'">EN</button>
+      <button (click)="changeLanguage('es')" [class.active]="currentLang === 'es'">ES</button>
+      <button (click)="changeLanguage('pt')" [class.active]="currentLang === 'pt'">PT</button>
     </li>
   </ul>
+</nav>

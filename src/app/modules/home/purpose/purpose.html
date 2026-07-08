@@ -3,13 +3,13 @@
 
     <div class="purpose-container">
         <div class="purpose-header" data-aos="fade-up" data-aos-duration="1200" data-aos-once="false">
-            <h1 class="purpose-title">
+            <h1 class="purpose-title" data-i18n="COMMITMENT.TITLE">
                 OUR COMMITMENT
             </h1>
         </div>
 
         <div class="purpose-content" data-aos="fade-up" data-aos-duration="1200">
-            <p class="purpose-description">
+            <p class="purpose-description" data-i18n="COMMITMENT.TEXT">
                 We work hand in hand with our clients and partners to drive innovation in healthcare, with the goal of generating a positive impact and transforming the quality of life of people around the world.
             </p>
         </div>
@@ -22,7 +22,7 @@
     <section id="cro-expert-section" class="full-screen-section purpose-execution">
 
         <div class="services-main-title-wrap" data-aos="fade-down" data-aos-duration="1200">
-            <h1 class="services-main-title">
+            <h1 class="services-main-title" data-i18n="SERVICES.MAIN">
               YOUR CRO EXPERT FOR LATIN AMERICA
             </h1>
           </div>
@@ -30,7 +30,7 @@
         <div class="purpose-execution-container">
 
             <div class="purpose-execution-header" data-aos="fade-up" data-aos-duration="1200">
-                <h2 class="purpose-title services-title">
+                <h2 class="purpose-title services-title" data-i18n="SERVICES.TITLE">
                     OUR SERVICES
                 </h2>
             </div>
@@ -58,11 +58,11 @@
     
             <div class="purpose-latam-text">
     
-                <h1 class="purpose-latam-title">
+                <h1 class="purpose-latam-title" data-i18n="LATAM.TITLE">
                     WHY LATIN AMERICA?
                 </h1>
     
-                <p>
+                <p data-i18n="LATAM.TEXT">
                     Latin America offers sponsors a powerful combination of cost efficiency, patient engagement, and high-quality execution. Lower operational costs compared to the U.S. and Europe help optimize clinical development budgets without compromising quality. Strong physician-patient relationships foster trust, adherence, and continuity throughout studies, contributing to lower dropout rates. This improves data quality, reduces recruitment replacement needs, and supports more reliable outcomes. Combined with experienced investigators and faster enrollment potential, LATAM helps accelerate timelines while maintaining scientific rigor.
                 </p>
     
@@ -106,8 +106,8 @@
                     <p class="detail-description">{{ item.desc }}</p>
                     <div class="detail-btn">
                         <button class="btn-connect" [routerLink]="['/connect']" fragment="contact">
-                            CONNECT
-                        </button>
+                            {{ item.button }}
+                          </button>
                     </div>
                 </div>
 

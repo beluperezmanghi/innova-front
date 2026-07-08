@@ -7,6 +7,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import * as AOS from 'aos';
 import { RouterModule } from '@angular/router';
 import { Footer } from '../../shell/footer/footer';
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-purpose',
   imports: [CommonModule, Footer, RouterModule],
@@ -16,57 +17,34 @@ import { Footer } from '../../shell/footer/footer';
 export class Purpose {
   selectedIndex: number = 0;
   barTop: number = 0;
-  purposeItems = [
-    {
-      title: 'Feasibility and site\u00A0selection',
-      desc: `We have a pre-qualified sites network working with us in the different countries across Latam. These sites have gone through a rigorous feasibility process assessing patient availability, site capabilities and working procedures. We prioritize high-performing sites with proven track records to ensure fast recruitment, compliance, and study success.`,
-      img: '/home/gota1.png',
-      align: 'right'
-    },
-    {
-      title: 'Regulatory requirements to conduct the\u00A0study',
-      desc: 'We provide our clients with a clear overview of the regulatory requirements needed to initiate a clinical trial in each country. Our team ensures all necessary documents required in each step to obtain the study approval from the IRBs, ECs, MoH (Institutional Review Board, Ethics Committee, Ministry of Health).',
-      img: '/home/gota2.png',
-      align: 'left'
-    },
-    {
-      title: 'Study set-up and startup\u00A0phase',
-      desc: 'Efficient coordination of all startup activities to ensure a fast and compliant study launch. Our proactive approach minimizes delays and identifies potential obstacles to ensure a smooth study launch and avoid unnecessary and predictable hold-ups.',
-      img: '/home/gota3.png',
-      align: 'right'
-    },
-    {
-      title: 'Budget and contract\u00A0negotiation',
-      desc: 'We support sponsors in the development, review, and negotiation of study budgets and clinical trial agreements. Our team works closely with sites and stakeholders to facilitate efficient negotiations, helping ensure financial transparency, contractual compliance, and timely study start-up.',
-      img: '/home/gota4.png',
-      align: 'left'
-    },
-    {
-      title: 'Logistics and importation\u00A0process',
-      desc: 'We manage the end-to-end importation and logistics of clinical supplies, ensuring regulatory compliance and timely delivery to the depot. Our expertise helps navigating customs processes efficiently avoiding potential delays. A smooth importation process is key in any study\u00A0success.',
-      img: '/home/gota5.png',
-      align: 'right'
-    },
-    {
-      title: 'Vendor selection and\u00A0management',
-      desc: 'We contribute in identifying the external vendors needed along the study and oversee them during the clinical trial to ensure high-quality performance, compliance with regulatory requirements and alignment to study timelines and objectives.',
-      img: '/home/gota6.png',
-      align: 'left'
-    },
-    {
-      title: 'Project overview and\u00A0monitoring',
-      desc: 'We provide ongoing coordination and oversight of study progress through on-site and/or remote monitoring, risk assessment and performance tracking. Our team ensures adherence to protocol and local and international regulations, timelines and quality standards, keeping our clients informed at every stage.',
-      img: '/home/gota7.png',
-      align: 'right'
-    }, {
-      title: 'Clinical research powered by our alliance with\u00A0Alpha-CR',
-      desc: 'We combine our operational expertise with Alpha-CR, an ISO 27001-certified platform validated under FDA 21 CFR Part 11 and EMA Annex 11, delivering agile execution and highest-quality data for\u00A0sponsors.',
-      img: '/home/gota8.png',
-      align: 'left'
-    },
-  ];
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
-
+  purposeItems: any[] = [];
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private translate: TranslateService
+  ) {
+    this.loadPurposeItems();
+  
+    this.translate.onLangChange.subscribe(() => {
+      this.loadPurposeItems();
+    });
+  }
+  loadPurposeItems() {
+    this.translate.get(['SERVICE_DETAILS', 'COMMON']).subscribe((res) => {
+      const t = res.SERVICE_DETAILS;
+      const common = res.COMMON;
+  
+      this.purposeItems = [
+        { title: t.FEASIBILITY.TITLE, desc: t.FEASIBILITY.TEXT, button: common.BUTTON, img: '/home/gota1.png', align: 'right' },
+        { title: t.REGULATORY.TITLE, desc: t.REGULATORY.TEXT, button: common.BUTTON, img: '/home/gota2.png', align: 'left' },
+        { title: t.STARTUP.TITLE, desc: t.STARTUP.TEXT, button: common.BUTTON, img: '/home/gota3.png', align: 'right' },
+        { title: t.BUDGET.TITLE, desc: t.BUDGET.TEXT, button: common.BUTTON, img: '/home/gota4.png', align: 'left' },
+        { title: t.LOGISTICS.TITLE, desc: t.LOGISTICS.TEXT, button: common.BUTTON, img: '/home/gota5.png', align: 'right' },
+        { title: t.VENDORS.TITLE, desc: t.VENDORS.TEXT, button: common.BUTTON, img: '/home/gota6.png', align: 'left' },
+        { title: t.MONITORING.TITLE, desc: t.MONITORING.TEXT, button: common.BUTTON, img: '/home/gota7.png', align: 'right' },
+        { title: t.ALLIANCE.TITLE, desc: t.ALLIANCE.TEXT, button: common.BUTTON, img: '/home/gota8.png', align: 'left' }
+      ];
+    });
+  }
 
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {

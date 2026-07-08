@@ -1,0 +1,153 @@
+{
+  "NAV": {
+      "HOME": "INÍCIO",
+      "ABOUT": "SOBRE NÓS",
+      "CONTACT": "CONTATO"
+  },
+  "FOOTER": {
+      "JOIN": "JUNTE-SE À EQUIPE"
+  },
+  "COMMITMENT": {
+    "TITLE": "NOSSO COMPROMISSO",
+    "TEXT": "Trabalhamos lado a lado com nossos clientes e parceiros para impulsionar a inovação na saúde, com o propósito de gerar um impacto positivo e transformar a qualidade de vida de pessoas ao redor do mundo."
+  },
+  "SERVICES": {
+    "MAIN": "SEU CRO ESPECIALISTA PARA A AMÉRICA LATINA",
+    "TITLE": "NOSSOS SERVIÇOS",
+    "FEASIBILITY": "Análise de viabilidade e seleção de centros",
+    "REGULATORY": "Requisitos regulatórios para a condução do estudo",
+    "STARTUP": "Preparação do estudo e fase de inicialização",
+    "BUDGET": "Negociação de orçamento e contratos",
+    "LOGISTICS": "Logística e processo de importação",
+    "VENDORS": "Seleção e gestão de fornecedores",
+    "MONITORING": "Gerenciamento e monitoramento do projeto",
+    "ALLIANCE": "Pesquisa clínica impulsionada por nossa parceria com a Alpha-CR"
+  },
+  "LATAM": {
+      "TITLE": "POR QUE A AMÉRICA LATINA?",
+      "TEXT": "A América Latina oferece aos patrocinadores uma combinação estratégica de eficiência de custos, engajamento dos participantes e excelência na execução dos estudos. Os custos operacionais mais baixos em comparação com os Estados Unidos e a Europa permitem otimizar os orçamentos de desenvolvimento clínico sem comprometer a qualidade. A forte relação entre médicos e pacientes promove confiança, adesão e continuidade ao longo dos estudos, contribuindo para menores taxas de abandono. Isso melhora a qualidade dos dados, reduz a necessidade de substituição de participantes e gera resultados mais confiáveis. Aliado a investigadores experientes e ao potencial de recrutamento mais ágil, a América Latina ajuda a acelerar os cronogramas dos estudos mantendo o rigor científico."
+  },
+  "COMMON": {
+    "BUTTON": "ENTRE EM CONTATO"
+  },
+  "SERVICE_DETAILS": {
+    "FEASIBILITY": {
+      "TITLE": "Análise de viabilidade e seleção de centros",
+      "TEXT": "Contamos com uma rede de centros previamente qualificados em diversos países da América Latina. Esses centros passaram por um rigoroso processo de avaliação de viabilidade, considerando disponibilidade de pacientes, capacidade operacional e procedimentos de trabalho. Priorizamos centros de alto desempenho e histórico comprovado para garantir recrutamento ágil, conformidade regulatória e o sucesso do estudo."
+    },
+    "REGULATORY": {
+      "TITLE": "Requisitos regulatórios para a condução do estudo",
+      "TEXT": "Oferecemos aos nossos clientes uma visão clara dos requisitos regulatórios necessários para iniciar um estudo clínico em cada país. Nossa equipe garante toda a documentação exigida em cada etapa para obter a aprovação do estudo junto aos Comitês de Ética, IRBs e Ministérios da Saúde."
+    },
+    "STARTUP": {
+      "TITLE": "Preparação do estudo e fase de inicialização",
+      "TEXT": "Coordenamos de forma eficiente todas as atividades de startup para garantir o início do estudo com agilidade e em conformidade regulatória. Nossa abordagem proativa reduz atrasos e identifica possíveis obstáculos para assegurar uma implementação tranquila e evitar imprevistos previsíveis."
+    },
+    "BUDGET": {
+      "TITLE": "Negociação de orçamento e contratos",
+      "TEXT": "Apoiamos os patrocinadores na elaboração, revisão e negociação de orçamentos e contratos de estudos clínicos. Trabalhamos em conjunto com centros e demais partes envolvidas para promover negociações eficientes, garantindo transparência financeira, conformidade contratual e início do estudo dentro do prazo."
+    },
+    "LOGISTICS": {
+      "TITLE": "Logística e processo de importação",
+      "TEXT": "Gerenciamos todo o processo de importação e logística de suprimentos clínicos, assegurando conformidade regulatória e entrega pontual ao depósito. Nossa experiência permite conduzir os processos alfandegários de forma eficiente, evitando atrasos. Um processo de importação bem executado é essencial para o sucesso de qualquer estudo."
+    },
+    "VENDORS": {
+      "TITLE": "Seleção e gestão de fornecedores",
+      "TEXT": "Auxiliamos na identificação dos fornecedores externos necessários para cada estudo e acompanhamos seu desempenho ao longo do ensaio clínico, garantindo alta qualidade, conformidade regulatória e alinhamento aos prazos e objetivos do projeto."
+    },
+    "MONITORING": {
+      "TITLE": "Gerenciamento e monitoramento do projeto",
+      "TEXT": "Realizamos a coordenação e supervisão contínuas do andamento do estudo por meio de monitoramento presencial e/ou remoto, avaliação de riscos e acompanhamento de desempenho. Nossa equipe assegura o cumprimento do protocolo, das regulamentações locais e internacionais, dos prazos e dos padrões de qualidade, mantendo nossos clientes informados em todas as etapas."
+    },
+    "ALLIANCE": {
+      "TITLE": "Pesquisa clínica impulsionada por nossa parceria com a Alpha-CR",
+      "TEXT": "Combinamos nossa expertise operacional com a Alpha-CR, uma plataforma certificada pela ISO 27001 e validada de acordo com a FDA 21 CFR Part 11 e a EMA Annex 11, proporcionando execução ágil e dados da mais alta qualidade para os patrocinadores."
+    }
+  },
+  "CTA": {
+    "TITLE": "OFERECEMOS SOLUÇÕES PERSONALIZADAS PARA AMPLIAR SEU IMPACTO",
+    "TEXT": "Dos estudos de fases iniciais aos ensaios multinacionais, a Innova Trials oferece a experiência, o suporte e a excelência operacional necessários para o sucesso dos seus projetos na América Latina e além."
+  },
+  "ABOUT": {
+    "TITLE": "SEU PARCEIRO DE CONFIANÇA EM INOVAÇÃO EM PESQUISA CLÍNICA",
+    "P1": "Na Innova Trials, ajudamos empresas farmacêuticas e de biotecnologia a transformar inovações médicas em realidade por meio de soluções para estudos clínicos eficientes, éticas e centradas no paciente. Com ampla experiência regional e padrões internacionais de qualidade, tornamos a pesquisa mais ágil, eficiente e impactante em todas as etapas.",
+    "P2": "Nossa equipe oferece suporte completo durante todo o processo de desenvolvimento clínico, desde o planejamento do estudo e a seleção de centros até as submissões regulatórias, o recrutamento de participantes, a condução do estudo e as atividades de encerramento. Ao combinar conhecimento local com padrões internacionais de qualidade, ajudamos os patrocinadores a superar desafios complexos, acelerar cronogramas e garantir excelência operacional em toda a América Latina.",
+    "P3": "Por meio de uma abordagem colaborativa e transparente, construímos parcerias de longo prazo voltadas para a entrega de resultados confiáveis, dados de alta qualidade e estudos clínicos bem-sucedidos."
+  },
+  "TEAM": {
+    "FEDERICO": {
+      "NAME": "Federico Pérez Manghi",
+      "ROLE1": "Cofundador e Diretor Médico – Innova Trials (Estados Unidos)",
+      "ROLE2": "Fundador e Presidente – CINME (Argentina)"
+    },
+    "MILAGROS": {
+      "NAME": "Milagros Pérez Manghi",
+      "ROLE1": "Cofundadora e Diretora Executiva – Innova Trials (Estados Unidos)",
+      "ROLE2": "Diretora Administrativa – CINME (Argentina)"
+    },
+    "SANTIAGO": {
+      "NAME": "Santiago Isbert Perlender",
+      "ROLE1": "Cofundador e Diretor Financeiro – Innova Trials (Estados Unidos)",
+      "ROLE2": "Diretor Estratégico e Financeiro – CINME (Argentina)"
+    },
+    "DANIEL": {
+      "NAME": "Daniel Cascon",
+      "ROLE1": "Cofundador e Diretor de Estratégia",
+      "ROLE2": ""
+    }
+  },
+  "TEAM_LARGE": {
+    "FEDERICO": {
+      "NAME": "Federico Pérez Manghi",
+      "ROLE1": "Cofundador e Diretor Médico – Innova Trials (Estados Unidos)",
+      "ROLE2": "Fundador e Presidente – CINME (Argentina)",
+      "BIO1": "Dr. Federico Pérez Manghi é Fundador e Diretor Médico da Innova Trials, uma Organização de Pesquisa Clínica com sede nos Estados Unidos, localizada em Key Biscayne, Flórida. Ele lidera a visão médica e científica da organização, assegurando excelência clínica, conformidade regulatória e segurança dos pacientes em todos os estudos.",
+      "BIO2": "Além de sua atuação na Innova Trials, Dr. Pérez Manghi é Fundador e Presidente da CINME, um importante centro de pesquisa clínica na Argentina. Com mais de 20 anos de experiência em prática clínica e operações de pesquisa, construiu uma trajetória reconhecida por integrar padrões farmacêuticos globais à expertise local.",
+      "BIO3": "Ao longo de sua carreira, Dr. Pérez Manghi atuou como Investigador Principal em diversos estudos clínicos de Fase II a IV, com foco especial em diabetologia, obesidade e desfechos cardiovasculares e renais. É Investigador Principal certificado pela ACRP e também contribuiu para a publicação de resultados de pesquisas clínicas em colaboração com importantes empresas farmacêuticas em revistas científicas revisadas por pares."
+    },
+    "MILAGROS": {
+      "NAME": "Milagros Pérez Manghi",
+      "ROLE1": "Cofundadora e Diretora Executiva – Innova Trials (Estados Unidos)",
+      "ROLE2": "Diretora Administrativa – CINME (Argentina)",
+      "BIO1": "Milagros Pérez Manghi é uma executiva com atuação estratégica nos setores de pesquisa clínica e saúde nos Estados Unidos e na América Latina. Atualmente, é CEO da Innova Trials, uma Organização de Pesquisa Clínica sediada nos Estados Unidos, focada em acelerar a inovação, a excelência operacional e as parcerias globais no desenvolvimento clínico.",
+      "BIO2": "Paralelamente, atua como CAO da CINME, em Buenos Aires, onde supervisiona a estratégia administrativa e desempenha um papel fundamental no alinhamento das operações clínicas aos padrões internacionais de qualidade e regulamentação.",
+      "BIO3": "Formada em Comércio Internacional pela UADE e com ampla experiência junto a patrocinadores farmacêuticos globais e CROs, Milagros combina visão estratégica, liderança operacional e conhecimento financeiro. Sua atuação é marcada pelo compromisso com transparência, colaboração internacional e elevação dos padrões da pesquisa clínica na América Latina."
+    },
+    "SANTIAGO": {
+      "NAME": "Santiago Isbert Perlender",
+      "ROLE1": "Cofundador e Diretor Financeiro – Innova Trials (Estados Unidos)",
+      "ROLE2": "Diretor Estratégico e Financeiro – CINME (Argentina)",
+      "BIO1": "Santiago Isbert Perlender é Diretor Financeiro da Innova Trials, uma organização de pesquisa clínica sediada em Miami, dedicada a acelerar o desenvolvimento de medicamentos por meio de uma gestão inovadora de estudos clínicos e integração global de centros de pesquisa. Como CFO, Santiago lidera a estratégia financeira, a alocação de capital e a expansão internacional, desempenhando um papel essencial no crescimento da empresa nos Estados Unidos e na América Latina. Sua liderança garante escalabilidade operacional, alinhando disciplina financeira à missão da Innova de transformar o futuro dos estudos clínicos.",
+      "BIO2": "Santiago também atua como Diretor Estratégico e Financeiro da CINME, um dos principais centros de pesquisa da Argentina. Sua experiência entre diferentes mercados oferece uma perspectiva única sobre a interseção entre inovação em saúde, finanças e ecossistemas regulatórios.",
+      "BIO3": ""
+    },
+    "DANIEL": {
+      "NAME": "Daniel Cascon",
+      "ROLE1": "Cofundador e Diretor de Estratégia",
+      "ROLE2": "",
+      "BIO1": "Daniel Cascon é um empreendedor argentino-americano com mais de três décadas de experiência em liderança executiva nas áreas de vendas e marketing em empresas multinacionais nos Estados Unidos e na América Latina.",
+      "BIO2": "Daniel é Cofundador e Diretor de Estratégia da Innova Trials, uma Organização de Pesquisa Clínica sediada em Key Biscayne, Flórida. Fundada em 2024, a Innova Trials tem como propósito modernizar a pesquisa clínica por meio de parcerias estratégicas, expertise regional e uma abordagem centrada no paciente.",
+      "BIO3": "Além de sua atuação em inovação em saúde, Daniel é fundador da Baires International Realty, iniciativa que reflete sua trajetória no desenvolvimento e investimento imobiliário. Seu portfólio diverso demonstra um compromisso consistente com a construção de negócios de impacto."
+    }
+  },
+  "JOIN": {
+    "TITLE": "FAÇA PARTE DA NOSSA EQUIPE",
+    "TEXT": "Na Innova Trials, somos muito mais do que uma organização de pesquisa clínica. Somos uma equipe movida pela curiosidade, guiada por um propósito e unida pela colaboração. Todos os dias desafiamos o convencional, exploramos novas ideias e ultrapassamos limites para impulsionar a inovação na saúde. Se você deseja gerar um impacto real e crescer em uma cultura onde o desenvolvimento é incentivado, sua voz é valorizada e sua trajetória realmente importa, este é o seu lugar. Seja você um profissional experiente ou alguém que está iniciando a carreira, sua jornada com propósito começa aqui.",
+    "RESUME": "Envie seu currículo para",
+    "EMAIL": "E-MAIL",
+    "LOCATION": "ENDEREÇO",
+    "PHONE": "TELEFONE"
+  },
+  "CONTACT": {
+    "TITLE": "FALE CONOSCO",
+    "EMAIL": "E-mail",
+    "PHONE": "Telefone",
+    "ADDRESS": "Endereço",
+    "FORM_TITLE": "VAMOS CONVERSAR",
+    "NAME": "Nome",
+    "PHONE_FIELD": "Telefone",
+    "EMAIL_FIELD": "E-mail",
+    "COMPANY": "Empresa",
+    "MESSAGE": "Mensagem"
+  }
+}

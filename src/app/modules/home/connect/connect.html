@@ -1,7 +1,7 @@
 <section class="full-screen-section connect-hero1">
     <div class="connect-container1">
         <div class="title-connect-container">
-            <h1 class="connect-title text-end" data-aos="fade-up" data-aos-duration="1200">
+            <h1 class="connect-title text-end" data-aos="fade-up" data-aos-duration="1200" data-i18n="CONTACT.TITLE">
                 CONTACT US
             </h1>
         </div>
@@ -19,7 +19,7 @@
                 <span class="red-divider"></span>
             
                 <div class="red-info">
-                    <h1>E-mail</h1>
+                    <h1 data-i18n="CONTACT.EMAIL">E-mail</h1>
                     <h2>info@innovatrials.com</h2>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                 <span class="red-divider"></span>
             
                 <div class="red-info">
-                    <h1>Phone number</h1>
+                    <h1 data-i18n="CONTACT.PHONE">Phone number</h1>
                     <h2>+1&nbsp;(786)&nbsp;351-1786</h2>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                 <span class="red-divider"></span>
             
                 <div class="red-info">
-                    <h1>Address</h1>
+                    <h1 data-i18n="CONTACT.ADDRESS">Address</h1>
                     <h2>
                         104 Crandon Blvd, Suite 312<br>
                         Key Biscayne, FL 33149
@@ -61,30 +61,32 @@
 <section class="full-screen-section connect-hero2">
     <div class="view-mobile" id="contact" style="height: 30px;"></div>
 
-    <h2 class="connect-title-form" data-aos="fade-up" data-aos-duration="1200">LET'S CONNECT</h2>
+    <h2 class="connect-title-form" data-aos="fade-up" data-aos-duration="1200" data-i18n="CONTACT.FORM_TITLE">
+        LET'S CONNECT
+    </h2>
 
     <div class="card-form" data-aos="fade-up" data-aos-duration="1200">
         <form [formGroup]="contactForm" (ngSubmit)="sendEmail()" class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
             <div class="fiel-two">
-                <input formControlName="user_name" type="text" placeholder="Name"
-                    class="border border-gray-300 rounded-xl p-4 outline-none focus:border-blue-500 transition-colors">
+                <input formControlName="user_name" type="text" placeholder="Name" data-i18n-placeholder="CONTACT.NAME"
+                class="border border-gray-300 rounded-xl p-4 outline-none focus:border-blue-500 transition-colors">
 
-                <input formControlName="user_phone" type="text" placeholder="Phone"
-                    class="border border-gray-300 rounded-xl p-4 outline-none focus:border-blue-500 transition-colors">
+                <input formControlName="user_phone" type="text" placeholder="Phone" data-i18n-placeholder="CONTACT.PHONE_FIELD"
+                class="border border-gray-300 rounded-xl p-4 outline-none focus:border-blue-500 transition-colors">
             </div>
 
             <div class="fiel-two">
-                <input formControlName="user_email" type="email" placeholder="Email"
-                    class="border border-gray-300 rounded-xl p-4 outline-none focus:border-blue-500 transition-colors">
+                <input formControlName="user_email" type="email" placeholder="Email" data-i18n-placeholder="CONTACT.EMAIL_FIELD"
+    class="border border-gray-300 rounded-xl p-4 outline-none focus:border-blue-500 transition-colors">
 
-                <input formControlName="user_company" type="text" placeholder="Company"
-                    class="border border-gray-300 rounded-xl p-4 outline-none focus:border-blue-500 transition-colors">
+    <input formControlName="user_company" type="text" placeholder="Company" data-i18n-placeholder="CONTACT.COMPANY"
+    class="border border-gray-300 rounded-xl p-4 outline-none focus:border-blue-500 transition-colors">
             </div>
             <div class="fiel-two">
 
-                <textarea formControlName="message" placeholder="Message" rows="4"
-                    class="md:col-span-2 border border-gray-300 rounded-xl p-4 outline-none focus:border-blue-500 transition-colors"></textarea>
+                <textarea formControlName="message" placeholder="Message" data-i18n-placeholder="CONTACT.MESSAGE" rows="4"
+                class="md:col-span-2 border border-gray-300 rounded-xl p-4 outline-none focus:border-blue-500 transition-colors"></textarea>
             </div>
             <div class="containe-btn">
 
