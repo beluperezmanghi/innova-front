@@ -451,6 +451,10 @@
         transform: rotate(150deg);
     }
 
+    .join-hero-content h1 {
+    white-space: normal;
+    }
+
     .contact-cards {
         flex-direction: column;
         align-items: center;
@@ -518,7 +522,7 @@
 
     .join-hero-content h1 {
         font-size: clamp(28px, 8vw, 46px);
-        white-space: nowrap;
+        white-space: normal;
         line-height: 1;
         padding-top: 50px;
         padding-bottom: 8px;
