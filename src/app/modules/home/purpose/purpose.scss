@@ -1357,7 +1357,7 @@
       line-height: 1.05;
       margin: 0 0 20px;
       text-align: center;
-      white-space: nowrap;
+      white-space: normal;
     }
     
     .purpose-latam-text p {
@@ -1478,7 +1478,7 @@
   
   .purpose-latam-text h1 {
     font-size: clamp(25px, 6vw, 32px);
-    white-space: nowrap;
+    white-space: normal;
     margin-bottom: 18px;
   }
   
@@ -1652,11 +1652,13 @@
   
   .purpose-latam-text h1 {
     font-size: clamp(24px, calc(9px + 4.7vw), 31px);
-    line-height: 1.05;
+    line-height: 1.18;
     white-space: normal;
     max-width: clamp(205px, 58vw, 255px);
     margin: 0 auto clamp(14px, 4vw, 20px);
     text-align: center;
+    padding-top: 0.12em !important;
+    overflow: visible;
   }
   
   .purpose-latam-text p {
