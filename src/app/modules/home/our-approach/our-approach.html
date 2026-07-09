@@ -134,7 +134,10 @@
                 </div>
 
                 <div class="card-mini-description " [class.active]="expandedIndex === i">
-                    <span> <strong>{{person.fullname}}</strong> <br> {{person.description}}</span>
+                  <span>
+                    <strong>{{ person.fullname }}</strong><br>
+                    <span [innerHTML]="person.description"></span>
+                  </span>
                 </div>
 
             </div>
