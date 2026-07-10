@@ -419,21 +419,74 @@
 
 @media (min-width: 1000px) and (max-width: 1100px) and (orientation: portrait) {
     .footer-bg {
-      min-height: 250px !important;
-      height: auto !important;
+      min-height: 220px !important;
       padding: 22px 0 26px !important;
-      overflow: visible !important;
     }
   
     .footer-capsule {
+      position: relative;
       width: 96% !important;
       height: 130px !important;
+  
       margin-left: auto !important;
-      margin-right: 0 !important;
-      padding-left: 54px !important;
-      padding-right: 54px !important;
-      gap: 22px !important;
+      padding-left: 50px !important;
+      padding-right: 135px !important;
+  
       justify-content: flex-start !important;
-      overflow: visible !important;
+      gap: 115px !important;
+      overflow: hidden !important;
+    }
+  
+    .footer-logo {
+      flex: 0 0 150px !important;
+      width: 150px !important;
+      min-width: 150px !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  
+    .footer-logo img {
+      width: 100% !important;
+      height: auto !important;
+      display: block;
+    }
+  
+    .footer-socials {
+      flex: 0 0 auto !important;
+      padding: 0 !important;
+      gap: 15px !important;
+    }
+  
+    .social-btn {
+      flex: 0 0 34px !important;
+      width: 34px !important;
+      height: 34px !important;
+    }
+  
+    .join-team-btn {
+      flex: 1 1 auto;
+      min-width: 0;
+      margin-left: 15px !important;
+  
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      text-align: center;
+      white-space: nowrap;
+    }
+  
+    .footer-map {
+      position: absolute;
+      top: 0;
+      right: 0;
+  
+      width: 125px;
+      height: 100%;
+      flex: none;
+    }
+  
+    .footer-map img {
+      width: auto;
+      height: 100%;
+      margin: 0;
     }
   }

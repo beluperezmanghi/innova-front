@@ -1288,6 +1288,8 @@
       .our-approach-title {
         font-size: clamp(32px, calc(3.49vw + 0.8px), 51px);
         line-height: 1.15;
+        padding-left: clamp(18px, 2vw, 28px);
+        box-sizing: border-box;
       }
       
       .our-approach-description {

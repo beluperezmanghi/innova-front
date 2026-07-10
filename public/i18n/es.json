@@ -25,7 +25,7 @@
     },
     "LATAM": {
         "TITLE": "¿POR QUÉ AMÉRICA LATINA?",
-       "TEXT": "América Latina ofrece a los patrocinadores una combinación única de eficiencia en costos, compromiso de los pacientes y excelencia en la ejecución de los estudios. En comparación con Estados Unidos y Europa, los menores costos operativos permiten optimizar los presupuestos de desarrollo clínico sin comprometer la calidad. Una sólida relación entre los médicos y sus pacientes fomenta la confianza, la adherencia y la continuidad a lo largo de los estudios, contribuyendo a reducir las tasas de abandono. Esto mejora la calidad de los datos, disminuye la necesidad de reemplazar participantes y favorece resultados más confiables. Combinado con investigadores experimentados y un mayor potencial de reclutamiento ágil, América Latina contribuye a acelerar los plazos de los estudios manteniendo el máximo rigor científico."
+       "TEXT": "América Latina ofrece a los patrocinadores una combinación única de eficiencia en costos, compromiso de los pacientes y excelencia en la ejecución de los estudios. En comparación con Estados Unidos y Europa, los menores costos operativos permiten optimizar los presupuestos de desarrollo clínico sin comprometer la calidad. Una sólida relación entre los médicos y sus pacientes fomenta la confianza, la adherencia y la continuidad a lo largo de los estudios, contribuyendo a reducir las tasas de abandono. Esto mejora la calidad de los datos, disminuye la necesidad de reemplazar participantes y favorece resultados más confiables. Combinado con investigadores experimentados y un mayor potencial de reclutamiento ágil, América Latina contribuye a acelerar los plazos de los estudios manteniendo el máximo rigor\u00A0científico."
     },
     "COMMON": {
       "BUTTON": "CONTACTAR"
@@ -103,7 +103,7 @@
         "ROLE2": "Fundador y Presidente – CINME (Argentina)",
         "BIO1": "El Dr. Federico Pérez Manghi es Fundador y Director Médico de Innova Trials, una Organización de Investigación Clínica con sede en Estados Unidos, ubicada en Key Biscayne, Florida. Lidera la visión médica y científica de la organización, garantizando la excelencia clínica, el cumplimiento regulatorio y la seguridad de los pacientes en todos los estudios.",
         "BIO2": "Además de su función en Innova Trials, el Dr. Pérez Manghi es Fundador y Presidente de CINME, uno de los principales centros de investigación clínica de Argentina. Con más de 20 años de experiencia en práctica clínica y operaciones de investigación, ha construido una trayectoria reconocida por integrar estándares farmacéuticos internacionales con experiencia local.",
-        "BIO3": "A lo largo de su carrera, el Dr. Pérez Manghi se ha desempeñado como Investigador Principal en numerosos estudios clínicos de Fase II a IV, con un enfoque principal en diabetología, obesidad y estudios de resultados cardiovasculares y renales. Es Investigador Principal Certificado por ACRP y también ha contribuido a la publicación de resultados de investigaciones clínicas en colaboración con importantes compañías farmacéuticas en revistas científicas con revisión por pares."
+        "BIO3": "A lo largo de su carrera, el Dr. Pérez Manghi se ha desempeñado como Investigador Principal en numerosos estudios clínicos de Fase II a IV, con un enfoque principal en diabetología, obesidad y estudios de resultados cardiovasculares y renales. Es Investigador Principal Certificado por ACRP y también ha contribuido a la publicación de resultados de investigaciones clínicas en colaboración con importantes compañías farmacéuticas en revistas científicas con revisión por\u00A0pares."
       },
       "MILAGROS": {
         "NAME": "Milagros Pérez Manghi",
@@ -131,7 +131,7 @@
       }
     },
     "JOIN": {
-      "TITLE": "SUMATE A NUESTRO EQUIPO",
+      "TITLE": "SUMATE A NUESTRO\u00A0EQUIPO",
       "TEXT": "En Innova Trials somos mucho más que una organización de investigación clínica. Somos un equipo impulsado por la\u00A0curiosidad, guiado por un propósito y unido por la colaboración. Cada día desafiamos lo establecido, exploramos nuevas ideas y superamos los límites para impulsar el avance de la salud. Si te apasiona generar un impacto real y crecer en una cultura donde se valora tu desarrollo, tu voz es escuchada y tu camino realmente importa, este es tu lugar. Ya seas un profesional con experiencia o estés dando tus primeros pasos, tu camino con propósito comienza\u00A0aquí.",
       "RESUME": "Envíanos tu currículum a",
       "EMAIL": "CORREO ELECTRÓNICO",
