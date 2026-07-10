@@ -65,18 +65,24 @@
 .join-hero-content {
     position: relative;
     z-index: 4;
-    max-width: min(900px, 90vw);
+    width: 100%;
+    max-width: none;
     padding: 0 var(--section-x);
+    box-sizing: border-box;
     color: white;
-}
-
-.join-hero-content h1 {
+    text-align: center;
+    padding-top: clamp(40px, 2.8vw, 55px);
+  }
+  
+  .join-hero-content h1 {
+    width: 100%;
+    margin: 0 0 5px;
     font-family: "Gotham";
     font-size: var(--title-lg);
     font-weight: 500;
-    margin-bottom: 5px;
     white-space: nowrap;
-}
+    text-align: center;
+  }
 
 .join-hero-content p {
     font-family: "Gotham";

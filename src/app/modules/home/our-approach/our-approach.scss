@@ -717,11 +717,7 @@
         font-size: clamp(64px, calc(4.19vw - 36.5px), 135px);
         line-height: 1.25;
         margin: 0;
-      }
-      
-      .about-intro-title h2 span {
-        display: block;
-        white-space: nowrap;
+        white-space: pre-line;
       }
       
       .about-intro-text {
@@ -765,12 +761,12 @@
   }
   
   .card-mini-person-header {
-    height: clamp(116px, calc(4.48vw + 8.5px), 192px);
-    min-height: clamp(116px, calc(4.48vw + 8.5px), 192px);
+    height: clamp(136px, calc(4.48vw + 28px), 212px);
+    min-height: clamp(136px, calc(4.48vw + 28px), 212px);
   
     padding:
-      clamp(22px, calc(1.3vw - 9px), 44px)
-      clamp(24px, calc(1.53vw - 12.7px), 50px);
+    clamp(30px, calc(1.3vw - 1px), 52px)
+    clamp(24px, calc(1.53vw - 12.7px), 50px);
   
     box-sizing: border-box;
     display: flex;
@@ -1042,6 +1038,7 @@
         font-size: clamp(46px, calc(2.71vw + 7px), 72px);
         line-height: 1.16;
         margin: 0;
+        white-space: pre-line;
       }
       
       .about-intro-text {
@@ -1085,10 +1082,13 @@
     }
     
     .card-mini-person-header {
-        height: clamp(82px, calc(3.55vw + 31px), 116px);
-        min-height: clamp(82px, calc(3.55vw + 31px), 116px);
-        padding: clamp(14px, calc(0.84vw + 2px), 22px)
-                clamp(14px, calc(1.04vw - 1px), 24px);
+      height: clamp(100px, calc(3.55vw + 49px), 134px);
+      min-height: clamp(100px, calc(3.55vw + 49px), 134px);
+
+      padding:
+      clamp(22px, calc(0.84vw + 10px), 32px)
+      clamp(14px, calc(1.04vw - 1px), 24px);
+
         box-sizing: border-box;
     
         display: flex;
@@ -1138,7 +1138,7 @@
         width: 100%;
         max-width: clamp(1240px, calc(89.86vw - 56px), 2100px);
         margin-inline: auto;
-        gap: clamp(42px, calc(2.93vw - 0px), 70px);
+        gap: clamp(52px, calc(3.35vw - 4px), 78px);
       }
     
       .card-large-person {
@@ -1187,7 +1187,7 @@
       }
     
       .card-large-content span {
-        font-size: clamp(14.4px, calc(1vw + 0.4px), 24px);
+        font-size: clamp(14.2px, calc(0.98vw + 0.4px), 23.5px);
         line-height: 1.38;
     
         padding:
@@ -1339,6 +1339,7 @@
         font-size: clamp(38px, calc(1.92vw + 18.3px), 46px);
         line-height: 1.16;
         margin: 0;
+        white-space: normal;
       }
     
       .about-intro-text {
@@ -1609,6 +1610,7 @@
         padding-top: 30px;
         line-height: 1.15;
         margin: 0 auto !important;
+        white-space: normal;
       }
     
       .about-intro-text {
@@ -1945,6 +1947,7 @@
         font-size: clamp(2rem, 3vw, 4.3rem);
         line-height: 1.25;
         text-align: center !important;
+        white-space: normal;
     }
 
     .about-intro-text p {
