@@ -357,14 +357,13 @@
     }
 }
 
-.detail-content {
+ .detail-content {
   display: flex;
   min-height: clamp(225px, 17vw, 290px);
-  max-height: clamp(285px, 22vw, 360px); // nuevo
   background: transparent;
   padding: 0px 2px;
+  position: relative;
   margin-top: -14px;
-  overflow: hidden; // nuevo
     &.row {
         flex-direction: row;
     }
@@ -389,7 +388,7 @@
             color: #0c0b0b;
             font-size: clamp(1rem, calc(0.62rem + 0.62vw), 1.28rem);
             line-height: clamp(21px, calc(14px + 0.65vw), 27px);
-            margin: 8px auto 16px auto;
+            margin: 8px auto 30px auto;
             font-weight: 300;
         }
     }
@@ -402,7 +401,8 @@
             height: 100%;
             object-fit: cover;
             object-position: center 45%;
-            position: relative;
+            inset: 0;
+            position: absolute;
         }
     }
 }
@@ -414,11 +414,15 @@
     padding: clamp(8px, 0.75vw, 12px) clamp(22px, 1.6vw, 30px);
     border-radius: 999px;
     width: fit-content;
+    max-width: 100%;
+    white-space: nowrap;
     cursor: pointer;
     font-size: clamp(0.82rem, 0.75vw, 1rem);
     font-family: "Gotham", sans-serif;
     font-weight: 300;
     transition: transform 0.2s;
+    margin-top: auto;
+    align-self: flex-end;
 }
 
 .purpose-hero {
@@ -1654,7 +1658,8 @@
     font-size: clamp(24px, calc(9px + 4.7vw), 31px);
     line-height: 1.18;
     white-space: normal;
-    max-width: clamp(205px, 58vw, 255px);
+    width: 100%;
+    max-width: 340px;
     margin: 0 auto clamp(14px, 4vw, 20px);
     text-align: center;
     padding-top: 0.12em !important;
