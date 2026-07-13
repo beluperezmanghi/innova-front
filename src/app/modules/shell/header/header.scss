@@ -134,16 +134,25 @@
 @media (min-width: 1442px) and (max-width: 2399.5px) {
   .navbar {
     padding:
-      clamp(28px, calc(1.25vw + 10px), 40px)
-      clamp(55px, calc(3.66vw + 2px), 90px);
+    clamp(22px, min(calc(1.25vw + 10px), 2.8vh), 34px)
+    clamp(55px, calc(3.66vw + 2px), 90px);
   }
 
   .logo img {
-    height: clamp(70px, calc(5.75vw - 13px), 125px);
+    height: clamp(
+      62px,
+      min(calc(5.75vw - 13px), 8vh),
+      100px
+    );
   }
 
   .nav-links a {
-    font-size: clamp(28px, calc(1.25vw + 10px), 40px);
+    font-size: clamp(
+      24px,
+      min(calc(1.25vw + 10px), 2.8vh),
+      34px
+    );
+
     letter-spacing: clamp(2px, calc(0.1vw + 0.6px), 3px);
   }
 
@@ -151,7 +160,11 @@
     content: "•";
     color: #ffffff;
     margin: 0 clamp(22px, calc(3.45vw - 28px), 55px);
-    font-size: clamp(18px, calc(1.78vw - 8px), 35px);
+    font-size: clamp(
+      16px,
+      min(calc(1.78vw - 8px), 2.4vh),
+      30px
+    );
   }
 }
 
