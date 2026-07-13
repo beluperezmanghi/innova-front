@@ -1164,9 +1164,11 @@
         font-size: clamp(22px, calc(1.25vw + 4px), 34px);
         line-height: 1.08;
         margin: 0;
-    
-        flex: 0 0 clamp(170px, calc(9.4vw + 35px), 260px);
-        max-width: clamp(170px, calc(9.4vw + 35px), 260px);
+      
+        flex: 0 0 clamp(200px, calc(9.4vw + 65px), 290px);
+        max-width: clamp(200px, calc(9.4vw + 65px), 290px);
+        min-width: 0;
+      
         white-space: normal;
       }
     
